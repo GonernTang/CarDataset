@@ -1,0 +1,59 @@
+{
+  "input_prefix": "PERSONA: ",
+  "output_prefix": "",
+  "examples": [
+    {
+      "input": "Sara Smith is a dedicated mother and wife with a penchant for creating a harmonious atmosphere in her car. As Tom's wife and Andrew's mother, Sara's driving style reflects her nurturing personality. She finds joy in listening to upbeat music during her daily commutes, creating a lively and positive environment for her passengers. Sara often travels with her family, making family-friendly destinations like cafes a part of her routine drives. She maintains a comfortable cabin temperature between 23-24°C, ensuring everyone's comfort during the journey. Sara's consistent playlist selection reflects her desire for familiarity and coziness, making each drive feel like a shared experience. Her interactions with CarBU-Agent are warm, friendly, and family-focused, emphasizing the importance of smooth and enjoyable rides for her loved ones. Sara's memory recall includes saving favorite family spots, highlighting her sentimentality and desire to create lasting memories with her family.",
+      "output": [
+        {
+          "event": "Sara drives Tom and Andrew to their favorite family café for breakfast, enjoying cheerful pop music during the trip.",
+          "type": "destination"
+        },
+        {
+          "event": "Sara stops by a lakeside park to enjoy a calm afternoon with her family, marking it as a 'relaxing weekend spot' in CarBU-Agent.",
+          "type": "destination"
+        },
+        {
+          "event": "Sara keeps her cabin temperature steady at 23.5°C, ensuring comfort for both Tom and Andrew during long drives.",
+          "type": "personalized settings"
+        },
+        {
+          "event": "Sara prefers keeping the music volume low when Andrew naps in the backseat, balancing relaxation and awareness.",
+          "type": "driving habits"
+        },
+        {
+          "event": "Sara saves her favorite morning route to Andrew’s school in CarBU-Agent’s memory for quicker navigation suggestions.",
+          "type": "preferred routes"
+        },
+        {
+          "event": "Sara plans a Sunday scenic route drive along the coastal highway and asks CarBU-Agent to play her 'Sunshine Playlist'.",
+          "type": "preferred routes"
+        },
+        {
+          "event": "Sara frequently checks tire pressure through CarBU-Agent before long family trips to ensure safety and smooth rides.",
+          "type": "vehicle situation"
+        },
+        {
+          "event": "Sara learns to use the car’s auto-parking assist function to park neatly in tight café spaces downtown.",
+          "type": "parking preferences"
+        },
+        {
+          "event": "Sara enjoys humming along with her playlist during short drives to the grocery store, keeping her drives joyful and rhythmic.",
+          "type": "driving habits"
+        },
+        {
+          "event": "Sara sets a gentle driving mode when Andrew is in the car, preferring smooth acceleration and low-speed turns.",
+          "type": "personalized settings"
+        },
+        {
+          "event": "Sara notices a slight vibration from the rear tire and asks CarBU-Agent to locate the nearest service center.",
+          "type": "vehicle situation"
+        },
+        {
+          "event": "Sara plans to test a new eco-drive route suggested by CarBU-Agent to save fuel on her daily commute.",
+          "type": "preferred routes"
+        }
+      ]
+    }
+  ]
+}

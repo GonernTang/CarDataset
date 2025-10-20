@@ -1,0 +1,18 @@
+{
+    "input_prefix": "Attributes: ",
+    "output_prefix": "Persona: ",
+    "examples": [
+      {
+        "input": [
+            "My name is Sam.",
+            "I am Tom's colleague.",
+            "I am efficient and professional when driving.",
+            "I set the car temperature to 22°C.",
+            "I often listen to business podcasts on the road.",
+            "I prefer punctual, optimized routes.",
+            "I work with Tom at the same company."
+          ],
+        "output": "Sam is a punctual and efficient professional who works alongside Tom at the same company. He treats driving as an extension of his work routine — organized, calm, and goal-oriented. Sam prefers optimized, time-saving routes and maintains a consistent cabin temperature of 22°C for comfort. While driving, he often listens to business and leadership podcasts, using commute time to stay productive. His interactions with CarBU-Agent are concise and purposeful, focusing on timely navigation and maintaining smooth, efficient trips to work and meetings."
+      }
+    ]
+  }

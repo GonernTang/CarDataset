@@ -1,0 +1,80 @@
+{
+  "train": [
+    {
+      "Driver 1": [
+        "My name is Tom.",
+        "I am the main driver.",
+        "I prefer to avoid highways during rush hour.",
+        "I like practical and calm driving decisions.",
+        "I usually choose the shortest local route over highways.",
+        "I leave around 8:10 am on weekdays.",
+        "I am husband to Sara.",
+        "I am father to Andrew.",
+        "I am the son of Paul.",
+        "I am colleagues and friends with Sam and John."
+      ],
+      "in_dataset": 0
+    },
+    {
+      "Driver 2": [
+        "My name is Sara.",
+        "I am Tom's wife.",
+        "I enjoy listening to upbeat music while driving.",
+        "I often travel with my family.",
+        "I prefer a balanced AC temperature (around 23–24°C).",
+        "I like keeping the same playlist between drives.",
+        "I save favorite family spots like cafes.",
+        "I am Andrew's mother."
+      ],
+      "in_dataset": 1
+    },
+    {
+      "Driver 3": [
+        "My name is John.",
+        "I am Tom's friend.",
+        "I prefer the fastest route available.",
+        "I enjoy scenic detours when time allows.",
+        "I like adventurous and less conventional routes.",
+        "I often choose routes that shorten travel time."
+      ],
+      "in_dataset": 1
+    },
+    {
+      "Driver 4": [
+        "My name is Paul.",
+        "I am Tom's father.",
+        "I am an experienced driver.",
+        "I avoid toll roads whenever possible.",
+        "I prefer traditional, well-known routes.",
+        "I trust conservative driving choices over shortcuts.",
+        "I am Andrew's grandfather."
+      ],
+      "in_dataset": 1
+    },
+    {
+      "Driver 5": [
+        "My name is Andrew.",
+        "I am Tom's son.",
+        "I prefer a softer navigation voice.",
+        "I like listening to audiobooks during drives.",
+        "I am a young driver and like simple directions.",
+        "I prefer calm, gentle prompts from the agent.",
+        "I am Sara's son.",
+        "I am Paul's grandson."
+      ],
+      "in_dataset": 1
+    },
+    {
+      "Driver 6": [
+        "My name is Sam.",
+        "I am Tom's colleague.",
+        "I am efficient and professional when driving.",
+        "I set the car temperature to 22°C.",
+        "I often listen to business podcasts on the road.",
+        "I prefer punctual, optimized routes.",
+        "I work with Tom at the same company."
+      ],
+      "in_dataset": 1
+    }
+  ]
+}
