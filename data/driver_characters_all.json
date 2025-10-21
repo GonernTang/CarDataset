@@ -13,7 +13,7 @@
         "I am the son of Paul.",
         "I am colleagues and friends with Sam and John."
       ],
-      "in_dataset": 0
+      "in_dataset": 1
     },
     {
       "Driver 2": [
@@ -49,7 +49,7 @@
         "I trust conservative driving choices over shortcuts.",
         "I am Andrew's grandfather."
       ],
-      "in_dataset": 1
+      "in_dataset": 0
     },
     {
       "Driver 5": [

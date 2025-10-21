@@ -131,7 +131,6 @@ def convert_to_chat_html(speaker_1, speaker_2, outfile="", use_events=False, img
     # add persona
     
     body += speaker_1_div % get_speaker_info(speaker_1, use_events=use_events)
-    body += speaker_2_div % get_speaker_info(speaker_2, use_events=use_events)
 
     # add session
     for num in range(1, 50):
@@ -150,32 +149,14 @@ def convert_to_chat_html(speaker_1, speaker_2, outfile="", use_events=False, img
 
         if 'events_session_%s' % num in speaker_1 and 'events_session_%s' % num in speaker_2:
             speaker_1_events = speaker_1['events_session_%s' % num]
-            speaker_2_events = speaker_2['events_session_%s' % num]
 
             body += speaker_1_div % get_session_events(speaker_1_events)
-            body += speaker_2_div % get_session_events(speaker_2_events)
 
         for dialog in speaker_1['session_%s' % num]:
-            text = dialog["clean_text"]
-            if "img_url" in dialog:
-                try:
-
-                    selected_div = speaker_1_div_with_image if dialog["speaker"] == speaker_1["name"] else speaker_2_div_with_image
-                    url = dialog["img_url"]
-                    if type(url) == list:
-                        url = url[0]
-                    body += selected_div % (text, url, dialog['caption'])
-
-                    # img_str = img2base64(os.path.join(img_dir, 'session_%s' % num, 'a' if dialog["speaker"] == speaker_1["name"] else 'b', dialog['img_file'][0]))
-                    # body += selected_div % (text, 'data:image/png;base64,' + img_str, dialog['caption'])
-                    
-                except Exception as e:
-                    print(e)
-                    selected_div = speaker_1_div if dialog["speaker"] == speaker_1["name"] else speaker_2_div
-                    body += selected_div % text
-            else:
-                selected_div = speaker_1_div if dialog["speaker"] == speaker_1["name"] else speaker_2_div
-                body += selected_div % text
+            text = dialog["text"]
+           
+            selected_div = speaker_1_div if dialog["speaker"] == speaker_1["name"] else speaker_2_div
+            body += selected_div % text
     body += """
         </div>
     </div>

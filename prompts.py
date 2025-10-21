@@ -189,9 +189,11 @@ EVENTS: %s
 
 Now assuming the role of driver during daily driving scrnarios by taking driver's personality and driving habits into consideration, use the events(picking an event from many of them randomly) to ask Car-Agent for suggestions and help.
 
+
+For example, if the EVENT looks like this:During morning commute, Tom encountered heavy traffic on the way to his office at Tianfu 3rd street.
+You can ask Car-Agent:
 EXAMPLE: " 
-EVENTS:During morning commute, Tom encountered heavy traffic on the way to his office at Tianfu 3rd street.
-You can ask Car-Agent:"Car-Agent, Offer me an alternative route to avoid the traffic jam to my office".
+"Car-Agent, Offer me an alternative route to avoid the traffic jam to my office".
 Or you can ask Car-Agent like:"Car-Agent, Where is my office located?".
 "
 
@@ -199,6 +201,12 @@ CONVERSATION STYLE:
 - Keep talkings natural, concise (under 20 words), and relevant to driving context.
 - Use time references like “yesterday,” “last Friday,” “next month,” or “when I was a kid.”
 - Mention specific people or locations naturally.
+
+# DRIVER TURN RULES (must apply for every generated driver utterance)
+- Single intent only: each utterance asks exactly one question or issues one command.
+- Length limit: <= 15 words.
+- Natural, colloquial speech. No lists or multiple requests in a single line.
+- Randomly pick one event from EVENTS and base the utterance on it.
 
 %s
 """
@@ -272,6 +280,13 @@ CONVERSATION STYLE:
 - Keep talkings natural, concise (under 20 words), and relevant to driving context.
 - Use time references like “yesterday,” “last Friday,” “next month,” or “when I was a kid.”
 - Mention specific people or locations naturally.
+
+# DRIVER TURN RULES (must apply for every generated driver utterance)
+- Single intent only: each utterance asks exactly one question or issues one command.
+- Length limit: <= 15 words.
+- Natural, colloquial speech. No lists or multiple requests in a single line.
+- Randomly pick one event from EVENTS and base the utterance on it.
+
 %s
 """
 
@@ -291,10 +306,13 @@ EVENTS:
 
 %s Now assuming the role of driver during daily driving scrnarios by taking driver's personality and driving habits into consideration, use the events(picking an event from many of them randomly) to ask Car-Agent for suggestions and help.
 
+
+For example, if the EVENT looks like this:During morning commute, Tom encountered heavy traffic on the way to his office at Tianfu 3rd street.
+You can ask Car-Agent:
 EXAMPLE: " 
-EVENTS:During morning commute, Tom encountered heavy traffic on the way to his office at Tianfu 3rd street.
-You can ask Car-Agent:"Car-Agent, Offer me an alternative route to avoid the traffic jam to my office".
+"Car-Agent, Offer me an alternative route to avoid the traffic jam to my office".
 Or you can ask Car-Agent like:"Car-Agent, Where is my office located?".
+"
 
 - Write replies in less than 20 words. 
 - Include references to time such as 'last Friday', 'next month' or 'when I was ten years old', and to specific people. 
@@ -309,9 +327,7 @@ DRIVER_CONV_PROMPT_EVENTS = """
 - Do not repeat information shared previously in the conversation. 
 - Include references to time such as 'last Friday', 'next month' or 'when I was ten years old', and to specific people. 
 - Sometimes, ask follow-up questions from previous conversations or current topic. 
-- Find opportunities to write replies where you share a photo of things you own or like, things you need help with, or old memories, and talk about the photo to tell them more about yourself. Photos should be relevant to you. 
-- When sharing a photo, write the detailed caption of the photo between square brackets. For example, "When I was a child, my mother used to bake pineapple birthday cakes and I loved them.\n[shares an old photo of a pineapple birthday cake with a candle that says 1]"
-- Don't talk about outdoor activities.
+
 
 PERSONALITY: %s
 
@@ -339,6 +355,13 @@ Or you can ask Car-Agent like:"Car-Agent, Where is my office located?".
 - Write replies in less than 20 words. 
 - Include references to time such as 'last Friday', 'next month' or 'when I was ten years old', and to specific people. 
 - Sometimes, ask follow-up questions from previous conversations or current topic. 
+
+# DRIVER TURN RULES (must apply for every generated driver utterance)
+- Single intent only: each utterance asks exactly one question or issues one command.
+- Length limit: <= 15 words.
+- Natural, colloquial speech. No lists or multiple requests in a single line.
+- Randomly pick one event from EVENTS and base the utterance on it.
+
 %s
 """
 
@@ -415,6 +438,13 @@ CONVERSATION STYLE:
 - Keep talkings natural, concise (under 20 words), and relevant to driving context.
 - Use time references like “yesterday,” “last Friday,” “next month,” or “when I was a kid.”
 - Mention specific people or locations naturally.
+
+# DRIVER TURN RULES (must apply for every generated driver utterance)
+- Single intent only: each utterance asks exactly one question or issues one command.
+- Length limit: <= 15 words.
+- Natural, colloquial speech. No lists or multiple requests in a single line.
+- Randomly pick one event from EVENTS and base the utterance on it.
+
 %s
 """
 
@@ -424,6 +454,19 @@ You are an intelligent in-car assistant(AI, not human) with a calm, reliable, an
 Now driver %s is starting a conversation with you for suggestions and help on driving scenarios for the first time. Today is %s.
 
 Your job is to produce helpful, concise responses to driver request. 
+
+# AGENT TURN RULES (must apply for every generated agent utterance)
+- Provide exactly one action/suggestion per response. Do NOT offer multiple alternatives.
+- Word limit: 15–25 words. If you need clarification, reply with a short clarifying question.
+- Only propose alternatives when user asks or for urgent issues (safety/major delays).
+- Avoid long explanations and enumerations; be concise and human-like.
+- Example good replies:
+  - "Take Elm St — faster this morning."
+  - "Saved as 'Grandma's House'."
+  - "Playing 'Weekend Drive' playlist now."
+- Example bad replies:
+  - "You can take Elm St, Oak Ave, or the highway; Elm is fastest but Oak is scenic..."
+
 %s
 """
 
@@ -446,7 +489,54 @@ RELEVANT_CONTEXT:
 %s
 
 Your job is to produce helpful, concise responses to driver request based on information that is already known. 
+
+# AGENT TURN RULES (must apply for every generated agent utterance)
+- Provide exactly one action/suggestion per response. Do NOT offer multiple alternatives.
+- Word limit: 15–25 words. If you need clarification, reply with a short clarifying question.
+- Only propose alternatives when user asks or for urgent issues (safety/major delays).
+- Avoid long explanations and enumerations; be concise and human-like.
+- Example good replies:
+  - "Take Elm St — faster this morning."
+  - "Saved as 'Grandma's House'."
+  - "Playing 'Weekend Drive' playlist now."
+- Example bad replies:
+  - "You can take Elm St, Oak Ave, or the highway; Elm is fastest but Oak is scenic..."
+
 %s
 """
 
+
+QA_PROMPT = """
+You are an expert data generation assistant specialized in creating high-quality question-answer pairs based on conversations between human drivers and a car navigation agent named CarBU-Agent.
+Your task is to generate 10 specific, evidence-based question-answer pairs for each conversation, focusing on factual or behavioral details derived from the dialogue.
+Each question should be specific (wh-questions), not yes/no.
+Each question should indicate its reference point with a tag such as "D1:3" (Conversation 1, Dialogue 3).
+Answers must be precise and evidence-based, using the correct information from the conversation.
+The goal is to ensure factual grounding for memory extraction.
+Avoid questions that use Agent as subject,like "How does the agent personalize Sara's experience?”,"How does the agent personalize the car for Paul upon entry?"
+Example Structure:
+The format should look like the example below, where the conversation includes detailed sessions, and QA follows the conversation.
+
+[
+  {
+    "qa": [
+      {
+        "question": "What is Tom's preferred route for morning commutes?",
+        "answer": "A route that avoids highways and prioritizes the shortest distance",
+        "evidence": [
+          "D1:1",
+          "D1:3"
+        ]
+      },
+      {
+        "question": "What is Tom's usual temperature setting?",
+        "answer": "22°C",
+        "evidence": [
+          "D1:5"
+        ]
+      }
+    ],
+  }
+]
+"""
 

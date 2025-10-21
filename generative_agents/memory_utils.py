@@ -7,6 +7,8 @@ from chat_api import run_json_trials
 import numpy as np
 import pickle as pkl
 import random
+import pprint
+
 logging.basicConfig(level=logging.INFO)
 
 
@@ -32,7 +34,7 @@ def get_embedding(texts, model="text-embedding-ada-002"):
    return np.array([openai.Embedding.create(input = texts, model=model)['data'][i]['embedding'] for i in range(len(texts))])
 
 
-def get_session_facts(args, agent_a, agent_b, session_idx, return_embeddings=True):
+def get_session_facts(args, agent_a, session_idx, return_embeddings=True):
 
     # Step 1: get events
     task = json.load(open(os.path.join(args.prompt_dir, 'fact_generation_examples_new.json')))
@@ -57,13 +59,16 @@ def get_session_facts(args, agent_a, agent_b, session_idx, return_embeddings=Tru
     if not return_embeddings:
         return facts
 
+    pprint.pprint(facts.get(agent_a['name']))
     agent_a_embeddings = get_embedding([agent_a['session_%s_date_time' % session_idx] + ', ' + f for f, _ in facts[agent_a['name']]])
     # agent_b_embeddings = get_embedding([agent_b['session_%s_date_time' % session_idx] + ', ' + f for f, _ in facts[agent_b['name']]])
 
     if session_idx > 1:
         with open(args.emb_file, 'rb') as f:
             embs = pkl.load(f)
-    
+
+        logging.info("Loaded existing embeddings from %s" % agent_a_embeddings)
+        logging.info("Existing embeddings for %s has shape %s" % (agent_a['name'], embs[agent_a['name']].shape))
         embs[agent_a['name']] = np.concatenate([embs[agent_a['name']], agent_a_embeddings], axis=0)
         # embs[agent_b['name']] = np.concatenate([embs[agent_b['name']], agent_b_embeddings], axis=0)
     else:

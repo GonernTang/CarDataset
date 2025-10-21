@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .chat {
+            display: flex;
+            flex-direction: column;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        .sender1 {
+            background-color: #e2f0cb;
+            align-self: flex-start;
+        }
+        .sender2 {
+            background-color: #b2ebf2;
+            align-self: flex-end;
+        }
+        .date {
+            background-color: #ffb6c1;
+            align-self: center;
+        }
+        .message img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat">
+    
+        <div class="message sender1">
+            <p><b>Name</b>: Tom<br><b>Persona</b>: Tom is a practical and family-oriented individual who values calm and efficient driving. As the main driver, he prioritizes local roads over highways, especially during rush hour, opting for the shortest routes to his destinations. Tom's daily routine involves leaving around 8:10 am on weekdays for work. He is a devoted husband to Sara, a caring father to Andrew, and the son of Paul. Professionally, Tom shares a close bond with his colleagues and friends, Sam and John. In his interactions with CarBU-Agent, Tom appreciates practical and straightforward navigation decisions to ensure smooth and timely journeys. He enjoys a tranquil driving experience, often setting the car temperature for optimal comfort. Tom's driving style is cautious and thoughtful, aiming to reach his destinations efficiently while maintaining a relaxed demeanor behind the wheel.<br></p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 1 [ 9:44 am on 24 April, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, suggest the quickest route to my favorite local restaurant for a family dinner.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Taking the exit at Junction St will get you to 'Local Bites' faster with no traffic delays.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, how's the traffic on the route to 'Local Bites' for dinner tonight?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Traffic is currently light, so you should have a smooth drive to 'Local Bites' for dinner tonight.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, remind me of the best time to leave for work tomorrow.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>I will remind you to leave for work tomorrow by 7:45 am to avoid traffic congestion during rush hour.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, what's the weather forecast for today's drive to Andrew's school at 3 pm?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Expect clear skies and mild temperatures for your drive to Andrew's school at 3 pm today.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 2 [ 2:18 pm on 27 April, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a scenic route to the drive-in movie theater for tonight's surprise date night with Sara."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Pine Avenue for a pleasant drive to the drive-in movie theater tonight.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, what's the weather forecast for our evening at the drive-in movie theater tonight?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Clear skies tonight, perfect for a drive-in movie date with Sara.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a cozy spot en route to the drive-in movie theater for a brief stop."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Make a stop at Springs Park along the way to the drive-in; it's a cozy spot for a brief break.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, will there be any traffic delays on the way to the drive-in movie theater tonight?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Traffic is light on the route to the drive-in movie theater for your surprise date night with Sara.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 3 [ 1:57 pm on 29 April, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a scenic route for a hiking trip with Andrew to explore nature trails tomorrow."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Pine Ridge Trail for a scenic hiking adventure with Andrew tomorrow. Enjoy the nature trails!</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, remind me of the best stargazing spot Andrew and I discovered last summer."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Head to Observatory Hill for the stargazing spot you and Andrew enjoyed last summer. Bright skies await!</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any recommendations on renewing wedding vows with Sara for a memorable event?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider renewing your vows at a scenic spot like Sunset Cove for a memorable and romantic event with Sara.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, could you suggest a tranquil route for our vow renewal celebration tomorrow?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Sunset Drive for a tranquil route to your vow renewal celebration tomorrow. Enjoy the peaceful journey with Sara.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 4 [ 5:53 pm on 2 May, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>“Car-Agent, can you suggest a peaceful route to the countryside vineyard for our weekend getaway with Sara?”</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take the scenic Meadow Lane for a tranquil drive to the countryside vineyard with Sara.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, what scenic spots can we stop at on our way to the vineyard this weekend?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider stopping at the scenic Lakeshore Park for a lovely break during your drive to the vineyard with Sara.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, should we bring our new rescue dog to the vineyard this weekend for the first time?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>It's best to wait until your rescue dog is settled before bringing them to the vineyard this weekend for a comfortable experience.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, any tips for making our family game nights memorable and engaging for all?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Organize themed game nights to keep things exciting for everyone during your weekly family game nights.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 5 [ 12:25 am on 7 May, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a scenic route for Andrew's next stargazing outing after today's father-son baseball game."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Oak Hill Road for a scenic drive after today's baseball game. Enjoy stargazing with Andrew under the night sky there.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, remind me the best time to stargaze with Andrew on Oak Hill Road.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>The best time for stargazing on Oak Hill Road is after dark when the night sky is clear.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, can you recommend optimal stargazing spots on Oak Hill Road for Andrew and me next month?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Stargaze at the overlook near the lake on Oak Hill Road for a peaceful experience next month.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, should Andrew and I prepare any gear for stargazing at the lake overlook on Oak Hill Road?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Prepare binoculars for stargazing at the lake overlook on Oak Hill Road next month for a better view.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 6 [ 5:47 pm on 12 May, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, recommend a serene route to a lake for our family picnic next week."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Consider Lakeside Drive for a tranquil route to the lake picnic next week."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how's the weather forecast for next week's family picnic at the lake?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Next week's forecast for the family picnic looks sunny and perfect for outdoor activities by the lake."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you suggest the best spot for stargazing during our picnic next week at the lake?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Oak Hill Road offers an optimal spot for stargazing during your family picnic next week by the lake."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, what's the best time for stargazing at Oak Hill Road during our family picnic?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Stargaze at Oak Hill Road during your family picnic in the evening for the best view."</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 7 [ 1:49 pm on 22 May, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, suggest a scenic drive for a family outing after our charity run."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>How about a leisurely drive through the countryside along Lakeside Drive after the charity run?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, can we detour to Lakeside Drive top scenic spots during the charity run?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Detouring to Lakeside Drive during the charity run may add extra time. Shall I calculate the detour duration for you?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, please calculate the duration for the detour to Lakeside Drive during our charity run."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Calculating... Detour to Lakeside Drive during the charity run may add 20 minutes based on current traffic conditions.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Thank you, CarBU-Agent. Let's stick to the main route for the charity run."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Understood, sticking to the main route for the charity run.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 8 [ 6:59 pm on 6 June, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, suggest a relaxing route for a family drive post-camping trip. Can we include a scenic detour for stargazing?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Pine Road for a peaceful drive back, with a detour to the lake for stargazing.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Will the roads be winding for a scenic drive that complements our camping trip views?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Yes, Pine Road offers winding roads with lovely views, perfect for complementing your camping trip experience.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>What towns or landmarks will we pass by on Pine Road for a more scenic journey?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Enjoy picturesque towns like Pinecrest, pass by serene parks, and catch glimpses of the shimmering Pine Lake on Pine Road.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>How's the traffic flow in those towns along Pine Road? Inform me about potential delays.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Traffic flow is smooth in towns along Pine Road. No significant delays are expected.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 9 [ 11:34 am on 11 June, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, suggest a calm route for a weekend drive with Sara after hosting a game night with my colleagues last Friday."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>How about a scenic drive on Blue Ridge Parkway this weekend with Sara?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Can you recommend stops for photography along Blue Ridge Parkway? Date's on next Sunday."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider stopping at Waterrock Knob Overlook and Linn Cove Viaduct for stunning photo opportunities.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, how's traffic around Blue Ridge Parkway next Sunday afternoon for our photography stops?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Traffic is light around Blue Ridge Parkway on Sunday afternoons, ideal for your photography stops.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, can you suggest a peaceful picnic spot on Blue Ridge Parkway for Sara and me?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>How about a serene picnic at Julian Price Park along Blue Ridge Parkway for you and Sara?</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 10 [ 9:53 am on 17 June, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a peaceful and scenic route for a road trip to a nearby national park with Sara and Andrew on 15 June, 2022."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Blue Ridge Parkway for a serene and scenic drive to the national park on June 15 with Sara and Andrew.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, recommend a cozy spot for stargazing after the baseball game I planned with Andrew."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Oak Hill Road offers a tranquil Lake Outlook spot for stargazing after the baseball game with Andrew.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, help me with picturesque routes for our movie night under the stars next week.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Enjoy a picturesque drive to a local park for movie night under the stars with the family next week.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, suggest a relaxing drive route for the movie night under the stars with Sara and Andrew next week.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider a soothing drive along Lakeside Drive for a relaxing movie night under the stars with Sara and Andrew next week.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 11 [ 3:53 pm on 11 July, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a peaceful drive route for a weekend camping trip like last time."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider revisiting the scenic route through Pine Road for a tranquil weekend drive like before.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, how was the camping trip feel for you on a personal level?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>I don't have feelings. My focus is on assisting you effectively. Would you like help with anything else?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, suggest a blissful route for Sara's and my anniversary dinner later this month.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>How about a serene drive along Sunset Drive for your anniversary dinner?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, recall the dance class Sara and I enrolled in; recommend a scenic route for it.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Try a delightful drive along Blue Ridge Parkway for a scenic route to your dance class with Sara.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 12 [ 2:25 pm on 20 July, 2022 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a scenic route to help clear my mind after journaling on personal growth."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Lakeside Drive for a peaceful and calming scenic route.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you adjust the route to Lakeside Drive to avoid potential construction delays?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Stay on Lakeside Drive; no reported construction delays on this route for a peaceful drive.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, do you know any good spots on Lakeside Drive for a quick stop?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Stop at Lakeside Park for a tranquil lakeside view, perfect for a refreshing break during your drive.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, could you suggest a playlist to complement the serene vibe of Lakeside Park?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Playing the "Chill Reflections" playlist to enhance the serene atmosphere at Lakeside Park.</p>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

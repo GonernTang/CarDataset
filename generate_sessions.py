@@ -32,8 +32,8 @@ def parse_args():
     parser.add_argument('--num-sessions', type=int, default=20, help="Maximum number of sessions in the conversation")
     parser.add_argument('--num-days', type=int, default=240, help="Desired temporal span of the multi-session conversation")
     parser.add_argument('--num-events', type=int, default=15, help="Total number of events to generate for each agent; 1 per session works best")
-    parser.add_argument('--max-turns-per-session', type=int, default=20, help="Maximum number of total turns in each session")
-    parser.add_argument('--num-events-per-session', type=int, default=50, help="Total number of events to be assigned to each agent per session; 1-2 works best")
+    parser.add_argument('--max-turns-per-session', type=int, default=8, help="Maximum number of total turns in each session")
+    parser.add_argument('--num-events-per-session', type=int, default=2, help="Total number of events to be assigned to each agent per session; 1-2 works best")
 
     parser.add_argument('--persona', action="store_true", help="Set flag to sample a new persona from MSC and generate details")
     parser.add_argument('--session', action="store_true", help="Set flag to generate sessions based on the generated/existing personas")
@@ -113,23 +113,21 @@ def get_random_date():
 
 
 
-def get_session_summary(session, speaker_1, speaker_2, curr_date, previous_summary=""):
+def get_session_summary(session, driver, curr_date, previous_summary=""):
 
     session_query = ''
     for c in session:
         session_query += "%s: %s\n" % (c["speaker"], c["text"])
-        if "image" in c:
-            session_query += "[%s shares %s]\n" % (c["speaker"], c["image"])
 
     if previous_summary:
 
-        query = SESSION_SUMMARY_PROMPT % (speaker_1['name'], speaker_2['name'], previous_summary, curr_date,
-                                               speaker_1['name'], speaker_2['name'], session_query, speaker_1['name'], speaker_2['name'])
+        query = SESSION_SUMMARY_PROMPT % (driver['name'], previous_summary, curr_date,
+                                               driver['name'], session_query, driver['name'])
     else:
-        query = SESSION_SUMMARY_INIT_PROMPT % (speaker_1['name'], speaker_2['name'], curr_date, session_query)
+        query = SESSION_SUMMARY_INIT_PROMPT % (driver['name'], curr_date, session_query)
 
     query += '\n\n'
-    # should summarize persona, previous conversations with respect to speaker.
+    # should summarize persona, previous conversations with respect to driver.
     output = run_chatgpt(query, 1, 150, 'chatgpt')
     output = output.strip()
     return output
@@ -496,10 +494,10 @@ def main():
                 curr_date = get_session_date(driver['graph'], args, prev_date=prev_date_time) # datetime object
                 curr_date_time = curr_date + curr_time # datetime object
                 
-                relevant_events_a = get_relevant_events(driver['graph'],  curr_date_time, prev_date=prev_date_time)
-                driver['events_session_%s' % j] = relevant_events_a
+                relevant_events_driver = get_relevant_events(driver['graph'],  curr_date_time, prev_date=prev_date_time)
+                driver['events_session_%s' % j] = relevant_events_driver
 
-                if len(relevant_events_a) == 0:
+                if len(relevant_events_driver) == 0:
                     logging.info("Stoppping conversation because no more events available in KG.")
                     break
 
@@ -519,12 +517,11 @@ def main():
 
             if 'session_%s_facts' % j not in driver or args.overwrite_session:
 
-                facts = get_session_facts(args, driver, CarAgent, j)
+                facts = get_session_facts(args, driver, j)
 
                 driver['session_%s_facts' % j] = facts
-                CarAgent['session_%s_facts' % j] = facts
 
-                print(" --------- Session %s Summary for Agent A---------" % (j))
+                print(" --------- Session %s Summary for Driver---------" % (j))
                 print(facts)
 
                 save_agents([driver, CarAgent], args)
@@ -543,11 +540,10 @@ def main():
 
             if args.summary and ('session_%s_summary' % j not in driver or args.overwrite_session):
 
-                summary = get_session_summary(driver['session_%s' % j], driver, CarAgent, driver['session_%s_date_time' % j], 
+                summary = get_session_summary(driver['session_%s' % j], driver, driver['session_%s_date_time' % j], 
                                               previous_summary=None if j==1 else driver['session_%s_summary' % (j-1)])
 
                 driver['session_%s_summary' % j] = summary
-                CarAgent['session_%s_summary' % j] = summary
 
                 save_agents([driver, CarAgent], args)
 

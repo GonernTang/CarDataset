@@ -44,10 +44,10 @@ CASUAL_DIALOG_PROMPT = """
 Input: %s\nOutput: 
 """
 
-SESSION_SUMMARY_PROMPT = "Previous conversations between %s and %s so far can be summarized as follows: %s. The current time and date are %s. %s and %s just had the following conversation:\n\n%s\n\nSummarize the previous and current conversations between %s and %s in 150 words or less. Include key facts(time, location, action, people) about both speakers and time references.\n\n"
+SESSION_SUMMARY_PROMPT = "Previous conversations between %s and car-agent so far can be summarized as follows: %s. The current time and date are %s. %s and car-agent just had the following conversation:\n\n%s\n\nSummarize the previous and current conversations between %s and car-agent in 150 words or less. Include key facts(time, location, action, people) about both speakers and time references.\n\n"
 
 
-SESSION_SUMMARY_INIT_PROMPT = "Write a concise summary containing key facts(time, location, action, people) mentioned about %s and %s on %s in the following conversation:\n\n%s\n\n"
+SESSION_SUMMARY_INIT_PROMPT = "Write a concise summary containing key facts(time, location, action, people) mentioned about %s and car-agent on %s in the following conversation:\n\n%s\n\n"
 
 
 # VISUAL_QUESTION_PROMPT = "{}\n\n{}\n\n{} says, {}, and {}. Write the most natural question or comment {} can include in her response."
