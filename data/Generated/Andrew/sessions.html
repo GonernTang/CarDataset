@@ -1,0 +1,779 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .chat {
+            display: flex;
+            flex-direction: column;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        .sender1 {
+            background-color: #e2f0cb;
+            align-self: flex-start;
+        }
+        .sender2 {
+            background-color: #b2ebf2;
+            align-self: flex-end;
+        }
+        .date {
+            background-color: #ffb6c1;
+            align-self: center;
+        }
+        .message img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat">
+    
+        <div class="message sender1">
+            <p><b>Name</b>: Andrew<br><b>Persona</b>: Andrew is a young, cautious driver who values simplicity and calmness in his driving experience. As Tom's son and Sara's son, he carries a sense of responsibility and the desire to navigate safely. Being Paul's grandson, he seeks to uphold a legacy of careful driving habits. Andrew prefers a softer, gentler voice for navigation prompts, leaning towards Level 2/10 in volume. He enjoys listening to audiobooks during drives, often using them to relax and unwind. As a new driver, Andrew tends to be overly cautious, occasionally braking too early or driving slowly in unfamiliar areas. He appreciates straightforward directions that avoid complex maneuvers like unprotected left turns and high-speed highway mergers, prioritizing safety over speed. To ensure he doesn't miss any parts of his audiobook, Andrew values the 'auto-pause' feature that silences his story during navigation prompts. When parking, he chooses wide, open spaces at the far end of lots to prevent scratches, actively avoiding parallel parking. Andrew's common destinations include Oakwood High School, the City Library for studying, and his friend Mark's house, reflecting his academic and social priorities.<br></p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 1 [ 11:41 am on 29 September, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a gentle route to Oakwood High School for a stress-free drive."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Selecting a route with less traffic and smoother roads to Oakwood High School for a stress-free drive."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, remind me to brake early when approaching Oakwood High School."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Reminder set to brake early when approaching Oakwood High School. Drive safely!"</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, recommend a relaxed route to the City Library for studying later today."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Choosing a calm route with reduced congestion to the City Library for your study session later today."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a simple route to Mark's house, avoiding busy intersections and highways."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Mapping a straightforward, non-highway route to Mark's house, circumventing busy intersections for a smooth drive.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 2 [ 5:58 pm on 2 October, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a quiet route to the City Library for Sunday studying. Include scenic locations."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider taking Parkland Avenue for a peaceful drive, with scenic views along the way.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how's traffic on Parkland Avenue? Any construction causing delays?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Traffic on Parkland Avenue is light. No reported construction causing delays currently.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how far is the nearest parking lot to the City Library entrance?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>The nearest parking lot to the City Library entrance is approximately 200 meters away.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you remind me to return my library books when we arrive?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Reminder set to return library books upon arrival at the City Library.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 3 [ 8:37 pm on 7 October, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you recommend a serene route to Mark's house with minimal traffic? Prefer easy turns."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Taking Maple Rd. Fewer cars, gentle turns, and no busy intersections. Arrival estimated in 15 minutes."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any advice on where to park when I reach Mia's favorite bakery near Oakwood High?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>The bakery has a lot nearby. Parallel parking available on Elm St.; be cautious entering traffic.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, could you suggest a calming drive to the City Library with lush scenery and smooth traffic?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Enjoy a peaceful drive. Take Riverside Drive; scenic views, light traffic. Estimated driving time is around 20 minutes.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any recommendations for a stress-free way to return the library books on Friday morning?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider driving early for less congestion. Use the drop-off lane at the library entrance for a quick return.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 4 [ 3:55 pm on 12 October, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a quiet route to Oakwood High School avoiding construction zones like last week."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Taking Peaceful Lane should ensure a serene drive to Oakwood High School, steering clear of any construction zones.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any tips for smooth parking near Mia's favorite bakery without any scratches?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Consider parallel parking on Elm St near Mia's favorite bakery for smooth parking without any scratches.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I avoid heavy traffic like the rush hour I faced near Oakwood High School?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Choosing Parkwood Avenue instead of Main Street should help you avoid heavy traffic near Oakwood High School.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, help me find a stress-free route to the City Library for my study session."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Taking Riverside Drive will lead you to the City Library smoothly for your study session. Drive safely.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 5 [ 10:59 am on 16 October, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a peaceful route for a scenic evening drive after Oakwood High School via Riverside Path."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Try the Maple Avenue route after school  for a serene evening drive."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Can I explore Riverside Path this evening after school for a calming drive?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Exploring Riverside Path post-school for a relaxing drive is a great idea!"</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how's traffic on Maple Avenue for an evening drive? Any construction there recently?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Maple Avenue has light traffic this evening, no recent construction reported. Enjoy your serene drive!"</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"With the serene drive on Maple Avenue, I can relax and enjoy the peaceful evening."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Absolutely, Maple Avenue offers a tranquil journey with minimal disruptions for a peaceful evening drive."</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 6 [ 12:27 am on 22 October, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a route to Oakwood High School for my defensive driving course on 20 October."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Parkwood Avenue for the defensive driving course on 20 October.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, where can I park near Parkwood Avenue for my defensive driving course on 20 October?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Parking is available in the school lot off Parkwood Avenue for your defensive driving course on 20 October.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, remind me to review key points from the defensive driving course on 21 October."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Remember to review key points from the defensive driving course on 21 October.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a relaxing route to the City Library to prepare for my next driving lesson."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Drive via Riverside Drive to the City Library for a calming journey before your lesson.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 7 [ 4:59 pm on 27 October, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, recommend a stress-free route to Mark's house to continue my mystery novel audiobook."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take the serene Maple Rd route to Mark's house for a peaceful and enjoyable drive.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I adjust my driving for added relaxation when using the serene Maple Rd route?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Switch on calming music or a podcast, drive smoothly, and enjoy the scenic surroundings on Maple Rd for enhanced relaxation.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you suggest calming audiobooks that complement my drive on Maple Rd?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Listen to mystery audiobooks for a relaxing drive on Maple Rd, enhancing the serene atmosphere."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I optimize my driving experience while exploring new mystery novels?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Focus on the story, stay attentive, and let the audiobook immerse you in the mystery world for an engaging drive.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 8 [ 5:01 pm on 3 November, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you suggest a stress-free route to Oakwood High School avoiding high-speed highway merges?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Certainly, take Peaceful Lane to avoid fast highway merges."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, do you recommend any relaxing mystery audiobooks for my next drive to Oakwood High?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Listening to 'The Silent Detective' can add a relaxing element to your drive."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any tips for calming down if I encounter unexpected heavy traffic like last Wednesday?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Try deep breathing exercises or listening to calming music to stay relaxed during heavy traffic."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I adapt my driving style to feel more confident after last week's parking practice?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Practice parallel parking in an empty lot to build confidence in your parking skills."</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 9 [ 1:04 pm on 6 November, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a calming route to Oakwood High School for my upcoming morning drive."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Parkwood Avenue for a serene morning drive to Oakwood High School.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you remind me to breathe deeply if I encounter heavy traffic like yesterday's book club meeting?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice deep breathing to stay calm in heavy traffic situations like yesterday's book club meeting.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, recommend a mystery audiobook for my weekend trip to Mark's house."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Listen to "The Shadow of Suspense" for a thrilling mystery audiobook on your weekend trip to Mark's house.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any tips on staying alert during long drives for next month's road trip to Mark's?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Stay hydrated, take breaks, and switch up music to stay alert during next month's road trip to Mark's house.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 10 [ 1:39 pm on 12 November, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I ensure safe driving in heavy rain like my recent trip to the City Library?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>To drive safely in heavy rain: Maintain distance, reduce speed, use headlights, avoid sudden maneuvers, and stay focused.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, do you have audiobook recommendations for rainy drives like to the City Library?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>For rainy drives, recommend suspenseful or calming audiobooks. How about "Whispers in the Rain" or "Calm amidst Storm"?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, how can I best prepare my car for sudden weather changes during long drives?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Prepare your car: Check wipers, tires, fluids, lights, and emergency kit. Stay updated on weather forecasts for smoother trips.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"CarBU-Agent, what actions should I take if I encounter unexpected fog on my road trip?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>In fog: Reduce speed, use low beams, increase following distance, avoid sudden stops, and stay focused on the road ahead.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 11 [ 9:40 pm on 17 November, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I navigate through sudden slippery roads like the one I encountered last Friday?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice gentle braking, drive slowly, avoid sudden acceleration, and maintain a safe following distance in slippery conditions.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"When should I use hazard lights in slippery conditions to enhance visibility, Car-Agent?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Use hazard lights only when pulled over in a safe location due to poor visibility or stopped in traffic.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I enhance visibility during heavy rain like my last drive to the City Library?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Ensure wipers and headlights are on, maintain a safe speed, and increase following distance for better visibility in heavy rain.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"What additional precautions should I take in case of sudden heavy fog, Car-Agent?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Reduce speed, use fog lights if equipped, turn on low beams, and increase following distance in heavy fog for safety.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 12 [ 10:57 am on 21 November, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a calm, straightforward route to Oakwood High avoiding left turns. Can you provide audiobook options for the journey?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Attempt right turns on Elm St. For audiobooks, consider 'The Serene Roadtrip' or 'Drive Relax'."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I maintain focus with distractions while practicing parallel parking?",</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Limit distractions. Focus on mirrors, signals & parking. Would you like tips on handling distractions specifically during parking practice?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I choose a safe parking spot for my visit to City Library?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Select well-lit, visible parking spots near the library entrance. Would you like details on parking availability at the City Library today?</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a route to Mark's house with clear instructions to avoid high-speed merging."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Prefer Maple Rd for clear guidance without high-speed merging. Would you like alternative routes for Mark's house?</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 13 [ 7:00 pm on 26 November, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest serene routes to Oakwood High with minimal left turns for a calm drive."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Recommend Parkwood Avenue for a serene drive to Oakwood High with minimal left turns.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I focus better when parallel parking like during the safe driving campaign?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice parallel parking in a quiet area. Focus on reference points and use mirrors effectively.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, give guidance on merging onto a high-speed highway for future practice sessions.</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Review desired speed and traffic flow. Use entrance ramps to merge smoothly. Practice maintaining a safe following distance.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>Car-Agent, what's a safe route to Mark's avoiding high-speed merges for my next visit?</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Recommend using Maple Road to Mark's house to avoid high-speed merging, ensuring a safe and calm drive.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 14 [ 12:58 am on 2 December, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a calming route to the City Library for a study session after upgrading my audiobook genres."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Drive via Riverside Drive for a serene journey to the City Library today. Enjoy the relaxing ambiance with your new audiobook genres.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I incorporate a stop on Riverside Drive for a brief relaxation break?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>"Incorporate a brief stop on Riverside Drive for a relaxing break. Pause, unwind, and enjoy the soothing surroundings."</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest ways to merge smoothly onto the highway, especially with high traffic volume."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice merging onto the highway in quieter hours to build confidence. Gradually match the flow of traffic for a smoother transition.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you recommend a calm route to Oakwood High School with minimal high-speed merges?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Travel on Parkwood Avenue for a serene journey to Oakwood High School, minimizing high-speed merges for a relaxed drive.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 15 [ 5:18 pm on 7 December, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you recommend a wide parking space at Oakwood High School? Preferably away from other cars."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Try parking closer to the school entrance on Elm St for a wider space and fewer cars nearby.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, what's a calm route to the City Library for studying after my mindfulness exercises?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Riverside Drive for a serene route to the City Library after your mindfulness exercises.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I smoothly merge onto the highway next time I drive to Mark's?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice gradual acceleration and merging technique when entering the highway towards Mark's house.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I ensure I don't miss any part of my audiobook on my next drive?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Set up bookmarks or use a playback speed that suits your pace to ensure you don't miss any part of your audiobook.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 16 [ 9:06 pm on 12 December, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a calming route to Oakwood High following Mia's positive feedback."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take Riverside Drive for a serene drive to Oakwood High, incorporating mindfulness exercises for calmness, as previously done.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"How can I apply mindfulness during the drive for a serene Oakwood High arrival?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice deep breathing and focus on relaxation techniques while observing traffic, enhancing a peaceful driving experience.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, recommend a wide parking spot technique for Oakwood High after city driving."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Choose end spots for wider parking space at Oakwood High after exiting city streets, ensuring ease and comfort.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"What activities could I engage in at Oakwood High to relax before driving back?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take a short walk or listen to calming music at Oakwood High to unwind before your drive home.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 17 [ 9:29 pm on 17 December, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest a calming route to Oakwood High for group study session on 15 December."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Drive via Riverside Drive for a serene approach to Oakwood High.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"How can I best unwind post-study session drive at Oakwood High with Mia?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take a relaxing walk or listen to calming music at Oakwood High after the study session with Mia.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, should I invite Mia for a calming audiobook drive after Oakwood High study?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Offer Mia a serene audiobook drive post-study for relaxation and shared enjoyment.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"What challenging journeys could Mia suggest for our future group study sessions at Oakwood High?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Ask Mia for routes exploring serene countryside roads or scenic drives to enhance future study sessions at Oakwood High.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 18 [ 4:48 pm on 22 December, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, can you suggest another peaceful route to Oakwood High School like the one from last Friday?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Take the scenic shortcut through the park discovered on 20 December for a peaceful drive to Oakwood High School.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any tips for smoothly incorporating the new park route into my daily drives?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Gradually incorporate the scenic park route into your daily drives to Oakwood High School for a smooth transition.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I ensure I maintain the relaxed atmosphere in the park route daily?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Play calming music and practice deep breathing to maintain a relaxed atmosphere while driving the park route to Oakwood High School.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any suggestions on enhancing the park route experience for enjoying audiobooks during the drive?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Listen to engaging mystery audiobooks to enhance the park route experience during your drive to Oakwood High School.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 19 [ 9:07 am on 26 December, 2024 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, suggest practices to enhance mindful driving on my routes to Oakwood High School."</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice deep breathing for calmness and stay present while driving. Use serene routes suggested previously.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I incorporate deep breathing during mindful driving to the City Library?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Practice deep breathing in traffic pauses, and use abdominal breathing for calmness on Riverside Drive.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, Mia recommended recalling a positive memory during deep breathing while driving. Thoughts?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Recall positive memories during deep breathing; stay relaxed and focused on the drive. Prioritize safe driving practices.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any tips on incorporating positive memories effectively during my mindful driving for smooth relaxation?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Recall positive memories during deep breathing pauses for smooth relaxation. Stay focused and enjoy the drive.</p>
+        </div>
+
+            <div class="message date">
+                <p> &nbsp; &nbsp;Session 20 [ 6:45 pm on 1 January, 2025 ]&nbsp; &nbsp;</p>
+            </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I find a wide parking space at Oakwood High School like Grandpa did?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Try pulling through two adjacent spots at the back of the lot for wider space, like Grandpa.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Can you remind me of the mindfulness technique to stay calm when following Mia's car?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Recall a positive memory during deep breathing to stay calm when following Mia's car.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, any gentle route suggestions for Mia and I's upcoming hiking trip, please?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Explore scenic backroads off the main highway for a relaxed journey with Mia on your hiking trip.</p>
+        </div>
+
+        <div class="message sender1">
+            <p>"Car-Agent, how can I choose calming music for our road trip to the hiking trail?"</p>
+        </div>
+
+        <div class="message sender2">
+            <p>Create a custom playlist with instrumental or nature sounds for a calming road trip ambiance to the hiking trail.</p>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+{
+  "qa": [
+    {
+      "question": "What type of route did John request to 'The Rooftop Bar' for an exciting drive?",
+      "answer": "Scenic detour",
+      "evidence": [
+        "D1:1"
+      ]
+    },
+    {
+      "question": "When did John request a route with toll roads to 'The Rooftop Bar' for an adrenaline-filled drive?",
+      "answer": "Not stated in the text.",
+      "evidence": []
+    },
+    {
+      "question": "What driving techniques did CarBU-Agent suggest to maintain excitement?",
+      "answer": "CarBU-Agent suggested exploring alternate driving techniques like spirited cornering or accelerating out of turns carefully.",
+      "evidence": [
+        "D2:6"
+      ]
+    },
+    {
+      "question": "When should John focus on advanced car control, smooth braking, and lining up turns at optimal speeds?",
+      "answer": "John should focus on advanced car control, smooth braking, and lining up turns at optimal speeds to enjoy the thrill without speeding.",
+      "evidence": [
+        "D2:8"
+      ]
+    },
+    {
+      "question": "What did John ask Car-Agent about regarding his car's performance?",
+      "answer": "John asked Car-Agent to suggest tweaks to his car's setting for optimal performance on steep roads.",
+      "evidence": [
+        "D3:7"
+      ]
+    },
+    {
+      "question": "When did John ask Car-Agent about the next big local racing event?",
+      "answer": "John asked Car-Agent about the next big local racing event after discussing testing his car's performance on steep roads.",
+      "evidence": [
+        "D3:3",
+        "D3:7"
+      ]
+    },
+    {
+      "question": "What type of playlist did John ask Car-Agent to recommend for his drive tonight?",
+      "answer": "'Club Vibes' playlist",
+      "evidence": [
+        "D4:4"
+      ]
+    },
+    {
+      "question": "When did John ask Car-Agent to recommend a flashy lighting display for a night drive?",
+      "answer": "Not stated in the text.",
+      "evidence": []
+    },
+    {
+      "question": "What did John ask the CarBU-Agent to suggest for a route to 'Speedy Burger'?",
+      "answer": "John asked the CarBU-Agent to suggest a route avoiding highways to reduce speeding risks post his speeding ticket incident.",
+      "evidence": [
+        "D5:1"
+      ]
+    },
+    {
+      "question": "What did John ask the CarBU-Agent to help him locate?",
+      "answer": "John asked the CarBU-Agent to help him locate the nearest car wash because he needs to keep his car spotless.",
+      "evidence": [
+        "D5:3"
+      ]
+    },
+    {
+      "question": "What type of suspension upgrade should John consider for his car's performance in rally races?",
+      "answer": "Upgrade to adjustable coilover suspension for improved handling and stability during rally races.",
+      "evidence": [
+        "D6:6"
+      ]
+    },
+    {
+      "question": "Where can John find upcoming rally racing events to participate in next month?",
+      "answer": "Search for local rally racing events online or check with nearby racing clubs for upcoming events in the area.",
+      "evidence": [
+        "D6:4"
+      ]
+    },
+    {
+      "question": "What type of upgrades did Car-Agent suggest for John's car's interior?",
+      "answer": "CarBU-Agent suggested racing-themed interior upgrades like sport seats and a racing steering wheel.",
+      "evidence": [
+        "D7:8"
+      ]
+    },
+    {
+      "question": "When should John adjust his car's suspension settings for the racing league?",
+      "answer": "Not stated in the text.",
+      "evidence": []
+    },
+    {
+      "question": "What did John ask Car-Agent to recommend for his drive to Speedy Burger?",
+      "answer": "A playlist",
+      "evidence": [
+        "D8:5"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest John park near Speedy Burger tonight?",
+      "answer": "Speedy Burger lot",
+      "evidence": [
+        "D8:4"
+      ]
+    },
+    {
+      "question": "What did Car-Agent recommend as a scenic drive route for John to test his car's upgraded aerodynamics?",
+      "answer": "Blue Ridge Pkwy",
+      "evidence": [
+        "D9:2"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest John explore for a scenic stop along the Blue Ridge Pkwy?",
+      "answer": "Linville Falls",
+      "evidence": [
+        "D9:4"
+      ]
+    },
+    {
+      "question": "What route does John suggest for his club members to 'The Rooftop Bar'?",
+      "answer": "A thrilling route via the expressway.",
+      "evidence": [
+        "D10:1",
+        "D10:2"
+      ]
+    },
+    {
+      "question": "When is the luxury car exhibition at 'The Rooftop Bar'?",
+      "answer": "On September 25.",
+      "evidence": [
+        "D10:5",
+        "D10:6"
+      ]
+    },
+    {
+      "question": "What type of playlist did John request for his drive after the car performance show?",
+      "answer": "John requested the 'Performance Beats' playlist.",
+      "evidence": [
+        "D11:1",
+        "D11:2"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest John drive to for drifting excitement after upgrading his engine?",
+      "answer": "Car-Agent suggested driving to the local track for drifting excitement.",
+      "evidence": [
+        "D11:3",
+        "D11:4"
+      ]
+    },
+    {
+      "question": "What type of playlist did CarBU-Agent recommend for the drive to Hickory Pass?",
+      "answer": "\"Blaze & Drive\" playlist",
+      "evidence": [
+        "D12:4"
+      ]
+    },
+    {
+      "question": "Where is a great spot for a quick bite after the drive through Hickory Pass?",
+      "answer": "\"Speedy Bites Diner\"",
+      "evidence": [
+        "D12:6"
+      ]
+    },
+    {
+      "question": "What route did CarBU-Agent suggest to John for a less congested drive to 'The Rooftop Bar'?",
+      "answer": "Riverside Ave",
+      "evidence": [
+        "D13:2"
+      ]
+    },
+    {
+      "question": "How can John prevent exceeding speed limits like the one that led to his speeding ticket last month?",
+      "answer": "To avoid speed limits, use cruise control and monitor speed using the car's built-in speed alerts.",
+      "evidence": [
+        "D13:8"
+      ]
+    },
+    {
+      "question": "What playlist did Car-Agent play for John's road trip after attending a rock concert?",
+      "answer": "'Rock & Roll Road Trip' playlist",
+      "evidence": [
+        "D14:2"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent recommend John to drive for speed and scenic views with his new car customization?",
+      "answer": "Mountain View Hwy",
+      "evidence": [
+        "D14:4"
+      ]
+    },
+    {
+      "question": "When is John scheduled to have car upgrades?",
+      "answer": "After his upcoming rally race on November 25th.",
+      "evidence": [
+        "D15:4"
+      ]
+    },
+    {
+      "question": "What type of tires does John want to install for off-road exploration?",
+      "answer": "All-terrain tires.",
+      "evidence": [
+        "D15:6"
+      ]
+    },
+    {
+      "question": "What playlist did CarBU-Agent suggest for John's off-road adventure?",
+      "answer": "'Adventure Trail Mix' playlist",
+      "evidence": [
+        "D16:2"
+      ]
+    },
+    {
+      "question": "When should John check for car enthusiast meets at 'The Rooftop Bar'?",
+      "answer": "For future driving adventures and club connections.",
+      "evidence": [
+        "D16:8"
+      ]
+    },
+    {
+      "question": "What did CarBU-Agent suggest for enhancing John's driving experience?",
+      "answer": "High-performance tires can enhance grip, handling, and overall performance during dynamic drives and speed challenges.",
+      "evidence": [
+        "D17:4"
+      ]
+    },
+    {
+      "question": "When did John request suggestions for upgrades after his recent speed race challenge?",
+      "answer": "15th December.",
+      "evidence": [
+        "D17:1"
+      ]
+    },
+    {
+      "question": "What type of playlist did CarBU-Agent recommend for John's drive to 'Speedy Burger' after the race meetup tonight?",
+      "answer": "Playing the 'Adrenaline Rush' playlist.",
+      "evidence": [
+        "D18:4"
+      ]
+    },
+    {
+      "question": "Where did CarBU-Agent suggest John take for a quick route from 'The Rooftop Bar' to Downtown Gym after the themed car meet?",
+      "answer": "Take the expressway.",
+      "evidence": [
+        "D18:8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "qa": [
+    {
+      "question": "What route does Sam Williams suggest for the family picnic this weekend?",
+      "answer": "A shorter route to the park.",
+      "evidence": [
+        "D1:1"
+      ]
+    },
+    {
+      "question": "When is the mountain trip planned with Sam Williams' family?",
+      "answer": "Next month.",
+      "evidence": [
+        "D1:5"
+      ]
+    },
+    {
+      "question": "What type of playlist did Sam ask Car-Agent to recommend for celebrating his recent job promotion with Lily and Emily tonight?",
+      "answer": "Playing \"Job Promotion Celebration\" playlist",
+      "evidence": [
+        "D2:4"
+      ]
+    },
+    {
+      "question": "When did Sam ask Car-Agent to remind him to visit the fancy restaurant where he celebrated his promotion?",
+      "answer": "Reminder set to visit the fancy restaurant where you celebrated your promotion last Friday.",
+      "evidence": [
+        "D2:6"
+      ]
+    },
+    {
+      "question": "What did Sam ask Car-Agent to remind him of?",
+      "answer": "To pack Lily's favorite toys for the picnic at Rosewood Park.",
+      "evidence": [
+        "D3:7"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest stopping for a picnic along Meadowbrook Drive?",
+      "answer": "Rosewood Park.",
+      "evidence": [
+        "D3:6"
+      ]
+    },
+    {
+      "question": "What route does Sam Williams want to take to Meadowbrook Drive?",
+      "answer": "Willow Bend Road",
+      "evidence": [
+        "D4:2"
+      ]
+    },
+    {
+      "question": "Who is the family-friendly event along the scenic route suggested for Sam Williams?",
+      "answer": "Maple Valley Art Fair",
+      "evidence": [
+        "D4:4"
+      ]
+    },
+    {
+      "question": "What did Sam ask Car-Agent to remind him about before next month's picnic?",
+      "answer": "To check Lily's toy preferences",
+      "evidence": [
+        "D5:3"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest going after the father-daughter dance tonight?",
+      "answer": "HoneyBee Cafe",
+      "evidence": [
+        "D5:7",
+        "D5:8"
+      ]
+    },
+    {
+      "question": "What did Sam ask Car-Agent to do for Lily's next recital?",
+      "answer": "Sam asked Car-Agent to suggest a calmer route to the dance studio and schedule reminders for Lily's practice sessions.",
+      "evidence": [
+        "D6:1"
+      ]
+    },
+    {
+      "question": "When did Sam ask Car-Agent to arrange Lily's favorite snacks?",
+      "answer": "Sam asked Car-Agent to arrange Lily's favorite snacks for her special day at the dance studio.",
+      "evidence": [
+        "D6:7"
+      ]
+    },
+    {
+      "question": "What should Sam do to ensure comfortable temperatures during the long drive?",
+      "answer": "Set the climate control to a mild temperature before starting the journey.",
+      "evidence": [
+        "D7:4"
+      ]
+    },
+    {
+      "question": "What entertainment ideas were proposed for Lily to enjoy during the drive to the mountains?",
+      "answer": "Offer Lily her favorite audiobooks or interactive games.",
+      "evidence": [
+        "D7:8"
+      ]
+    },
+    {
+      "question": "What can Sam do to ensure Lily's safety during the long car rides to test the eco-friendly cars?",
+      "answer": "Use a sturdy child car seat appropriate for Lily's age and size to ensure her safety during the drives.",
+      "evidence": [
+        "D8:6"
+      ]
+    },
+    {
+      "question": "What alternative routes can Sam take for today's family drive to test eco-friendly cars?",
+      "answer": "Explore scenic routes via Maple Avenue or Willow Bend Road for a relaxing drive while testing eco-friendly cars.",
+      "evidence": [
+        "D8:8"
+      ]
+    },
+    {
+      "question": "What does Car-Agent recommend for entertaining Lily in the upcoming family trip?",
+      "answer": "Provide Lily with interactive story audiobooks or games during the trip for fun and engagement.",
+      "evidence": [
+        "D9:6"
+      ]
+    },
+    {
+      "question": "How can Sam ease Lily's anxiety about long drives while exploring eco-friendly cars?",
+      "answer": "Offer Lily her favorite snacks, comforting toys, and interactive games for a relaxing and enjoyable ride.",
+      "evidence": [
+        "D9:8"
+      ]
+    },
+    {
+      "question": "Who is being picked up from daycare after work?",
+      "answer": "Lily",
+      "evidence": [
+        "D10:1",
+        "D10:2"
+      ]
+    },
+    {
+      "question": "What time is the reminder set for Lily's daycare pickup?",
+      "answer": "5:00 pm",
+      "evidence": [
+        "D10:3",
+        "D10:4"
+      ]
+    },
+    {
+      "question": "What does Sam ask the Car-Agent to remind him of?",
+      "answer": "To charge his EV to meet the new carpooling initiative demands.",
+      "evidence": [
+        "D11:3"
+      ]
+    },
+    {
+      "question": "Where does Sam suggest engaging in eco-friendly activities for Lily's playdate?",
+      "answer": "At Rosewood Park.",
+      "evidence": [
+        "D11:7"
+      ]
+    },
+    {
+      "question": "What type of activities have the reviewed trips focused on?",
+      "answer": "Efficient routes and eco-friendly activities like planting seeds.",
+      "evidence": [
+        "D12:6"
+      ]
+    },
+    {
+      "question": "Where should Sam consider for an eco-friendly route with park options for Lily's daycare pickup tomorrow?",
+      "answer": "Willow Bend Road.",
+      "evidence": [
+        "D12:8"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent suggest to Sam Williams for planting seeds at Rosewood Park?",
+      "answer": "Take Willow Bend Road for an eco-friendly route to Rosewood Park for planting seeds activity with Lily.",
+      "evidence": [
+        "D13:2"
+      ]
+    },
+    {
+      "question": "When did Sam Williams discuss the parking optimization strategy with Car-Agent?",
+      "answer": "On September 15.",
+      "evidence": [
+        "D13:4"
+      ]
+    },
+    {
+      "question": "What workshop is recommended for Lily's enrollment?",
+      "answer": "SafeKids Road Safety Workshop is recommended for Lily's enrollment.",
+      "evidence": [
+        "D14:2"
+      ]
+    },
+    {
+      "question": "When will Sam receive a notification before the SafeKids Road Safety Workshop?",
+      "answer": "Sam will receive a notification one day before the SafeKids Road Safety Workshop for Lily's enrollment.",
+      "evidence": [
+        "D14:8"
+      ]
+    },
+    {
+      "question": "What should Sam do to customize the journey for Lily and Emily's engagement?",
+      "answer": "Prepare interactive games, audiobooks, and snacks to keep Lily and Emily engaged and entertained throughout the trip.",
+      "evidence": [
+        "D15:6"
+      ]
+    },
+    {
+      "question": "Where can Sam take scenic detours for the road trip with Lily and Emily?",
+      "answer": "Consider taking scenic routes via Riverside Drive or Sunset Boulevard for a picturesque drive with Lily and Emily.",
+      "evidence": [
+        "D15:4"
+      ]
+    },
+    {
+      "question": "What eco-friendly activity was suggested for Lily at Maple Valley Park?",
+      "answer": "Organizing a nature scavenger hunt",
+      "evidence": [
+        "D16:2"
+      ]
+    },
+    {
+      "question": "When should calming activities be suggested for Emily at Maple Valley Park?",
+      "answer": "After the mindfulness exercises",
+      "evidence": [
+        "D16:8"
+      ]
+    },
+    {
+      "question": "What nature activity can be planned for Lily at Maple Valley Park?",
+      "answer": "Plan a nature scavenger hunt for Lily at Maple Valley Park for a fun activity.",
+      "evidence": [
+        "D17:4"
+      ]
+    },
+    {
+      "question": "When should positive affirmations be integrated into the carpooling podcast?",
+      "answer": "Consider incorporating positive affirmations at the beginning or end of your carpooling podcast to boost morale and motivation.",
+      "evidence": [
+        "D17:8"
+      ]
+    },
+    {
+      "question": "What can Sam do to make the drive memorable for Lily during their father-daughter day next month?",
+      "answer": "Prepare a personalized playlist with Lily's favorite songs or stories.",
+      "evidence": [
+        "D18:4"
+      ]
+    },
+    {
+      "question": "What interactive games were suggested for Lily during the father-daughter drive next month?",
+      "answer": "Playing 'I Spy,' '20 Questions,' or a scavenger hunt.",
+      "evidence": [
+        "D18:6"
+      ]
+    },
+    {
+      "question": "What type of playlist should Sam curate for father-daughter drives with Lily next month?",
+      "answer": "Curate a nature-inspired playlist for a soothing musical experience.",
+      "evidence": [
+        "D19:6"
+      ]
+    },
+    {
+      "question": "When should Sam consider prioritizing Maple Valley Park and Riverside Drive for scenic beauty?",
+      "answer": "On the next family road trip.",
+      "evidence": [
+        "D19:8"
+      ]
+    },
+    {
+      "question": "What suggestions did Car-Agent provide to make Lily's outdoor experiences more engaging during drives?",
+      "answer": "Create a nature-friendly playlist, plan a nature scavenger hunt, and bring interactive nature-themed games.",
+      "evidence": [
+        "D20:4"
+      ]
+    },
+    {
+      "question": "When should Sam avoid driving to have efficient drives post-Lily's school drop-off?",
+      "answer": "Rush hour",
+      "evidence": [
+        "D20:8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "qa": [
+    {
+      "question": "What time does Paul Johnson's gathering at the Golden Years Community Center start today?",
+      "answer": "1:00 PM",
+      "evidence": [
+        "D1:4"
+      ]
+    },
+    {
+      "question": "What type of items is Paul Johnson considering for his gathering at the community center?",
+      "answer": "Not stated in the text.",
+      "evidence": []
+    },
+    {
+      "question": "What did Paul Johnson ask Car-Agent to remind him about near the clinic?",
+      "answer": "To check for parking options near Dr. Evans' Clinic before his appointment.",
+      "evidence": [
+        "D2:6"
+      ]
+    },
+    {
+      "question": "When did Paul Johnson ask Car-Agent about the safest way to get to Main Street Supermarket?",
+      "answer": "Next Friday.",
+      "evidence": [
+        "D2:7"
+      ]
+    },
+    {
+      "question": "What did Paul ask Car-Agent to remind him of before heading to the local park?",
+      "answer": "To properly secure Andrew's car seat",
+      "evidence": [
+        "D3:5",
+        "D3:6"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest for a post-park coffee stop?",
+      "answer": "Joe's Java on Elm Street",
+      "evidence": [
+        "D3:7",
+        "D3:8"
+      ]
+    },
+    {
+      "question": "What is the reminder for Paul Johnson from Car-Agent?",
+      "answer": "To pick up Andrew's favorite doughnut from Joe's Java on Elm Street.",
+      "evidence": [
+        "D4:7"
+      ]
+    },
+    {
+      "question": "When is Paul Johnson planning to visit Joe's Java on Elm Street?",
+      "answer": "For a post-park stop.",
+      "evidence": [
+        "D4:6"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent suggest to Paul Johnson for the safest route to the car dealership?",
+      "answer": "Navigate via Oak Street.",
+      "evidence": [
+        "D5:2"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent recommend for Andrew's enjoyment post-dealership SUV pickup?",
+      "answer": "Andrew Park on Willow Lane.",
+      "evidence": [
+        "D5:8"
+      ]
+    },
+    {
+      "question": "Where might Paul find sufficient parking options near Joe's Java on Elm Street?",
+      "answer": "Check Maple Street for sufficient parking options near Joe's Java on Elm Street.",
+      "evidence": [
+        "D6:6"
+      ]
+    },
+    {
+      "question": "What did Car-Agent suggest as a scenic route to the Golden Years Community Center?",
+      "answer": "Consider Oak Avenue for a scenic route to the Golden Years Community Center today.",
+      "evidence": [
+        "D6:2"
+      ]
+    },
+    {
+      "question": "What did Car-Agent recommend as a quiet spot for Paul and Andrew to enjoy a picnic near the park?",
+      "answer": "The shaded area near the pond at the park.",
+      "evidence": [
+        "D7:8"
+      ]
+    },
+    {
+      "question": "When did Paul ask about the traffic to the park destination and any updates since last Friday?",
+      "answer": "During the conversation with Car-Agent.",
+      "evidence": [
+        "D7:3"
+      ]
+    },
+    {
+      "question": "What kind of route did Car-Agent recommend to Paul Johnson for his next visit to the Golden Years Community Center?",
+      "answer": "Taking Oak Avenue will offer a serene route to the Golden Years Community Center.",
+      "evidence": [
+        "D8:2"
+      ]
+    },
+    {
+      "question": "When is traffic near the Golden Years Community Center usually light according to Car-Agent?",
+      "answer": "Traffic near the Golden Years Community Center around noon is typically light.",
+      "evidence": [
+        "D8:4"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent recommend for Paul Johnson to take Andrew back home?",
+      "answer": "Oak Avenue",
+      "evidence": [
+        "D9:2"
+      ]
+    },
+    {
+      "question": "When is the traffic near the Golden Years Community Center light?",
+      "answer": "around lunchtime today",
+      "evidence": [
+        "D9:8"
+      ]
+    },
+    {
+      "question": "Where did CarBU-Agent suggest looking for parking near the Community Center?",
+      "answer": "Look for parking on Maple Street by the Community Center's entrance for the discussion session.",
+      "evidence": [
+        "D10:6"
+      ]
+    },
+    {
+      "question": "When is navigating light traffic on Maple Street near the Community Center preferable?",
+      "answer": "around noon",
+      "evidence": [
+        "D10:4"
+      ]
+    },
+    {
+      "question": "What socializing options are available after Paul's discussion session at the Community Center?",
+      "answer": "Pinecrest Café for a cozy post-session chat near the Community Center.",
+      "evidence": [
+        "D11:4"
+      ]
+    },
+    {
+      "question": "When will Paul receive a reminder about his safety-enhanced car upgrade delivery?",
+      "answer": "Before the safety-enhanced car upgrade is due for delivery.",
+      "evidence": [
+        "D11:6"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent suggest to Paul Johnson for the Golden Years Community Center?",
+      "answer": "Take Oak Avenue for a scenic and safe route to the Golden Years Community Center after his safe driving course last Friday.",
+      "evidence": [
+        "D12:2"
+      ]
+    },
+    {
+      "question": "When was the positive feedback about the new safety features received?",
+      "answer": "Positive feedback about new safety features was received from Andrew's parents on Monday.",
+      "evidence": [
+        "D12:6"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent recommend to Paul for Andrew's morning school drop-offs?",
+      "answer": "Drive north on Pine Street, then turn left onto Oak Avenue.",
+      "evidence": [
+        "D13:2"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest Paul secure a parking spot for morning drop-offs near Andrew's school?",
+      "answer": "At the end of Elm Street.",
+      "evidence": [
+        "D13:8"
+      ]
+    },
+    {
+      "question": "What is the traffic condition on Oak Avenue for Andrew's school journey tomorrow morning?",
+      "answer": "Traffic conditions on Oak Avenue are clear for Andrew's school journey tomorrow morning.",
+      "evidence": [
+        "D14:4"
+      ]
+    },
+    {
+      "question": "Where should Paul head for a scenic drive with Andrew next weekend?",
+      "answer": "Head north on Maple Ave, then left onto Oak Ave for a scenic drive with Andrew next weekend.",
+      "evidence": [
+        "D14:6"
+      ]
+    },
+    {
+      "question": "What is suggested to keep Andrew engaged during long drives?",
+      "answer": "Play Andrew's favorite songs or audiobooks during the drives for engagement.",
+      "evidence": [
+        "D15:4"
+      ]
+    },
+    {
+      "question": "Where can impressive scenic spots be found near the museum for the upcoming trip?",
+      "answer": "Explore the botanical gardens near the museum for impressive scenic views during your upcoming trip.",
+      "evidence": [
+        "D15:8"
+      ]
+    },
+    {
+      "question": "What is the traffic situation around Dr. Evans' Clinic at noon today?",
+      "answer": "Traffic around Dr. Evans' Clinic at noon today is expected to be light.",
+      "evidence": [
+        "D16:6"
+      ]
+    },
+    {
+      "question": "Where is the easiest parking option near the Golden Years Community Center this Friday?",
+      "answer": "The easiest parking option near Golden Years Community Center this Friday is available at Oak Avenue Parking Lot.",
+      "evidence": [
+        "D16:8"
+      ]
+    },
+    {
+      "question": "What did Paul ask Car-Agent to check regarding the museum visit next weekend?",
+      "answer": "If the museum has any special events",
+      "evidence": [
+        "D17:3"
+      ]
+    },
+    {
+      "question": "When should Paul stay updated for any traffic changes near the museum?",
+      "answer": "Closer to the visit",
+      "evidence": [
+        "D17:6"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent suggest for Paul's weekend drive to the park?",
+      "answer": "Taking Oak Avenue",
+      "evidence": [
+        "D18:2"
+      ]
+    },
+    {
+      "question": "When did Car-Agent mention that no recent roadwork has impacted the usual scenic route to the park?",
+      "answer": "In response to Paul's question about roadwork affecting the usual scenic route.",
+      "evidence": [
+        "D18:4"
+      ]
+    },
+    {
+      "question": "What did Paul ask Car-Agent to remind him about for the exploration trip tomorrow?",
+      "answer": "Andrew's favorite snacks",
+      "evidence": [
+        "D19:3"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent recommend Paul to explore for beautiful gardens during the drive tomorrow?",
+      "answer": "Brookside Gardens",
+      "evidence": [
+        "D19:7"
+      ]
+    },
+    {
+      "question": "What does Paul want to grab for the next scenic drive?",
+      "answer": "Andrew's favorite snacks",
+      "evidence": [
+        "D20:3"
+      ]
+    },
+    {
+      "question": "Where does Car-Agent recommend stopping for a safe exploration spot on the monthly drive?",
+      "answer": "Brookside Gardens",
+      "evidence": [
+        "D20:6"
+      ]
+    }
+  ]
+}

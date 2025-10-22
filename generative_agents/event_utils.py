@@ -30,7 +30,7 @@ OUTPUT: %s
 
 ----------------------------------------------------------------------------------------------------------------
 
-For the following input personality and driving habits, generate three independent sub-events E1, E2 and E3 aligned with their personality. Sub-events can be positive or negative life events and should reflect evolution in the person's relationships, state of mind, personality etc. 
+For the following input personality and driving habits, generate three independent sub-events E1, E2 and E3 aligned with their personality and driving habits. Sub-events can be events under different driving scenarios and should reflect evolution in the person's relationships, state of mind, personality and driving habits etc. 
 
 PERSONALITY: %s
 OUTPUT: 
@@ -57,7 +57,7 @@ OUTPUT: %s
 
 ----------------------------------------------------------------------------------------------------------------
 
-For the following input personality, generate new sub-events %s that are caused by one or more EXISTING sub-events. Sub-events can be positive or negative life events and should reflect evolution in the person's relationships, state of mind, personality etc. Do not repeat existing sub-events. Start and end your answer with a square bracket.
+For the following input personality and driving habits,generate new sub-events %s that are caused by one or more EXISTING sub-events. Sub-events can be events under different driving scenarios and should reflect evolution in the person's relationships, state of mind, personality and driving habits etc. Do not repeat existing sub-events. Start and end your answer with a square bracket.
 
 PERSONALITY: %s
 EXISTING: %s
@@ -184,7 +184,7 @@ def get_events(agent, start_date, end_date, args):
 
 
     task = json.load(open(os.path.join(args.prompt_dir, 'event_generation_examples.json')))
-    persona_examples = [e["input"] + '\nGenerate events between 1 January, 2020 and 30 April, 2020.' for e in task['examples']]
+    persona_examples = [e["input"] + '\nGenerate events between 1 January, 2024 and 30 December, 2025.' for e in task['examples']]
     
     # Step 1: Get initial events
     task = json.load(open(os.path.join(args.prompt_dir, 'graph_generation_examples.json')))
@@ -214,6 +214,72 @@ def get_events(agent, start_date, end_date, args):
             output = parsed
 
     agent_events = output
+
+        # ---------- begin patch: normalize event fields ----------
+    def normalize_event_fields(e):
+        """
+        标准化一条 event 的字段名和格式，返回新的 dict（不修改原始对象）。
+        目标字段名： 'id', 'date' (string), 'sub_event' (string), 'caused_by' (list)
+        兼容输入中的 'sub-event', 'sub_event', 'time' 等多种写法。
+        """
+        new = {}
+        # copy original keys but normalize names: lower-case, replace '-' with '_'
+        for k, v in e.items():
+            nk = k.strip().lower().replace('-', '_')
+            new[nk] = v
+
+        # ensure id exists and is string
+        if 'id' in new:
+            new['id'] = str(new['id']).strip()
+        else:
+            # if no id, try to construct one (shouldn't normally happen)
+            new['id'] = None
+
+        # unify date: prefer 'date', else 'time'
+        if 'date' in new and new['date'] is not None:
+            new['date'] = str(new['date']).strip()
+        elif 'time' in new and new['time'] is not None:
+            new['date'] = str(new['time']).strip()
+            # optionally remove 'time' key to avoid duplication
+            new.pop('time', None)
+        else:
+            # leave as empty string to avoid KeyError later
+            new['date'] = ""
+
+        # unify sub_event text
+        if 'sub_event' in new and new['sub_event'] is not None:
+            new['sub_event'] = str(new['sub_event']).strip()
+        elif 'sub_event' not in new and 'sub_event' in new:
+            new['sub_event'] = str(new.get('sub-event', "")).strip()
+        else:
+            # try original keys
+            new['sub_event'] = str(new.get('sub-event', new.get('sub_event', ""))).strip()
+
+        # ensure caused_by is a list
+        cb = new.get('caused_by', [])
+        if cb is None:
+            cb = []
+        if isinstance(cb, str):
+            # try to parse comma-separated ids
+            cb_list = re.findall(r'E\d+', cb)
+            new['caused_by'] = cb_list
+        elif isinstance(cb, list):
+            # strip items
+            new['caused_by'] = [str(x).strip() for x in cb]
+        else:
+            new['caused_by'] = []
+
+        return new
+
+    # normalize all agent_events right after initial parse
+    agent_events = [normalize_event_fields(e) for e in agent_events]
+
+    # print for debug (optional)
+    print("Normalized initial events (sample):")
+    for e in agent_events[:10]:
+        print(e)
+    # ---------- end patch ----------
+
     print("The following events have been generated in the initialization step:")
     for e in agent_events:
         print(list(e.items()))
@@ -249,6 +315,7 @@ def get_events(agent, start_date, end_date, args):
         if len(agent_events) > args.num_events:
             agent_events = filter_events(agent_events)
 
+    agent_events = renumber_events(agent_events)
     return agent_events
 
 
@@ -277,3 +344,40 @@ def filter_events(events):
         # print(id2events[id])
     
     return [e for e in events if e["id"] not in remove_ids]
+
+
+def renumber_events(agent_events, prefix='E'):
+    """
+    1) 按日期（或按出现顺序）对 events 做稳定排序（这里按原列表顺序保序）；
+    2) 为每个事件生成新的连续 id: E1..EN；
+    3) 返回新的事件列表，并把 caused_by 重映射成新 id。
+    """
+    # build old_id -> event mapping
+    old_ids = [e.get('id') for e in agent_events]
+    # Create mapping old->new
+    id_map = {}
+    for new_idx, old_id in enumerate(old_ids, start=1):
+        id_map[old_id] = f"{prefix}{new_idx}"
+
+    # Apply mapping to events
+    new_events = []
+    for e in agent_events:
+        new_e = dict(e)  # shallow copy
+        old_id = e.get('id')
+        new_e['id'] = id_map.get(old_id, old_id)
+
+        # remap caused_by list
+        if 'caused_by' in new_e and isinstance(new_e['caused_by'], list):
+            new_caused = []
+            for cid in new_e['caused_by']:
+                new_caused.append(id_map.get(cid, cid))  # keep old if mapping missing
+            new_e['caused_by'] = new_caused
+        new_events.append(new_e)
+    return new_events
+
+# 用法：在 get_events 的 return 之前
+# agent_events = renumber_events(agent_events)
+# return agent_events
+
+
+

@@ -3,15 +3,21 @@
     {
       "Driver 1": [
         "My name is Tom.",
+        "I am husband to Sara.",
+        "I am father to Andrew.",
+        "I am the son of Paul.",
+        "I am colleagues and friends with Sam and John.",
         "I am the main driver.",
         "I prefer to avoid highways during rush hour.",
         "I like practical and calm driving decisions.",
         "I usually choose the shortest local route over highways.",
         "I leave around 8:10 am on weekdays.",
-        "I am husband to Sara.",
-        "I am father to Andrew.",
-        "I am the son of Paul.",
-        "I am colleagues and friends with Sam and John."
+        "I prefer smooth acceleration and braking; I dislike sudden maneuvers, which is why I avoid congested highways.",
+        "I listen to the 'Morning News' radio preset during my commute.",
+        "I prefer the cabin temperature at a consistent 21°C.",
+        "As the main driver, I appreciate proactive vehicle health reminders (e.g., 'Oil change due in 500 miles') based on my regular commute.",
+        "I prefer parking in my usual spot at the office (Level 3, near the elevator) for efficiency.",
+        "My frequent destinations include 'Work (Innovatech Corp)', 'Home', 'Andrew's School', and 'The Daily Grind' (my morning coffee stop)."
       ],
       "in_dataset": 1
     },
@@ -19,12 +25,18 @@
       "Driver 2": [
         "My name is Sara.",
         "I am Tom's wife.",
-        "I enjoy listening to upbeat music while driving.",
+        "I am Andrew's mother.",
+        "I enjoy listening to upbeat pop music while driving.",
         "I often travel with my family.",
         "I prefer a balanced AC temperature (around 23–24°C).",
         "I like keeping the same playlist between drives.",
         "I save favorite family spots like cafes.",
-        "I am Andrew's mother."
+        "I set my music volume to a higher level (e.g., Level 7/10) to enjoy the music.",
+        "I drive cautiously and smoothly, especially when Andrew is in the car; I value safety alerts like 'school zone ahead'.",
+        "I prefer scenic routes over the fastest ones if the time difference isn't too significant.",
+        "I often use the 'Share ETA' feature with Tom when I'm heading home from an outing.",
+        "I prefer covered parking garages, especially in bad weather, and like spots close to the entrance or elevators for convenience with groceries.",
+        "My frequent destinations include 'Greenleaf Yoga Studio', 'Fresh Market' (groceries), 'Oakwood Mall', and 'Bella Pasta' (family restaurant)."
       ],
       "in_dataset": 1
     },
@@ -32,10 +44,16 @@
       "Driver 3": [
         "My name is John.",
         "I am Tom's friend.",
-        "I prefer the fastest route available.",
+        "I prefer the fastest route available, including toll roads.",
         "I enjoy scenic detours when time allows.",
         "I like adventurous and less conventional routes.",
-        "I often choose routes that shorten travel time."
+        "I often choose routes that shorten travel time.",
+        "I tend to drive faster than average and am comfortable with quick lane changes to maintain speed.",
+        "I like the agent to ask if I'm 'in a hurry' or 'exploring' to determine whether to prioritize speed or adventure.",
+        "I listen to high-energy electronic or rock music at a loud volume.",
+        "I tend to ignore non-critical maintenance alerts (e.g., 'low washer fluid') but want immediate warnings about tire pressure or brakes due to my spirited driving.",
+        "I prefer the closest possible spot to my destination, even if it's tight street parking.",
+        "I often navigate to new, one-off locations like 'Speedy Burger', 'Downtown Gym', and 'The Rooftop Bar'."
       ],
       "in_dataset": 1
     },
@@ -43,24 +61,35 @@
       "Driver 4": [
         "My name is Paul.",
         "I am Tom's father.",
+        "I am Andrew's grandfather.",
         "I am an experienced driver.",
         "I avoid toll roads whenever possible.",
         "I prefer traditional, well-known routes.",
         "I trust conservative driving choices over shortcuts.",
-        "I am Andrew's grandfather."
+        "I drive slowly and steadily, often 5 mph below the speed limit, and maintain a large following distance.",
+        "I listen to 'News Radio' or 'Classical Music' at a moderate, clear volume.",
+        "I prefer navigation prompts to be given well in advance (e.g., 'In 2 miles, prepare to turn right').",
+        "I like the cabin temperature cool, around 20°C.",
+        "I prefer parking spots that are easy to enter and exit, often choosing 'pull-through' spots or parking farther away in less crowded areas to avoid reversing.",
+        "My frequent destinations include 'Golden Years Community Center,' 'Dr. Evans' Clinic,' and the 'Main Street Supermarket'."
       ],
-      "in_dataset": 0
+      "in_dataset": 1
     },
     {
       "Driver 5": [
         "My name is Andrew.",
         "I am Tom's son.",
-        "I prefer a softer navigation voice.",
+        "I prefer a softer navigation voice (e.g., Level 2/10).",
         "I like listening to audiobooks during drives.",
         "I am a young driver and like simple directions.",
         "I prefer calm, gentle prompts from the agent.",
         "I am Sara's son.",
-        "I am Paul's grandson."
+        "I am Paul's grandson.",
+        "As a new driver, I am overly cautious, sometimes braking too early or driving too slowly in unfamiliar areas.",
+        "I prefer routes that minimize complex maneuvers like unprotected left turns or merging onto high-speed highways, even if it's not the fastest way.",
+        "I like the 'auto-pause' feature for my audiobook when navigation prompts are spoken, so I don't miss any of my story.",
+        "I prefer to park in wide, open spaces at the far end of the parking lot to avoid getting scratches; I actively avoid parallel parking.",
+        "My frequent destinations are 'Oakwood High School,' 'City Library' (for studying), and my friend 'Mark's House'."
       ],
       "in_dataset": 1
     },
@@ -69,10 +98,16 @@
         "My name is Sam.",
         "I am Tom's colleague.",
         "I am efficient and professional when driving.",
-        "I set the car temperature to 22°C.",
+        "I set the car temperature to exactly 22°C.",
         "I often listen to business podcasts on the road.",
         "I prefer punctual, optimized routes.",
-        "I work with Tom at the same company."
+        "I work with Tom at the same company (Innovatech Corp).",
+        "My driving style is very smooth and efficient, with gradual acceleration and braking to optimize for fuel economy.",
+        "I appreciate real-time traffic rerouting to ensure I am always on the most punctual route.",
+        "I listen to my podcasts at a low, focused volume (Level 3/10) to absorb the information without being distracted.",
+        "I like to receive a monthly 'Vehicle Health Summary' but prefer to silence real-time, non-critical alerts to maintain focus.",
+        "I prefer to park in a specific shaded area of the company garage to keep the car cool and minimize walk time.",
+        "I use the 'Log Trip for Business' feature for all travel to 'Innovatech Corp' and client meetings."
       ],
       "in_dataset": 1
     }

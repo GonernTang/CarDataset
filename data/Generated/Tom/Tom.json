@@ -1,1457 +1,925 @@
 {
-  "name": "Tom",
-  "persona_summary": "Tom is a practical and family-oriented individual who values calm and efficient driving. As the main driver, he prioritizes local roads over highways, especially during rush hour, opting for the shortest routes to his destinations. Tom's daily routine involves leaving around 8:10 am on weekdays for work. He is a devoted husband to Sara, a caring father to Andrew, and the son of Paul. Professionally, Tom shares a close bond with his colleagues and friends, Sam and John. In his interactions with CarBU-Agent, Tom appreciates practical and straightforward navigation decisions to ensure smooth and timely journeys. He enjoys a tranquil driving experience, often setting the car temperature for optimal comfort. Tom's driving style is cautious and thoughtful, aiming to reach his destinations efficiently while maintaining a relaxed demeanor behind the wheel.",
-  "msc_prompt": [
-    "My name is Tom.",
-    "I am the main driver.",
-    "I prefer to avoid highways during rush hour.",
-    "I like practical and calm driving decisions.",
-    "I usually choose the shortest local route over highways.",
-    "I leave around 8:10 am on weekdays.",
-    "I am husband to Sara.",
-    "I am father to Andrew.",
-    "I am the son of Paul.",
-    "I am colleagues and friends with Sam and John."
-  ],
-  "events_start_date": "21 April, 2022",
-  "graph": [
-    {
-      "sub-event": "Tom decides to surprise Sara with a weekend getaway to a cozy cabin in the woods.",
-      "date": "25 April, 2022",
-      "id": "E1",
-      "caused_by": []
+  "conversation": {
+    "speaker_a": "Tom",
+    "speaker_b": "CarBU-Agent",
+    "session_1_date_time": "5:01 pm on 11 March, 2024",
+    "session_1": [
+      {
+        "text": "\"Car-Agent, recommend a quicker route to 'Cozy Beans' for my morning coffee run.\"",
+        "speaker": "Tom",
+        "dia_id": "D1:1"
+      },
+      {
+        "text": "\"Try taking Maple Avenue for a quicker route this time of the day.\"",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D1:2"
+      },
+      {
+        "text": "\"Car-Agent, remind me to check the coffee specials at 'Cozy Beans' tomorrow.\"",
+        "speaker": "Tom",
+        "dia_id": "D1:3"
+      },
+      {
+        "text": "I've set a reminder to check 'Cozy Beans' coffee specials tomorrow morning.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D1:4"
+      },
+      {
+        "text": "\"Car-Agent, suggest the best time to leave tomorrow for a smooth drive to Andrew's school.\"",
+        "speaker": "Tom",
+        "dia_id": "D1:5"
+      },
+      {
+        "text": "To avoid traffic, leave for Andrew's school by 7:30 am tomorrow morning.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D1:6"
+      },
+      {
+        "text": "\"Car-Agent, remind me to stop by 'Cozy Beans' for my morning coffee tomorrow.\"",
+        "speaker": "Tom",
+        "dia_id": "D1:7"
+      },
+      {
+        "text": "I've set a reminder for you to stop by 'Cozy Beans' for your morning coffee tomorrow.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D1:8"
+      }
+    ],
+    "session_2_date_time": "4:22 pm on 13 March, 2024",
+    "session_2": [
+      {
+        "text": "\"Car-Agent, suggest a serene route to Andrew's school, keeping in mind Sara's musical at 9 am.\"",
+        "speaker": "Tom",
+        "dia_id": "D2:1"
+      },
+      {
+        "text": "Take Oakwood Drive for a scenic and calm drive to Andrew's school by 8:15 am.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D2:2"
+      },
+      {
+        "text": "Car-Agent, adjust cabin music to calm Sara before her musical at 9 am.",
+        "speaker": "Tom",
+        "dia_id": "D2:3"
+      },
+      {
+        "text": "Playing soft classical music to soothe Sara before the musical at 9 am.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D2:4"
+      },
+      {
+        "text": "Car-Agent, remind me to surprise Andrew with homemade dessert after his school play tomorrow.",
+        "speaker": "Tom",
+        "dia_id": "D2:5"
+      },
+      {
+        "text": "Reminding you to surprise Andrew with homemade dessert after his school play tomorrow.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D2:6"
+      },
+      {
+        "text": "Car-Agent, guide me to a quieter dinner spot for a relaxing date night at 7 pm.",
+        "speaker": "Tom",
+        "dia_id": "D2:7"
+      },
+      {
+        "text": "Navigating to \"Candlelight Cove\" for a quieter dinner spot for your relaxing date night at 7 pm.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D2:8"
+      }
+    ],
+    "session_3_date_time": "7:33 pm on 16 March, 2024",
+    "session_3": [
+      {
+        "text": "\"Car-Agent, suggest a fuel-efficient route for John and me to carpool to work post-15th March.\"",
+        "speaker": "Tom",
+        "dia_id": "D3:1"
+      },
+      {
+        "text": "Navigate via highway after 7:00 am for a fuel-efficient route for carpooling with John post-15th March.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D3:2"
+      },
+      {
+        "text": "\"Car-Agent, remind me to check Andrew's school pickup time after the school play on 15th March.\"",
+        "speaker": "Tom",
+        "dia_id": "D3:3"
+      },
+      {
+        "text": "Reminder set to check Andrew's school pickup time post-school play on 15th March.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D3:4"
+      },
+      {
+        "text": "\"Car-Agent, recommend eco-friendly practices for daily commutes post-car pooling with John starting 15th March.\"",
+        "speaker": "Tom",
+        "dia_id": "D3:5"
+      },
+      {
+        "text": "Eco-tip: Avoid idling, carpool regularly, and consider electric/hybrid cars for eco-friendly commutes post-car pooling with John.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D3:6"
+      },
+      {
+        "text": "\"Car-Agent, suggest a scenic route for a family drive to celebrate Andrew's successful school play on the weekend.\"",
+        "speaker": "Tom",
+        "dia_id": "D3:7"
+      },
+      {
+        "text": "Take Oakwood Drive for a scenic family drive to celebrate Andrew's school play success on the weekend.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D3:8"
+      }
+    ],
+    "session_4_date_time": "9:58 pm on 20 March, 2024",
+    "session_4": [
+      {
+        "text": "\"Car-Agent, recommend eco-friendly packing tips for our upcoming family camping trip.\"",
+        "speaker": "Tom",
+        "dia_id": "D4:1"
+      },
+      {
+        "text": "Consider reusable utensils, biodegradable plates, and packing in a reusable container. Leave no trace while camping.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D4:2"
+      },
+      {
+        "text": "\"Car-Agent, how can I plan an efficient route for our weekend beach trip with Sara?\"",
+        "speaker": "Tom",
+        "dia_id": "D4:3"
+      },
+      {
+        "text": "Take the scenic coastal route for the weekend beach trip with Sara to enjoy the beautiful views along the way.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D4:4"
+      },
+      {
+        "text": "\"Car-Agent, how often should I perform maintenance tasks for smooth weekend trips?\"",
+        "speaker": "Tom",
+        "dia_id": "D4:5"
+      },
+      {
+        "text": "Regularly check tire pressure, oil level, and fluid levels before long drives. Follow manufacturer's maintenance schedule for more.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D4:6"
+      },
+      {
+        "text": "\"Car-Agent, suggest scenic stops along the route to the beach for Sara and me.\"",
+        "speaker": "Tom",
+        "dia_id": "D4:7"
+      },
+      {
+        "text": "Plan stops at coastal lookout points and charming seaside towns for scenic breaks during your drive.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D4:8"
+      }
+    ],
+    "session_5_date_time": "9:22 pm on 1 April, 2024",
+    "session_5": [
+      {
+        "text": "\"Car-Agent, Based on our recent carpool picnic, suggest a fuel-efficient route for a weekend outing with Sara and Andrew.\"",
+        "speaker": "Tom",
+        "dia_id": "D5:1"
+      },
+      {
+        "text": "Taking the scenic route via Coastal Highway minimizes fuel consumption while enjoying the journey with Sara and Andrew.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D5:2"
+      },
+      {
+        "text": "\"Car-Agent, any tips to make the beach trip more eco-friendly for Sara and Andrew?\"",
+        "speaker": "Tom",
+        "dia_id": "D5:3"
+      },
+      {
+        "text": "Reuse water bottles, use eco-friendly sunscreens, and pack reusable bags for beach cleanups to reduce waste.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D5:4"
+      },
+      {
+        "text": "\"Car-Agent, how can I ensure a smooth drive to pick Andrew up after his afternoon classes?\"",
+        "speaker": "Tom",
+        "dia_id": "D5:5"
+      },
+      {
+        "text": "Set a reminder to leave early, check traffic updates, and take the most efficient route to Andrew's school.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D5:6"
+      },
+      {
+        "text": "\"Car-Agent, remind me to fuel up before driving John and Sam to our carpool picnic this weekend.\"",
+        "speaker": "Tom",
+        "dia_id": "D5:7"
+      },
+      {
+        "text": "Reminder set to refuel before the carpool picnic with John and Sam this weekend for a smooth journey.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D5:8"
+      }
+    ],
+    "session_6_date_time": "7:01 pm on 3 April, 2024",
+    "session_6": [
+      {
+        "text": "\"Car-Agent, suggest a scenic drive route for our family camping trip this weekend.\"",
+        "speaker": "Tom",
+        "dia_id": "D6:1"
+      },
+      {
+        "text": "Take the picturesque Rocky Ridge route for a scenic drive during the family camping trip.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D6:2"
+      },
+      {
+        "text": "\"Car-Agent, any recommendations for roadside attractions along the Rocky Ridge route for our trip?\"",
+        "speaker": "Tom",
+        "dia_id": "D6:3"
+      },
+      {
+        "text": "Explore the quaint Wildflower Farms along the Rocky Ridge route for charming roadside attractions on your trip.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D6:4"
+      },
+      {
+        "text": "\"Car-Agent, how's the weather forecast along the Rocky Ridge route for our camping trip?\"",
+        "speaker": "Tom",
+        "dia_id": "D6:5"
+      },
+      {
+        "text": "Expect clear skies and mild temperatures along the Rocky Ridge route for a pleasant camping trip.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D6:6"
+      },
+      {
+        "text": "\"Car-Agent, remind me to pack an extra blanket for the camping trip to Rocky Ridge.\"",
+        "speaker": "Tom",
+        "dia_id": "D6:7"
+      },
+      {
+        "text": "Reminder set to pack an extra blanket for the camping trip to Rocky Ridge this weekend.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D6:8"
+      }
+    ],
+    "session_7_date_time": "8:43 pm on 11 April, 2024",
+    "session_7": [
+      {
+        "text": "\"Car-Agent, remind me to check the tire pressure before our beach trip next weekend.\"",
+        "speaker": "Tom",
+        "dia_id": "D7:1"
+      },
+      {
+        "text": "Reminder set to check tire pressure before the beach trip.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D7:2"
+      },
+      {
+        "text": "Car-Agent, how can I ensure Andrew's safety when driving him to school every morning?",
+        "speaker": "Tom",
+        "dia_id": "D7:3"
+      },
+      {
+        "text": "Consider enrolling Andrew in a booster seat if he meets the height and weight requirements.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D7:4"
+      },
+      {
+        "text": "Car-Agent, how can I maintain focus and calm while driving Andrew to school daily?",
+        "speaker": "Tom",
+        "dia_id": "D7:5"
+      },
+      {
+        "text": "Practice deep breathing techniques to stay calm and focused during your daily drives with Andrew.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D7:6"
+      },
+      {
+        "text": "Car-Agent, could you recommend calming music or podcasts during the commute to Andrew's school?",
+        "speaker": "Tom",
+        "dia_id": "D7:7"
+      },
+      {
+        "text": "\"Playing calming music for a serene drive to Andrew's school.\"",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D7:8"
+      }
+    ],
+    "session_8_date_time": "5:26 pm on 19 April, 2024",
+    "session_8": [
+      {
+        "text": "\"Car-Agent, remind me to check my tire pressure before I surprise Andrew at school on 17 April.\"",
+        "speaker": "Tom",
+        "dia_id": "D8:1"
+      },
+      {
+        "text": "Reminder set to check tire pressure before 17 April surprise for Andrew.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D8:2"
+      },
+      {
+        "text": "\"Car-Agent, suggest a scenic route to make my promotion celebration dinner extra special with Sara.\"",
+        "speaker": "Tom",
+        "dia_id": "D8:3"
+      },
+      {
+        "text": "Consider a scenic drive via Sunset Valley Road for a special dinner celebration with Sara.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D8:4"
+      },
+      {
+        "text": "\"Car-Agent, recommend calming music for my commute to surprise Andrew after work.\"",
+        "speaker": "Tom",
+        "dia_id": "D8:5"
+      },
+      {
+        "text": "Playing soothing instrumental music for a calm commute to surprise Andrew after work.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D8:6"
+      },
+      {
+        "text": "\"Car-Agent, how can I plan a safe drive with a special treat for Andrew today?\"",
+        "speaker": "Tom",
+        "dia_id": "D8:7"
+      },
+      {
+        "text": "Ensure Andrew is secured in a booster seat for safety. Plan surprise treat accordingly for a safe drive.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D8:8"
+      }
+    ],
+    "session_9_date_time": "5:23 pm on 26 April, 2024",
+    "session_9": [
+      {
+        "text": "\"Car-Agent, suggest a scenic route for our weekend trip to the vineyard after my recent promotion.\"",
+        "speaker": "Tom",
+        "dia_id": "D9:1"
+      },
+      {
+        "text": "Consider taking the Coastal Highway for a picturesque route to the vineyard.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D9:2"
+      },
+      {
+        "text": "\"Car-Agent, ensure the tire pressure is optimal for the vineyard trip next weekend.\"",
+        "speaker": "Tom",
+        "dia_id": "D9:3"
+      },
+      {
+        "text": "I'll remind you to check the tire pressure before your vineyard trip for optimal performance.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D9:4"
+      },
+      {
+        "text": "Car-Agent, what's the best route to avoid any traffic on the drive after the concert?",
+        "speaker": "Tom",
+        "dia_id": "D9:5"
+      },
+      {
+        "text": "Taking the Riverside Parkway could help you steer clear of traffic after the concert.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D9:6"
+      },
+      {
+        "text": "Car-Agent, remind me to secure Andrew in the booster seat for the post-concert drive.",
+        "speaker": "Tom",
+        "dia_id": "D9:7"
+      },
+      {
+        "text": "I'll remind you to secure Andrew in the booster seat for the drive after the concert.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D9:8"
+      }
+    ],
+    "session_10_date_time": "5:15 pm on 20 May, 2024",
+    "session_10": [
+      {
+        "text": "Car-Agent, remind me of the best route to that mountain cabin for this weekend's surprise getaway for Sara?",
+        "speaker": "Tom",
+        "dia_id": "D10:1"
+      },
+      {
+        "text": "Take the scenic Coastal Highway for a relaxing drive to the mountain cabin this weekend.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D10:2"
+      },
+      {
+        "text": "Car-Agent, how's the traffic forecast along the Coastal Highway for our romantic weekend getaway to the mountain cabin?",
+        "speaker": "Tom",
+        "dia_id": "D10:3"
+      },
+      {
+        "text": "Expect light traffic along the Coastal Highway for a smooth weekend drive to the mountain cabin.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D10:4"
+      },
+      {
+        "text": "Car-Agent, can you suggest any must-visit spots along the Coastal Highway for our mountain cabin surprise trip?",
+        "speaker": "Tom",
+        "dia_id": "D10:5"
+      },
+      {
+        "text": "Explore scenic viewpoints like Sunset Bluff along the Coastal Highway for your mountain cabin getaway.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D10:6"
+      },
+      {
+        "text": "Car-Agent, what activities do you recommend at the mountain cabin for Sara and me?",
+        "speaker": "Tom",
+        "dia_id": "D10:7"
+      },
+      {
+        "text": "Enjoy hiking trails, stargazing, and cozy evenings by the fireplace at the mountain cabin getaway with Sara.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D10:8"
+      }
+    ],
+    "session_11_date_time": "12:44 am on 3 June, 2024",
+    "session_11": [
+      {
+        "text": "\"Car-Agent, Andrew enjoyed checking tire pressure with me. Any tips for teaching him about checking oil levels too?\"",
+        "speaker": "Tom",
+        "dia_id": "D11:1"
+      },
+      {
+        "text": "Involve Andrew in checking the oil level after fueling up the car. Explain the dipstick markings and importance of regular maintenance.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D11:2"
+      },
+      {
+        "text": "\"Car-Agent, what fun family activity can we do involving car maintenance for Andrew next?\"",
+        "speaker": "Tom",
+        "dia_id": "D11:3"
+      },
+      {
+        "text": "Have Andrew help wash and wax the car. It's a hands-on activity that teaches responsibility and keeps the car looking fresh.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D11:4"
+      },
+      {
+        "text": "\"Car-Agent, Sara and I joined a couples' cooking class. Any cooking-themed family activities we can include Andrew in?\"",
+        "speaker": "Tom",
+        "dia_id": "D11:5"
+      },
+      {
+        "text": "Plan a family cooking session together. Let Andrew choose a recipe, prep ingredients, and assist in cooking for a fun experience.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D11:6"
+      },
+      {
+        "text": "\"Car-Agent, how can we incorporate our cooking class recipes into a family meal with Sara and Andrew?\"",
+        "speaker": "Tom",
+        "dia_id": "D11:7"
+      },
+      {
+        "text": "Create a themed family dinner night. Assign tasks for each family member to prepare dishes from the cooking class recipes together.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D11:8"
+      }
+    ],
+    "session_12_date_time": "10:20 am on 21 June, 2024",
+    "session_12": [
+      {
+        "text": "\"Car-Agent, remind me to check the tire pressure before our family trip to the car museum on 20 June.\"",
+        "speaker": "Tom",
+        "dia_id": "D12:1"
+      },
+      {
+        "text": "\"Reminder set to check tire pressure before family trip on 20 June.\"",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D12:2"
+      },
+      {
+        "text": "\"Car-Agent, suggest a scenic route to the car museum for a relaxing drive with my family.\"",
+        "speaker": "Tom",
+        "dia_id": "D12:3"
+      },
+      {
+        "text": "\"I recommend taking the Coastal Highway for a scenic drive to the car museum with your family.\"",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D12:4"
+      },
+      {
+        "text": "\"Car-Agent, how can we involve Andrew in learning about the car museum's technologies on 20 June?\"",
+        "speaker": "Tom",
+        "dia_id": "D12:5"
+      },
+      {
+        "text": "\"Involve Andrew by discussing vehicle technologies at the museum and encouraging questions on 20 June.\"",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D12:6"
+      },
+      {
+        "text": "\"Car-Agent, can you recommend interactive exhibits at the car museum for Andrew's engagement on 20 June?\"",
+        "speaker": "Tom",
+        "dia_id": "D12:7"
+      },
+      {
+        "text": "\"Look for hands-on exhibits like interactive vehicle models or simulators at the car museum for Andrew's engagement.\"",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D12:8"
+      }
+    ],
+    "session_13_date_time": "12:52 am on 2 July, 2024",
+    "session_13": [
+      {
+        "text": "\"Car-Agent, which energy-efficient driving technique should I try next for an eco-friendly commute?\"",
+        "speaker": "Tom",
+        "dia_id": "D13:1"
+      },
+      {
+        "text": "Try coasting when approaching stops & gentle acceleration for fuel efficiency.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D13:2"
+      },
+      {
+        "text": "\"Car-Agent, how can I incorporate energy-efficient driving techniques when driving with Andrew next week?\"",
+        "speaker": "Tom",
+        "dia_id": "D13:3"
+      },
+      {
+        "text": "Encourage smooth acceleration and deceleration to save fuel and keep the drive comfortable for Andrew.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D13:4"
+      },
+      {
+        "text": "\"Car-Agent, can you suggest age-appropriate music playlists for Andrew's enjoyment during our drives?\"",
+        "speaker": "Tom",
+        "dia_id": "D13:5"
+      },
+      {
+        "text": "Play 'Kid-Friendly Jams' playlist for enjoyable drives with Andrew.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D13:6"
+      },
+      {
+        "text": "\"Car-Agent, how can I deepen Andrew's interest in music during our rides together?\"",
+        "speaker": "Tom",
+        "dia_id": "D13:7"
+      },
+      {
+        "text": "Introduce Andrew to different music genres and artists to spark his curiosity and appreciation for music.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D13:8"
+      }
+    ],
+    "session_14_date_time": "2:20 pm on 7 July, 2024",
+    "session_14": [
+      {
+        "text": "\"Car-Agent, Sara plans a surprise birthday party for Andrew at the amusement park. Suggest fun activities for the party?\"",
+        "speaker": "Tom",
+        "dia_id": "D14:1"
+      },
+      {
+        "text": "How about a carousel ride, face painting, and a mini treasure hunt at the amusement park for Andrew's birthday party?",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D14:2"
+      },
+      {
+        "text": "Car-Agent, what precautions should I take for Andrew's safety during the amusement park visit?\"",
+        "speaker": "Tom",
+        "dia_id": "D14:3"
+      },
+      {
+        "text": "Reminder to agree on a meeting point if separated, take frequent breaks, and ensure Andrew knows emergency contact details.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D14:4"
+      },
+      {
+        "text": "Car-Agent, on our family hike next weekend, suggest ways to make it memorable for Sara's parents as well.",
+        "speaker": "Tom",
+        "dia_id": "D14:5"
+      },
+      {
+        "text": "Surprise them with a themed picnic, capture moments with photos, and share interesting facts about the trail during the hike.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D14:6"
+      },
+      {
+        "text": "Car-Agent, Andrew's thrilled about his new art supplies. Can we plan a painting session during our next family outing?",
+        "speaker": "Tom",
+        "dia_id": "D14:7"
+      },
+      {
+        "text": "Organize a family painting session at a scenic spot during the next outing to inspire Andrew's creativity.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D14:8"
+      }
+    ],
+    "session_15_date_time": "8:04 pm on 9 July, 2024",
+    "session_15": [
+      {
+        "text": "\"Car-Agent, suggest eco-friendly driving tips for our new hybrid vehicle after the upgrade.\"",
+        "speaker": "Tom",
+        "dia_id": "D15:1"
+      },
+      {
+        "text": "Use gentle acceleration and avoid idling for better fuel efficiency in the hybrid vehicle.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D15:2"
+      },
+      {
+        "text": "\"Car-Agent, recommend a shorter route plan for our new scenic weekend drive.\"",
+        "speaker": "Tom",
+        "dia_id": "D15:3"
+      },
+      {
+        "text": "Taking the Coastal Highway should offer a shorter scenic route for your weekend drive.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D15:4"
+      },
+      {
+        "text": "\"Car-Agent, how can I incorporate interactive exhibits into our scenic drive with Sara and Andrew?\"",
+        "speaker": "Tom",
+        "dia_id": "D15:5"
+      },
+      {
+        "text": "Plan a detour to visit interactive roadside attractions or nature stops along your scenic drive with Sara and Andrew.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D15:6"
+      },
+      {
+        "text": "\"Car-Agent, how can we make the family hike memorable for Sara's parents next month?\"",
+        "speaker": "Tom",
+        "dia_id": "D15:7"
+      },
+      {
+        "text": "Consider personalizing the hike with favorite viewpoints or planning a themed nature scavenger hunt for Sara's parents.",
+        "speaker": "CarBU-Agent",
+        "dia_id": "D15:8"
+      }
+    ]
+  },
+  "event_summary": {
+    "events_session_1": {
+      "sub_event": [
+        "Tom discovers a new local cafe 'Cozy Beans' on his way to work and starts stopping by for his morning coffee fix."
+      ],
+      "id": [
+        "E8"
+      ],
+      "caused_by": [],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "10 March, 2024"
     },
-    {
-      "sub-event": "Tom plans a family picnic by the lake to celebrate Andrew's birthday.",
-      "date": "10 May, 2022",
-      "id": "E2",
+    "events_session_2": {
+      "sub-event": [
+        "Tom takes Sara out for a surprise date night.",
+        "Tom starts using a meditation app for relaxation during his daily commute.",
+        "Tom starts practicing gentle acceleration and braking techniques with Andrew in the car.",
+        "Tom discovers a new back-road shortcut on his way to work, reducing commute time."
+      ],
+      "id": [
+        "E4",
+        "E12",
+        "E20",
+        "E24"
+      ],
       "caused_by": [
-        "E1"
-      ]
+        "E1",
+        "E4",
+        "E7",
+        "E8"
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "12 March, 2024"
     },
-    {
-      "sub-event": "Tom organizes a barbecue dinner with Paul, Sam, and John to strengthen their bond.",
-      "date": "5 June, 2022",
-      "id": "E3",
+    "events_session_3": {
+      "sub_event": [
+        "Tom attends Andrew's school play and surprises him with a dessert treat.",
+        "Tom starts carpooling with colleague John to reduce carbon footprint and traffic congestion on their way to work."
+      ],
+      "id": [
+        "E1",
+        "E9"
+      ],
+      "caused_by": [],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "15 March, 2024"
+    },
+    "events_session_4": {
+      "sub-event": [
+        "Tom tries a new energy-efficient driving technique after receiving positive feedback from CarBU-Agent.",
+        "Tom and Sara decide to take a spontaneous weekend road trip to a nearby beach town.",
+        "Tom and Sara plan a family camping trip for the weekend."
+      ],
+      "id": [
+        "E13",
+        "E25",
+        "E5"
+      ],
+      "caused_by": [
+        "E9",
+        "E10",
+        "E4"
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "20 March, 2024"
+    },
+    "events_session_5": {
+      "sub-event": [
+        "Tom organizes a carpool picnic for colleagues Sam and John on a sunny weekend."
+      ],
+      "id": [
+        "E14"
+      ],
+      "caused_by": [
+        "E9"
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "30 March, 2024"
+    },
+    "events_session_6": {
+      "sub-event": [
+        "Tom and Sara have a movie night at home after a long week."
+      ],
+      "id": [
+        "E6"
+      ],
+      "caused_by": [
+        "E5"
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "02 April, 2024"
+    },
+    "events_session_7": {
+      "sub-event": [
+        "Tom decides to enroll in a defensive driving course after witnessing a minor accident on his daily commute."
+      ],
+      "id": [
+        "E28"
+      ],
+      "caused_by": [
+        "E12"
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "10 April, 2024"
+    },
+    "events_session_8": {
+      "sub-event": [
+        "Tom decides to surprise Andrew by picking him up from school with a special treat."
+      ],
+      "id": [
+        "E7"
+      ],
       "caused_by": [
         "E2"
-      ]
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "17 April, 2024"
     },
-    {
-      "sub-event": "Tom adopts a rescue dog from the local shelter.",
-      "date": "30 April, 2022",
-      "id": "E4",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara decide to enroll in a cooking class together.",
-      "date": "2 May, 2022",
-      "id": "E5",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Andrew volunteer at a local community garden.",
-      "date": "15 May, 2022",
-      "id": "E6",
-      "caused_by": [
-        "E4"
-      ]
-    },
-    {
-      "sub-event": "Tom hosts a game night with his colleagues Sam and John at his place.",
-      "date": "7 June, 2022",
-      "id": "E7",
-      "caused_by": [
-        "E3"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara attend a local charity event together.",
-      "date": "10 June, 2022",
-      "id": "E10",
-      "caused_by": [
-        "E5"
-      ]
-    },
-    {
-      "sub-event": "Tom plans a road trip to visit a nearby national park with Sara and Andrew.",
-      "date": "15 June, 2022",
-      "id": "E11",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara decide to renew their wedding vows.",
-      "date": "28 April, 2022",
-      "id": "E13",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Andrew discover a new hobby of stargazing together.",
-      "date": "5 May, 2022",
-      "id": "E14",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom plans a surprise date night for Sara at a drive-in movie theater.",
-      "date": "27 April, 2022",
-      "id": "E16",
-      "caused_by": [
-        "E13"
-      ]
-    },
-    {
-      "sub-event": "Tom and Andrew attend a father-son baseball game together.",
-      "date": "7 May, 2022",
-      "id": "E17",
-      "caused_by": [
-        "E14"
-      ]
-    },
-    {
-      "sub-event": "Tom introduces Sara to his colleagues Sam and John over dinner.",
-      "date": "12 May, 2022",
-      "id": "E18",
-      "caused_by": [
-        "E7"
-      ]
-    },
-    {
-      "sub-event": "Tom participates in a charity run with Sara and Andrew.",
-      "date": "20 May, 2022",
-      "id": "E19",
-      "caused_by": [
-        "E10"
-      ]
-    },
-    {
-      "sub-event": "Tom starts meditating every morning to reduce stress and promote mindfulness.",
-      "date": "30 May, 2022",
-      "id": "E20",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom organizes a weekend camping trip for the family to reconnect with nature.",
-      "date": "5 June, 2022",
-      "id": "E21",
-      "caused_by": [
-        "E20"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara enroll in a dance class together to enhance their bond.",
-      "date": "10 July, 2022",
-      "id": "E22",
-      "caused_by": [
-        "E10"
-      ]
-    },
-    {
-      "sub-event": "Tom starts journaling his thoughts and experiences to reflect on his personal growth.",
-      "date": "18 July, 2022",
-      "id": "E23",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara decide to adopt a second rescue dog from the local shelter.",
-      "date": "2 May, 2022",
-      "id": "E24",
-      "caused_by": [
-        "E4"
-      ]
-    },
-    {
-      "sub-event": "Tom plans a weekend getaway to a beach resort with Sara and Andrew.",
-      "date": "22 May, 2022",
-      "id": "E25",
-      "caused_by": [
-        "E11"
-      ]
-    },
-    {
-      "sub-event": "Tom organizes a game night with his colleagues Sam and John at a board game cafe.",
-      "date": "12 June, 2022",
-      "id": "E26",
-      "caused_by": [
-        "E7"
-      ]
-    },
-    {
-      "sub-event": "Tom starts taking scenic detours on his way home to enjoy the countryside views.",
-      "date": "18 June, 2022",
-      "id": "E27",
-      "caused_by": [
+    "events_session_9": {
+      "sub_event": [
+        "Tom receives a promotion at work and celebrates with Sara over dinner."
+      ],
+      "id": [
+        "E2",
+        "E10",
         "E21"
-      ]
-    },
-    {
-      "sub-event": "Tom decides to surprise Sara with a romantic dinner at a rooftop restaurant with a view.",
-      "date": "25 April, 2022",
-      "id": "E28",
-      "caused_by": [
-        "E1"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara attend a couple's retreat to strengthen their relationship.",
-      "date": "30 April, 2022",
-      "id": "E29",
-      "caused_by": [
-        "E13"
-      ]
-    },
-    {
-      "sub-event": "Tom starts a gratitude journaling practice to appreciate the little moments in life.",
-      "date": "10 May, 2022",
-      "id": "E30",
-      "caused_by": [
-        "E23"
-      ]
-    },
-    {
-      "sub-event": "Tom plans a movie night under the stars in the backyard for family bonding.",
-      "date": "15 June, 2022",
-      "id": "E31",
-      "caused_by": [
-        "E11"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara have a heart-to-heart conversation about their future goals and aspirations.",
-      "date": "18 July, 2022",
-      "id": "E34",
-      "caused_by": [
-        "E23"
-      ]
-    },
-    {
-      "sub-event": "Tom receives a personalized gift from Sara for their anniversary.",
-      "date": "25 April, 2022",
-      "id": "E36",
-      "caused_by": [
-        "E29"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara plan a weekend getaway to a countryside vineyard for relaxation.",
-      "date": "30 April, 2022",
-      "id": "E37",
-      "caused_by": [
-        "E29"
-      ]
-    },
-    {
-      "sub-event": "Tom starts a tradition of Sunday morning breakfast with the family.",
-      "date": "10 May, 2022",
-      "id": "E38",
-      "caused_by": [
-        "E30"
-      ]
-    },
-    {
-      "sub-event": "Tom surprises Andrew with tickets to a baseball game for father-son bonding.",
-      "date": "15 June, 2022",
-      "id": "E39",
-      "caused_by": [
-        "E31"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara decide to redecorate their living room together.",
-      "date": "22 April, 2022",
-      "id": "E40",
-      "caused_by": [
-        "E13"
-      ]
-    },
-    {
-      "sub-event": "Tom starts experimenting with new recipes for family dinner nights.",
-      "date": "23 April, 2022",
-      "id": "E41",
-      "caused_by": [
-        "E5"
-      ]
-    },
-    {
-      "sub-event": "Tom organizes a hiking trip with Andrew to explore nature trails.",
-      "date": "28 April, 2022",
-      "id": "E42",
-      "caused_by": [
-        "E14"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara decide to attend a couple's therapy session to enhance communication and understanding.",
-      "date": "5 May, 2022",
-      "id": "E43",
-      "caused_by": [
-        "E34"
-      ]
-    },
-    {
-      "sub-event": "Tom receives a promotion at work and celebrates with a family dinner at his favorite local restaurant.",
-      "date": "23 April, 2022",
-      "id": "E44",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara decide to start a weekly tradition of family game nights to strengthen their bond.",
-      "date": "2 May, 2022",
-      "id": "E45",
-      "caused_by": [
-        "E38"
-      ]
-    },
-    {
-      "sub-event": "Tom gets a surprise visit from his long-lost cousin, sparking a weekend of family reunions and storytelling.",
-      "date": "10 May, 2022",
-      "id": "E46",
-      "caused_by": [
-        "E37"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara volunteer at a local animal shelter together, fostering kittens for the first time.",
-      "date": "15 June, 2022",
-      "id": "E47",
-      "caused_by": [
-        "E24"
-      ]
-    }
-  ],
-  "events_session_1": [
-    {
-      "sub-event": "Tom and Sara decide to redecorate their living room together.",
-      "date": "22 April, 2022",
-      "id": "E40",
-      "caused_by": [
-        "E13"
-      ]
-    },
-    {
-      "sub-event": "Tom starts experimenting with new recipes for family dinner nights.",
-      "date": "23 April, 2022",
-      "id": "E41",
-      "caused_by": [
-        "E5"
-      ]
-    },
-    {
-      "sub-event": "Tom receives a promotion at work and celebrates with a family dinner at his favorite local restaurant.",
-      "date": "23 April, 2022",
-      "id": "E44",
-      "caused_by": []
-    }
-  ],
-  "session_1_date_time": "9:44 am on 24 April, 2022",
-  "session_1": [
-    {
-      "text": "Car-Agent, suggest the quickest route to my favorite local restaurant for a family dinner.",
-      "speaker": "Tom",
-      "dia_id": "D1:1"
-    },
-    {
-      "text": "Taking the exit at Junction St will get you to 'Local Bites' faster with no traffic delays.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D1:2"
-    },
-    {
-      "text": "Car-Agent, how's the traffic on the route to 'Local Bites' for dinner tonight?",
-      "speaker": "Tom",
-      "dia_id": "D1:3"
-    },
-    {
-      "text": "Traffic is currently light, so you should have a smooth drive to 'Local Bites' for dinner tonight.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D1:4"
-    },
-    {
-      "text": "Car-Agent, remind me of the best time to leave for work tomorrow.",
-      "speaker": "Tom",
-      "dia_id": "D1:5"
-    },
-    {
-      "text": "I will remind you to leave for work tomorrow by 7:45 am to avoid traffic congestion during rush hour.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D1:6"
-    },
-    {
-      "text": "Car-Agent, what's the weather forecast for today's drive to Andrew's school at 3 pm?",
-      "speaker": "Tom",
-      "dia_id": "D1:7"
-    },
-    {
-      "text": "Expect clear skies and mild temperatures for your drive to Andrew's school at 3 pm today.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D1:8"
-    }
-  ],
-  "session_1_facts": {
-    "Tom": [
-      [
-        "Tom is planning to go to his favorite local restaurant, 'Local Bites', for a family dinner.",
-        "D1:1"
       ],
-      [
-        "Tom is concerned about traffic on his route to 'Local Bites' for dinner tonight.",
-        "D1:3"
-      ],
-      [
-        "Tom inquires about the best time to leave for work tomorrow to avoid traffic congestion.",
-        "D1:5"
-      ],
-      [
-        "Tom needs the weather forecast for his drive to Andrew's school at 3 pm today.",
-        "D1:7"
-      ]
-    ]
-  },
-  "session_1_summary": "Tom consulted the CarBU-Agent at 9:44 am on 24 April, 2022, to plan his day. The CarBU-Agent advised Tom on the quickest route to his favorite local restaurant, 'Local Bites,' for a family dinner, avoiding traffic delays by taking an exit at Junction St. The agent also informed Tom that traffic was light for dinner that night. Furthermore, the CarBU-Agent suggested Tom leave for work by 7:45 am the next day to avoid rush hour congestion and predicted clear skies and mild temperatures for his drive to Andrew's school at 3 pm that day.",
-  "events_session_2": [
-    {
-      "sub-event": "Tom decides to surprise Sara with a weekend getaway to a cozy cabin in the woods.",
-      "date": "25 April, 2022",
-      "id": "E1",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom decides to surprise Sara with a romantic dinner at a rooftop restaurant with a view.",
-      "date": "25 April, 2022",
-      "id": "E28",
       "caused_by": [
-        "E1"
-      ]
-    },
-    {
-      "sub-event": "Tom receives a personalized gift from Sara for their anniversary.",
-      "date": "25 April, 2022",
-      "id": "E36",
-      "caused_by": [
-        "E29"
-      ]
-    },
-    {
-      "sub-event": "Tom plans a surprise date night for Sara at a drive-in movie theater.",
-      "date": "27 April, 2022",
-      "id": "E16",
-      "caused_by": [
-        "E13"
-      ]
-    }
-  ],
-  "session_2_date_time": "2:18 pm on 27 April, 2022",
-  "session_2": [
-    {
-      "text": "\"Car-Agent, suggest a scenic route to the drive-in movie theater for tonight's surprise date night with Sara.\"",
-      "speaker": "Tom",
-      "dia_id": "D2:1"
-    },
-    {
-      "text": "Take Pine Avenue for a pleasant drive to the drive-in movie theater tonight.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D2:2"
-    },
-    {
-      "text": "\"Car-Agent, what's the weather forecast for our evening at the drive-in movie theater tonight?\"",
-      "speaker": "Tom",
-      "dia_id": "D2:3"
-    },
-    {
-      "text": "Clear skies tonight, perfect for a drive-in movie date with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D2:4"
-    },
-    {
-      "text": "\"Car-Agent, suggest a cozy spot en route to the drive-in movie theater for a brief stop.\"",
-      "speaker": "Tom",
-      "dia_id": "D2:5"
-    },
-    {
-      "text": "Make a stop at Springs Park along the way to the drive-in; it's a cozy spot for a brief break.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D2:6"
-    },
-    {
-      "text": "\"Car-Agent, will there be any traffic delays on the way to the drive-in movie theater tonight?\"",
-      "speaker": "Tom",
-      "dia_id": "D2:7"
-    },
-    {
-      "text": "Traffic is light on the route to the drive-in movie theater for your surprise date night with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D2:8"
-    }
-  ],
-  "session_2_facts": {
-    "Tom": [
-      [
-        "Tom is planning a surprise date night at a drive-in movie theater with Sara.",
-        "D2:1"
-      ],
-      [
-        "Tom is interested in knowing the weather forecast for the evening at the drive-in movie theater.",
-        "D2:3"
-      ],
-      [
-        "Tom is looking for a cozy spot en route to the drive-in movie theater for a brief stop.",
-        "D2:5"
-      ],
-      [
-        "Tom is concerned about potential traffic delays on the way to the drive-in movie theater.",
-        "D2:7"
-      ]
-    ],
-    "CarBU-Agent": [
-      [
-        "CarBU-Agent suggests taking Pine Avenue for a pleasant drive to the drive-in movie theater.",
-        "D2:2"
-      ],
-      [
-        "CarBU-Agent informs Tom about the clear skies perfect for a drive-in movie date tonight.",
-        "D2:4"
-      ],
-      [
-        "CarBU-Agent suggests making a stop at Springs Park along the way to the drive-in movie theater for a brief break.",
-        "D2:6"
-      ],
-      [
-        "CarBU-Agent reassures Tom that traffic is light on the route to the drive-in movie theater for the surprise date night.",
-        "D2:8"
-      ]
-    ]
-  },
-  "session_2_summary": "Tom sought advice from the CarBU-Agent for his plans on 24 April and 27 April, 2022. On 24 April, the agent guided Tom to Local Bites restaurant for dinner, suggested an early start to avoid rush hour the next day, and gave weather updates. On 27 April, Tom asked for a scenic route to a drive-in movie theater for a surprise date with Sara. The agent recommended Pine Avenue for a pleasant drive, predicted clear skies, and advised a stop at Springs Park en route. Traffic was reported to be light. The conversations between Tom and the CarBU-Agent focused on route planning, weather forecasts, and traffic conditions for various events, including family dinners and date nights, providing helpful suggestions to ensure smooth",
-  "events_session_3": [
-    {
-      "sub-event": "Tom and Sara decide to renew their wedding vows.",
-      "date": "28 April, 2022",
-      "id": "E13",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom organizes a hiking trip with Andrew to explore nature trails.",
-      "date": "28 April, 2022",
-      "id": "E42",
-      "caused_by": [
-        "E14"
-      ]
-    }
-  ],
-  "session_3_date_time": "1:57 pm on 29 April, 2022",
-  "session_3": [
-    {
-      "text": "\"Car-Agent, suggest a scenic route for a hiking trip with Andrew to explore nature trails tomorrow.\"",
-      "speaker": "Tom",
-      "dia_id": "D3:1"
-    },
-    {
-      "text": "Take Pine Ridge Trail for a scenic hiking adventure with Andrew tomorrow. Enjoy the nature trails!",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D3:2"
-    },
-    {
-      "text": "\"Car-Agent, remind me of the best stargazing spot Andrew and I discovered last summer.\"",
-      "speaker": "Tom",
-      "dia_id": "D3:3"
-    },
-    {
-      "text": "Head to Observatory Hill for the stargazing spot you and Andrew enjoyed last summer. Bright skies await!",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D3:4"
-    },
-    {
-      "text": "\"Car-Agent, any recommendations on renewing wedding vows with Sara for a memorable event?\"",
-      "speaker": "Tom",
-      "dia_id": "D3:5"
-    },
-    {
-      "text": "Consider renewing your vows at a scenic spot like Sunset Cove for a memorable and romantic event with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D3:6"
-    },
-    {
-      "text": "\"Car-Agent, could you suggest a tranquil route for our vow renewal celebration tomorrow?\"",
-      "speaker": "Tom",
-      "dia_id": "D3:7"
-    },
-    {
-      "text": "Take Sunset Drive for a tranquil route to your vow renewal celebration tomorrow. Enjoy the peaceful journey with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D3:8"
-    }
-  ],
-  "session_3_facts": {
-    "Tom": [
-      [
-        "Tom is planning a hiking trip with Andrew and asked for a scenic route suggestion.",
-        "D3:1"
-      ],
-      [
-        "Tom and Andrew discovered a stargazing spot at Observatory Hill last summer.",
-        "D3:3"
-      ],
-      [
-        "Tom is considering renewing wedding vows with Sara and asked for recommendations for a memorable event.",
-        "D3:5"
-      ],
-      [
-        "Tom asked for a tranquil route suggestion for their vow renewal celebration with Sara.",
-        "D3:7"
-      ]
-    ]
-  },
-  "session_3_summary": "Tom has been seeking advice from the CarBU-Agent for various events. On 24 April and 27 April, the agent provided guidance for dinners and a scenic drive with Sara, predicting weather, traffic conditions, and suggesting routes. Today, on 29 April at 1:57 pm, Tom asked for a scenic route for a hiking trip with Andrew, to be taken tomorrow, and reminisced about a stargazing spot with Andrew. He then sought advice on renewing wedding vows with Sara, and the agent recommended Sunset Cove for the event, suggesting a tranquil route via Sunset Drive. Tom and the CarBU-Agent have coordinated plans for family outings and romantic occasions, with the agent offering helpful suggestions for smooth and enjoyable experiences.",
-  "events_session_4": [
-    {
-      "sub-event": "Tom adopts a rescue dog from the local shelter.",
-      "date": "30 April, 2022",
-      "id": "E4",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara attend a couple's retreat to strengthen their relationship.",
-      "date": "30 April, 2022",
-      "id": "E29",
-      "caused_by": [
-        "E13"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara plan a weekend getaway to a countryside vineyard for relaxation.",
-      "date": "30 April, 2022",
-      "id": "E37",
-      "caused_by": [
-        "E29"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara decide to enroll in a cooking class together.",
-      "date": "2 May, 2022",
-      "id": "E5",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara decide to adopt a second rescue dog from the local shelter.",
-      "date": "2 May, 2022",
-      "id": "E24",
-      "caused_by": [
-        "E4"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara decide to start a weekly tradition of family game nights to strengthen their bond.",
-      "date": "2 May, 2022",
-      "id": "E45",
-      "caused_by": [
-        "E38"
-      ]
-    }
-  ],
-  "session_4_date_time": "5:53 pm on 2 May, 2022",
-  "session_4": [
-    {
-      "text": "\u201cCar-Agent, can you suggest a peaceful route to the countryside vineyard for our weekend getaway with Sara?\u201d",
-      "speaker": "Tom",
-      "dia_id": "D4:1"
-    },
-    {
-      "text": "Take the scenic Meadow Lane for a tranquil drive to the countryside vineyard with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D4:2"
-    },
-    {
-      "text": "Car-Agent, what scenic spots can we stop at on our way to the vineyard this weekend?",
-      "speaker": "Tom",
-      "dia_id": "D4:3"
-    },
-    {
-      "text": "Consider stopping at the scenic Lakeshore Park for a lovely break during your drive to the vineyard with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D4:4"
-    },
-    {
-      "text": "Car-Agent, should we bring our new rescue dog to the vineyard this weekend for the first time?",
-      "speaker": "Tom",
-      "dia_id": "D4:5"
-    },
-    {
-      "text": "It's best to wait until your rescue dog is settled before bringing them to the vineyard this weekend for a comfortable experience.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D4:6"
-    },
-    {
-      "text": "Car-Agent, any tips for making our family game nights memorable and engaging for all?",
-      "speaker": "Tom",
-      "dia_id": "D4:7"
-    },
-    {
-      "text": "Organize themed game nights to keep things exciting for everyone during your weekly family game nights.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D4:8"
-    }
-  ],
-  "session_4_facts": {
-    "Tom": [
-      [
-        "Tom is planning a weekend getaway to a countryside vineyard with Sara.",
-        "D4:1"
-      ],
-      [
-        "Tom is interested in finding scenic spots to stop at on the way to the vineyard.",
-        "D4:3"
-      ],
-      [
-        "Tom has a new rescue dog and is considering bringing it to the vineyard for the first time.",
-        "D4:5"
-      ],
-      [
-        "Tom is looking for tips to make family game nights memorable and engaging for all.",
-        "D4:7"
-      ]
-    ]
-  },
-  "session_4_summary": "Tom has been communicating with the CarBU-Agent for various occasions. On 24 and 27 April, Tom sought advice for dinners and scenic drives with Sara, considering weather and traffic. On 29 April, he asked for a scenic route for hiking with Andrew and advice on renewing vows with Sara at Sunset Cove. Today, on 2 May, Tom inquired about a peaceful route to a vineyard getaway with Sara, stopping at Lakeshore Park. He also asked about bringing their rescue dog to the vineyard and tips for engaging family game nights. The agent provided suggestions for a tranquil drive, scenic stops, waiting to bring the dog, and organizing themed game nights for the family. Their conversations have been focused on planning outings, romantic",
-  "events_session_5": [
-    {
-      "sub-event": "Tom and Andrew discover a new hobby of stargazing together.",
-      "date": "5 May, 2022",
-      "id": "E14",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom and Sara decide to attend a couple's therapy session to enhance communication and understanding.",
-      "date": "5 May, 2022",
-      "id": "E43",
-      "caused_by": [
-        "E34"
-      ]
-    },
-    {
-      "sub-event": "Tom and Andrew attend a father-son baseball game together.",
-      "date": "7 May, 2022",
-      "id": "E17",
-      "caused_by": [
-        "E14"
-      ]
-    }
-  ],
-  "session_5_date_time": "12:25 am on 7 May, 2022",
-  "session_5": [
-    {
-      "text": "\"Car-Agent, suggest a scenic route for Andrew's next stargazing outing after today's father-son baseball game.\"",
-      "speaker": "Tom",
-      "dia_id": "D5:1"
-    },
-    {
-      "text": "Take Oak Hill Road for a scenic drive after today's baseball game. Enjoy stargazing with Andrew under the night sky there.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D5:2"
-    },
-    {
-      "text": "Car-Agent, remind me the best time to stargaze with Andrew on Oak Hill Road.",
-      "speaker": "Tom",
-      "dia_id": "D5:3"
-    },
-    {
-      "text": "The best time for stargazing on Oak Hill Road is after dark when the night sky is clear.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D5:4"
-    },
-    {
-      "text": "Car-Agent, can you recommend optimal stargazing spots on Oak Hill Road for Andrew and me next month?",
-      "speaker": "Tom",
-      "dia_id": "D5:5"
-    },
-    {
-      "text": "Stargaze at the overlook near the lake on Oak Hill Road for a peaceful experience next month.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D5:6"
-    },
-    {
-      "text": "Car-Agent, should Andrew and I prepare any gear for stargazing at the lake overlook on Oak Hill Road?",
-      "speaker": "Tom",
-      "dia_id": "D5:7"
-    },
-    {
-      "text": "Prepare binoculars for stargazing at the lake overlook on Oak Hill Road next month for a better view.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D5:8"
-    }
-  ],
-  "session_5_facts": {
-    "Tom": [
-      [
-        "Tom is planning a stargazing outing with Andrew after a father-son baseball game.",
-        "D5:1"
-      ],
-      [
-        "Tom is inquiring about the best time to stargaze on Oak Hill Road with Andrew.",
-        "D5:3"
-      ],
-      [
-        "Tom is looking for optimal stargazing spots on Oak Hill Road for himself and Andrew next month.",
-        "D5:5"
-      ],
-      [
-        "Tom is asking if there is any gear to prepare for stargazing at the lake overlook on Oak Hill Road.",
-        "D5:7"
-      ]
-    ]
-  },
-  "session_5_summary": "In their previous conversations, Tom sought advice from the CarBU-Agent for various outings, including dinners, scenic drives, hiking trips, and a vow renewal with his partner Sara, considering weather and locations like Sunset Cove and a vineyard. Tom also inquired about family game nights. Today, Tom asked for a scenic route for stargazing with his son Andrew after a baseball game, specifically mentioning Oak Hill Road. The agent advised stargazing after dark and recommended a peaceful lake overlook spot on Oak Hill Road for next month. Tom also asked about preparing binoculars for the stargazing trip. The conversations have focused on planning outings, stargazing, and family activities. The current time is 12:25 am on 7 May",
-  "events_session_6": [
-    {
-      "sub-event": "Tom plans a family picnic by the lake to celebrate Andrew's birthday.",
-      "date": "10 May, 2022",
-      "id": "E2",
-      "caused_by": [
-        "E1"
-      ]
-    },
-    {
-      "sub-event": "Tom starts a gratitude journaling practice to appreciate the little moments in life.",
-      "date": "10 May, 2022",
-      "id": "E30",
-      "caused_by": [
-        "E23"
-      ]
-    },
-    {
-      "sub-event": "Tom starts a tradition of Sunday morning breakfast with the family.",
-      "date": "10 May, 2022",
-      "id": "E38",
-      "caused_by": [
-        "E30"
-      ]
-    },
-    {
-      "sub-event": "Tom gets a surprise visit from his long-lost cousin, sparking a weekend of family reunions and storytelling.",
-      "date": "10 May, 2022",
-      "id": "E46",
-      "caused_by": [
-        "E37"
-      ]
-    },
-    {
-      "sub-event": "Tom introduces Sara to his colleagues Sam and John over dinner.",
-      "date": "12 May, 2022",
-      "id": "E18",
-      "caused_by": [
-        "E7"
-      ]
-    }
-  ],
-  "session_6_date_time": "5:47 pm on 12 May, 2022",
-  "session_6": [
-    {
-      "text": "\"Car-Agent, recommend a serene route to a lake for our family picnic next week.\"",
-      "speaker": "Tom",
-      "dia_id": "D6:1"
-    },
-    {
-      "text": "\"Consider Lakeside Drive for a tranquil route to the lake picnic next week.\"",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D6:2"
-    },
-    {
-      "text": "\"Car-Agent, how's the weather forecast for next week's family picnic at the lake?\"",
-      "speaker": "Tom",
-      "dia_id": "D6:3"
-    },
-    {
-      "text": "\"Next week's forecast for the family picnic looks sunny and perfect for outdoor activities by the lake.\"",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D6:4"
-    },
-    {
-      "text": "\"Car-Agent, can you suggest the best spot for stargazing during our picnic next week at the lake?\"",
-      "speaker": "Tom",
-      "dia_id": "D6:5"
-    },
-    {
-      "text": "\"Oak Hill Road offers an optimal spot for stargazing during your family picnic next week by the lake.\"",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D6:6"
-    },
-    {
-      "text": "\"Car-Agent, what's the best time for stargazing at Oak Hill Road during our family picnic?\"",
-      "speaker": "Tom",
-      "dia_id": "D6:7"
-    },
-    {
-      "text": "\"Stargaze at Oak Hill Road during your family picnic in the evening for the best view.\"",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D6:8"
-    }
-  ],
-  "session_6_facts": {
-    "Tom": [
-      [
-        "Tom is planning a family picnic at the lake for next week.",
-        "D6:1"
-      ],
-      [
-        "Tom is interested in knowing the weather forecast for the family picnic at the lake next week.",
-        "D6:3"
-      ],
-      [
-        "Tom is looking for suggestions for the best spot for stargazing during the family picnic at the lake next week.",
-        "D6:5"
-      ],
-      [
-        "Tom inquired about the best time for stargazing at Oak Hill Road during the family picnic.",
-        "D6:7"
-      ]
-    ]
-  },
-  "session_6_summary": "In their past conversations, Tom sought advice from CarBU-Agent for various outings, including dinners, scenic drives, hiking trips, and a vow renewal with Sara, considering locations like Sunset Cove and a vineyard. Tom also asked about family game nights. Today, Tom asked about a scenic route for stargazing with his son Andrew after his baseball game and specified Oak Hill Road. CarBU-Agent advised stargazing after dark and suggested a peaceful lake overlook spot on Oak Hill Road for next month. Tom inquired about preparing binoculars for the stargazing trip during the current conversation. The time is 12:25 am on May 7th when Tom asked about stargazing and 5:47 pm on May 12th",
-  "events_session_7": [
-    {
-      "sub-event": "Tom and Andrew volunteer at a local community garden.",
-      "date": "15 May, 2022",
-      "id": "E6",
-      "caused_by": [
-        "E4"
-      ]
-    },
-    {
-      "sub-event": "Tom participates in a charity run with Sara and Andrew.",
-      "date": "20 May, 2022",
-      "id": "E19",
-      "caused_by": [
+        "E2",
         "E10"
-      ]
+      ],
+      "sub-event": [
+        "Tom and Sara plan a weekend trip to a nearby vineyard to relax and unwind together.",
+        "Tom explores a new restaurant 'Cozy Bites' with Sara and Andrew."
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "25 April, 2024"
     },
-    {
-      "sub-event": "Tom plans a weekend getaway to a beach resort with Sara and Andrew.",
-      "date": "22 May, 2022",
-      "id": "E25",
+    "events_session_10": {
+      "sub-event": [
+        "Tom and Sara attend a traffic safety seminar together to enhance their driving awareness.",
+        "Tom decides to surprise Sara with a weekend getaway to a cozy mountain cabin."
+      ],
+      "id": [
+        "E29",
+        "E16"
+      ],
       "caused_by": [
-        "E11"
-      ]
-    }
-  ],
-  "session_7_date_time": "1:49 pm on 22 May, 2022",
-  "session_7": [
-    {
-      "text": "\"CarBU-Agent, suggest a scenic drive for a family outing after our charity run.\"",
-      "speaker": "Tom",
-      "dia_id": "D7:1"
-    },
-    {
-      "text": "How about a leisurely drive through the countryside along Lakeside Drive after the charity run?",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D7:2"
-    },
-    {
-      "text": "\"CarBU-Agent, can we detour to Lakeside Drive top scenic spots during the charity run?\"",
-      "speaker": "Tom",
-      "dia_id": "D7:3"
-    },
-    {
-      "text": "Detouring to Lakeside Drive during the charity run may add extra time. Shall I calculate the detour duration for you?",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D7:4"
-    },
-    {
-      "text": "\"CarBU-Agent, please calculate the duration for the detour to Lakeside Drive during our charity run.\"",
-      "speaker": "Tom",
-      "dia_id": "D7:5"
-    },
-    {
-      "text": "Calculating... Detour to Lakeside Drive during the charity run may add 20 minutes based on current traffic conditions.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D7:6"
-    },
-    {
-      "text": "\"Thank you, CarBU-Agent. Let's stick to the main route for the charity run.\"",
-      "speaker": "Tom",
-      "dia_id": "D7:7"
-    },
-    {
-      "text": "Understood, sticking to the main route for the charity run.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D7:8"
-    }
-  ],
-  "session_7_facts": {
-    "Tom": [
-      [
-        "Tom is organizing a family outing that involves a charity run.",
-        "D7:1"
-      ],
-      [
-        "Tom requested CarBU-Agent to suggest a scenic drive for the family outing after the charity run.",
-        "D7:1"
-      ],
-      [
-        "Tom inquired about detouring to Lakeside Drive top scenic spots during the charity run.",
-        "D7:3"
-      ],
-      [
-        "Tom requested CarBU-Agent to calculate the duration for the detour to Lakeside Drive during the charity run.",
-        "D7:5"
-      ],
-      [
-        "Tom decided to stick to the main route for the charity run, opting not to detour to Lakeside Drive.",
-        "D7:7"
-      ]
-    ]
-  },
-  "session_7_summary": "Tom sought advice from CarBU-Agent for various outings and activities like dinners, scenic drives, hikes, and a vow renewal with Sara at Sunset Cove or a vineyard. He also inquired about family game nights. Tom asked for a scenic route for stargazing with his son Andrew after his baseball game on Oak Hill Road, to be planned for the next month. In the current conversation, he requested a scenic drive after a charity run. Tom considered a detour to Lakeside Drive but decided against it due to time constraints, choosing to stick to the main route. The time of the current conversation is 1:49 pm on May 22nd, 2022, following previous interactions that occurred on May 7th at 12",
-  "events_session_8": [
-    {
-      "sub-event": "Tom starts meditating every morning to reduce stress and promote mindfulness.",
-      "date": "30 May, 2022",
-      "id": "E20",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom organizes a barbecue dinner with Paul, Sam, and John to strengthen their bond.",
-      "date": "5 June, 2022",
-      "id": "E3",
-      "caused_by": [
-        "E2"
-      ]
-    },
-    {
-      "sub-event": "Tom organizes a weekend camping trip for the family to reconnect with nature.",
-      "date": "5 June, 2022",
-      "id": "E21",
-      "caused_by": [
-        "E20"
-      ]
-    }
-  ],
-  "session_8_date_time": "6:59 pm on 6 June, 2022",
-  "session_8": [
-    {
-      "text": "\"CarBU-Agent, suggest a relaxing route for a family drive post-camping trip. Can we include a scenic detour for stargazing?\"",
-      "speaker": "Tom",
-      "dia_id": "D8:1"
-    },
-    {
-      "text": "Take Pine Road for a peaceful drive back, with a detour to the lake for stargazing.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D8:2"
-    },
-    {
-      "text": "Will the roads be winding for a scenic drive that complements our camping trip views?",
-      "speaker": "Tom",
-      "dia_id": "D8:3"
-    },
-    {
-      "text": "Yes, Pine Road offers winding roads with lovely views, perfect for complementing your camping trip experience.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D8:4"
-    },
-    {
-      "text": "What towns or landmarks will we pass by on Pine Road for a more scenic journey?",
-      "speaker": "Tom",
-      "dia_id": "D8:5"
-    },
-    {
-      "text": "Enjoy picturesque towns like Pinecrest, pass by serene parks, and catch glimpses of the shimmering Pine Lake on Pine Road.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D8:6"
-    },
-    {
-      "text": "How's the traffic flow in those towns along Pine Road? Inform me about potential delays.",
-      "speaker": "Tom",
-      "dia_id": "D8:7"
-    },
-    {
-      "text": "Traffic flow is smooth in towns along Pine Road. No significant delays are expected.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D8:8"
-    }
-  ],
-  "session_8_facts": {
-    "Tom": [
-      [
-        "Tom is planning a family drive post-camping trip and is interested in a relaxing and scenic route, including a detour for stargazing.",
-        "D8:1"
-      ],
-      [
-        "Tom is concerned about having winding roads for a scenic drive that complements their camping trip views.",
-        "D8:3"
-      ],
-      [
-        "Tom is curious about the towns or landmarks they will pass by on Pine Road for a more scenic journey.",
-        "D8:5"
-      ],
-      [
-        "Tom is interested in knowing about the traffic flow in towns along Pine Road and potential delays.",
-        "D8:7"
-      ]
-    ]
-  },
-  "session_8_summary": "Tom has been consulting CarBU-Agent for advice on various outings and activities like dinners, scenic drives, hikes, and family game nights. On May 7th at 12 pm, he sought a scenic route for stargazing with his son after a baseball game. On June 6th at 6:59 pm, following a charity run, he asked for a relaxing route with a scenic detour for stargazing after a camping trip. CarBU-Agent suggested taking Pine Road, known for winding roads and lovely views, passing through Pinecrest, parks, and Pine Lake. Traffic flow in towns along Pine Road was expected to be smooth with no delays. Throughout the conversations, Tom sought guidance for enhancing his outings with family and friends,",
-  "events_session_9": [
-    {
-      "sub-event": "Tom hosts a game night with his colleagues Sam and John at his place.",
-      "date": "7 June, 2022",
-      "id": "E7",
-      "caused_by": [
-        "E3"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara attend a local charity event together.",
-      "date": "10 June, 2022",
-      "id": "E10",
-      "caused_by": [
+        "E16",
+        "E2",
         "E5"
-      ]
-    }
-  ],
-  "session_9_date_time": "11:34 am on 11 June, 2022",
-  "session_9": [
-    {
-      "text": "\"CarBU-Agent, suggest a calm route for a weekend drive with Sara after hosting a game night with my colleagues last Friday.\"",
-      "speaker": "Tom",
-      "dia_id": "D9:1"
-    },
-    {
-      "text": "How about a scenic drive on Blue Ridge Parkway this weekend with Sara?",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D9:2"
-    },
-    {
-      "text": "\"Can you recommend stops for photography along Blue Ridge Parkway? Date's on next Sunday.\"",
-      "speaker": "Tom",
-      "dia_id": "D9:3"
-    },
-    {
-      "text": "Consider stopping at Waterrock Knob Overlook and Linn Cove Viaduct for stunning photo opportunities.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D9:4"
-    },
-    {
-      "text": "\"CarBU-Agent, how's traffic around Blue Ridge Parkway next Sunday afternoon for our photography stops?\"",
-      "speaker": "Tom",
-      "dia_id": "D9:5"
-    },
-    {
-      "text": "Traffic is light around Blue Ridge Parkway on Sunday afternoons, ideal for your photography stops.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D9:6"
-    },
-    {
-      "text": "\"CarBU-Agent, can you suggest a peaceful picnic spot on Blue Ridge Parkway for Sara and me?\"",
-      "speaker": "Tom",
-      "dia_id": "D9:7"
-    },
-    {
-      "text": "How about a serene picnic at Julian Price Park along Blue Ridge Parkway for you and Sara?",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D9:8"
-    }
-  ],
-  "session_9_facts": {
-    "Tom": [
-      [
-        "Tom hosted a game night with colleagues last Friday before planning a weekend drive with Sara.",
-        "D9:1"
       ],
-      [
-        "Tom is planning a scenic drive on Blue Ridge Parkway with Sara this weekend.",
-        "D9:2"
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "20 May, 2024"
+    },
+    "events_session_11": {
+      "sub-event": [
+        "Tom and Sara attend a couples' cooking class to bond and learn new recipes.",
+        "Tom introduces Andrew to car maintenance basics by involving him in checking tire pressure and oil levels."
       ],
-      [
-        "Tom is going on a date with Sara next Sunday and is interested in photography stops along Blue Ridge Parkway.",
-        "D9:3"
+      "id": [
+        "E17",
+        "E30"
       ],
-      [
-        "Tom is concerned about the traffic around Blue Ridge Parkway for their photography stops next Sunday afternoon.",
-        "D9:5"
-      ],
-      [
-        "Tom is planning a peaceful picnic on Blue Ridge Parkway with Sara.",
-        "D9:7"
-      ]
-    ],
-    "CarBU-Agent": [
-      [
-        "CarBU-Agent suggested a calm route on Blue Ridge Parkway for a weekend drive with Sara.",
-        "D9:2"
-      ],
-      [
-        "CarBU-Agent recommended Waterrock Knob Overlook and Linn Cove Viaduct as stops for photography along Blue Ridge Parkway.",
-        "D9:4"
-      ],
-      [
-        "CarBU-Agent informed Tom that traffic is light around Blue Ridge Parkway on Sunday afternoons.",
-        "D9:6"
-      ],
-      [
-        "CarBU-Agent suggested Julian Price Park as a peaceful picnic spot on Blue Ridge Parkway for Tom and Sara.",
-        "D9:8"
-      ]
-    ]
-  },
-  "session_9_summary": "Tom has been seeking advice from CarBU-Agent for various outings, such as stargazing after a baseball game and a charity run. CarBU-Agent suggested scenic routes like Pine Road for these activities. Today, Tom asked for a calm drive with his wife, Sara, after hosting a game night. CarBU-Agent recommended a scenic drive on Blue Ridge Parkway for the weekend with Sara, suggesting photography stops at Waterrock Knob Overlook and Linn Cove Viaduct, and a peaceful picnic spot at Julian Price Park. The conversation took place at 11:34 am on 11 June, 2022, focusing on enhancing outings for Tom and Sara with scenic drives and thoughtful stops for relaxation and photography.",
-  "events_session_10": [
-    {
-      "sub-event": "Tom organizes a game night with his colleagues Sam and John at a board game cafe.",
-      "date": "12 June, 2022",
-      "id": "E26",
       "caused_by": [
-        "E7"
-      ]
+        "E4",
+        "E27"
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "02 June, 2024"
     },
-    {
-      "sub-event": "Tom plans a road trip to visit a nearby national park with Sara and Andrew.",
-      "date": "15 June, 2022",
-      "id": "E11",
-      "caused_by": []
-    },
-    {
-      "sub-event": "Tom plans a movie night under the stars in the backyard for family bonding.",
-      "date": "15 June, 2022",
-      "id": "E31",
-      "caused_by": [
-        "E11"
-      ]
-    },
-    {
-      "sub-event": "Tom surprises Andrew with tickets to a baseball game for father-son bonding.",
-      "date": "15 June, 2022",
-      "id": "E39",
-      "caused_by": [
+    "events_session_12": {
+      "sub-event": [
+        "Tom plans a family outing to a car museum to learn about different vehicle technologies and history."
+      ],
+      "id": [
         "E31"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara volunteer at a local animal shelter together, fostering kittens for the first time.",
-      "date": "15 June, 2022",
-      "id": "E47",
+      ],
       "caused_by": [
-        "E24"
-      ]
-    }
-  ],
-  "session_10_date_time": "9:53 am on 17 June, 2022",
-  "session_10": [
-    {
-      "text": "\"Car-Agent, suggest a peaceful and scenic route for a road trip to a nearby national park with Sara and Andrew on 15 June, 2022.\"",
-      "speaker": "Tom",
-      "dia_id": "D10:1"
-    },
-    {
-      "text": "Take Blue Ridge Parkway for a serene and scenic drive to the national park on June 15 with Sara and Andrew.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D10:2"
-    },
-    {
-      "text": "\"Car-Agent, recommend a cozy spot for stargazing after the baseball game I planned with Andrew.\"",
-      "speaker": "Tom",
-      "dia_id": "D10:3"
-    },
-    {
-      "text": "Oak Hill Road offers a tranquil Lake Outlook spot for stargazing after the baseball game with Andrew.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D10:4"
-    },
-    {
-      "text": "Car-Agent, help me with picturesque routes for our movie night under the stars next week.",
-      "speaker": "Tom",
-      "dia_id": "D10:5"
-    },
-    {
-      "text": "Enjoy a picturesque drive to a local park for movie night under the stars with the family next week.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D10:6"
-    },
-    {
-      "text": "Car-Agent, suggest a relaxing drive route for the movie night under the stars with Sara and Andrew next week.",
-      "speaker": "Tom",
-      "dia_id": "D10:7"
-    },
-    {
-      "text": "Consider a soothing drive along Lakeside Drive for a relaxing movie night under the stars with Sara and Andrew next week.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D10:8"
-    }
-  ],
-  "session_10_facts": {
-    "Tom": [
-      [
-        "Tom is planning road trips and activities with Sara and Andrew on specific dates.",
-        "D10:1"
+        "E26"
       ],
-      [
-        "Tom planned a baseball game with Andrew and is looking for a cozy spot for stargazing after the game.",
-        "D10:3"
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "20 June, 2024"
+    },
+    "events_session_13": {
+      "sub-event": [
+        "Tom introduces Andrew to a new music genre during their drive to school, sparking his interest in music.",
+        "Tom receives a vehicle maintenance reminder tailored for his daily commute.",
+        "Tom starts a car maintenance journal to keep track of vehicle upkeep and improvements."
       ],
-      [
-        "Tom is organizing a movie night under the stars with Sara and Andrew next week.",
-        "D10:7"
-      ]
-    ],
-    "CarBU-Agent": [
-      [
-        "CarBU-Agent suggests the Blue Ridge Parkway for a road trip to a national park for a serene and scenic drive on June 15 with Sara and Andrew.",
-        "D10:2"
+      "id": [
+        "E18",
+        "E22",
+        "E26"
       ],
-      [
-        "CarBU-Agent recommends Oak Hill Road for stargazing at a tranquil Lake Outlook spot after the baseball game with Andrew.",
-        "D10:4"
-      ],
-      [
-        "CarBU-Agent suggests a local park for a movie night under the stars with the family next week, offering a picturesque drive to get there.",
-        "D10:6"
-      ],
-      [
-        "CarBU-Agent advises a relaxing drive along Lakeside Drive for the movie night under the stars with Sara and Andrew next week.",
-        "D10:8"
-      ]
-    ]
-  },
-  "session_10_summary": "Tom has been seeking advice from CarBU-Agent for various outings, such as stargazing after a baseball game and a charity run, requesting peaceful and scenic routes for drives. CarBU-Agent has suggested routes like Pine Road, Blue Ridge Parkway, and Oak Hill Road for these activities. Today, Tom asked for a road trip to a national park on June 15 with Sara and Andrew, and CarBU-Agent recommended Blue Ridge Parkway for a serene drive. Tom also sought suggestions for a cozy stargazing spot after a baseball game with Andrew, which CarBU-Agent advised to be on Oak Hill Road. Lastly, Tom asked for picturesque routes for a movie night under the stars next week with Sara and Andrew, leading to a recommendation for a soothing drive",
-  "events_session_11": [
-    {
-      "sub-event": "Tom starts taking scenic detours on his way home to enjoy the countryside views.",
-      "date": "18 June, 2022",
-      "id": "E27",
       "caused_by": [
-        "E21"
-      ]
-    },
-    {
-      "sub-event": "Tom and Sara enroll in a dance class together to enhance their bond.",
-      "date": "10 July, 2022",
-      "id": "E22",
-      "caused_by": [
-        "E10"
-      ]
-    }
-  ],
-  "session_11_date_time": "3:53 pm on 11 July, 2022",
-  "session_11": [
-    {
-      "text": "\"Car-Agent, suggest a peaceful drive route for a weekend camping trip like last time.\"",
-      "speaker": "Tom",
-      "dia_id": "D11:1"
-    },
-    {
-      "text": "Consider revisiting the scenic route through Pine Road for a tranquil weekend drive like before.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D11:2"
-    },
-    {
-      "text": "Car-Agent, how was the camping trip feel for you on a personal level?",
-      "speaker": "Tom",
-      "dia_id": "D11:3"
-    },
-    {
-      "text": "I don't have feelings. My focus is on assisting you effectively. Would you like help with anything else?",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D11:4"
-    },
-    {
-      "text": "Car-Agent, suggest a blissful route for Sara's and my anniversary dinner later this month.",
-      "speaker": "Tom",
-      "dia_id": "D11:5"
-    },
-    {
-      "text": "How about a serene drive along Sunset Drive for your anniversary dinner?",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D11:6"
-    },
-    {
-      "text": "Car-Agent, recall the dance class Sara and I enrolled in; recommend a scenic route for it.",
-      "speaker": "Tom",
-      "dia_id": "D11:7"
-    },
-    {
-      "text": "Try a delightful drive along Blue Ridge Parkway for a scenic route to your dance class with Sara.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D11:8"
-    }
-  ],
-  "session_11_facts": {
-    "Tom": [
-      [
-        "Tom went on a weekend camping trip in the past that was tranquil, possibly through Pine Road.",
-        "D11:1"
+        "E7",
+        "E13",
+        "E22"
       ],
-      [
-        "Tom is planning an anniversary dinner with someone named Sara later this month.",
-        "D11:5"
-      ],
-      [
-        "Tom and Sara enrolled in a dance class together.",
-        "D11:7"
-      ]
-    ]
-  },
-  "session_11_summary": "Tom has been consulting CarBU-Agent for peaceful and scenic drive routes for various outings. On June 15, CarBU-Agent suggested Blue Ridge Parkway for a national park road trip with Sara and Andrew. For stargazing after a baseball game, Oak Hill Road was recommended. Another request was for a serene drive for a movie night under the stars with Sara and Andrew. Today, Tom asked for a peaceful drive route for a weekend camping trip, and CarBU-Agent suggested revisiting Pine Road. Tom then inquired about Car-Agent's camping trip experience, to which CarBU-Agent stated not having feelings but focusing on assistance. Additionally, a blissful route for Tom's anniversary dinner with Sara was proposed along Sunset Drive, and a scenic route for their",
-  "events_session_12": [
-    {
-      "sub-event": "Tom starts journaling his thoughts and experiences to reflect on his personal growth.",
-      "date": "18 July, 2022",
-      "id": "E23",
-      "caused_by": []
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "30 June, 2024"
     },
-    {
-      "sub-event": "Tom and Sara have a heart-to-heart conversation about their future goals and aspirations.",
-      "date": "18 July, 2022",
-      "id": "E34",
+    "events_session_14": {
+      "sub-event": [
+        "Tom explores a new scenic route on the weekend drive with Sara, Andrew, and Sara's parents visiting from out of town.",
+        "Tom and Sara plan a surprise birthday party for Andrew's best friend at a local amusement park.",
+        "Tom and Sara plan a weekend hike to a nearby trail with Andrew and Sara's parents.",
+        "Tom surprises Andrew with a new set of art supplies for his creativity."
+      ],
+      "id": [
+        "E11",
+        "E19",
+        "E23",
+        "E27"
+      ],
       "caused_by": [
+        "E3",
+        "E11",
         "E23"
-      ]
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "05 July, 2024"
+    },
+    "events_session_15": {
+      "sub_event": [
+        "Tom explores a new scenic route on the weekend drive with Sara and Andrew."
+      ],
+      "id": [
+        "E3",
+        "E15"
+      ],
+      "caused_by": [
+        "E13"
+      ],
+      "sub-event": [
+        "Tom upgrades to a hybrid vehicle for better fuel efficiency."
+      ],
+      "Tom": [],
+      "CarBU-Agent": [],
+      "date": "08 July, 2024"
     }
-  ],
-  "session_12_date_time": "2:25 pm on 20 July, 2022",
-  "session_12": [
-    {
-      "text": "\"Car-Agent, suggest a scenic route to help clear my mind after journaling on personal growth.\"",
-      "speaker": "Tom",
-      "dia_id": "D12:1"
-    },
-    {
-      "text": "Take Lakeside Drive for a peaceful and calming scenic route.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D12:2"
-    },
-    {
-      "text": "\"Car-Agent, can you adjust the route to Lakeside Drive to avoid potential construction delays?\"",
-      "speaker": "Tom",
-      "dia_id": "D12:3"
-    },
-    {
-      "text": "Stay on Lakeside Drive; no reported construction delays on this route for a peaceful drive.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D12:4"
-    },
-    {
-      "text": "\"Car-Agent, do you know any good spots on Lakeside Drive for a quick stop?\"",
-      "speaker": "Tom",
-      "dia_id": "D12:5"
-    },
-    {
-      "text": "Stop at Lakeside Park for a tranquil lakeside view, perfect for a refreshing break during your drive.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D12:6"
-    },
-    {
-      "text": "\"Car-Agent, could you suggest a playlist to complement the serene vibe of Lakeside Park?\"",
-      "speaker": "Tom",
-      "dia_id": "D12:7"
-    },
-    {
-      "text": "Playing the \"Chill Reflections\" playlist to enhance the serene atmosphere at Lakeside Park.",
-      "speaker": "CarBU-Agent",
-      "dia_id": "D12:8"
-    }
-  ],
-  "session_12_facts": {
-    "Tom": [
-      [
-        "Tom journals on personal growth.",
-        "D12:1"
-      ]
-    ]
   },
-  "session_12_summary": "Tom turned to CarBU-Agent for scenic drive route suggestions multiple times, seeking tranquil experiences for various outings with Sara and Andrew. CarBU-Agent recommended Blue Ridge Parkway for a national park road trip, Oak Hill Road for stargazing, and Pine Road for a camping trip. Tom also inquired about CarBU-Agent's camping experience. For Tom's anniversary, CarBU-Agent recommended Sunset Drive. In the latest conversation on July 20 at 2:25 pm, Tom asked for a calming route after journaling on personal growth, and CarBU-Agent suggested Lakeside Drive. Tom asked for a detour to avoid construction delays, to which CarBU-Agent assured him of clear roads. They discussed a stop at Lakeside Park for a break and"
+  "session_summary": {
+    "session_1_summary": "On 11 March, 2024, at 5:01 pm, Tom interacted with Car-Agent for his morning coffee run and planning for a smooth drive to Andrew's school. Car-Agent recommended a quicker route via Maple Avenue for the coffee run and suggested leaving by 7:30 am to avoid traffic for Andrew's school. Reminders were set to check 'Cozy Beans' coffee specials and stop by for morning coffee the next day.",
+    "session_2_summary": "Tom and Car-Agent have been discussing various plans, including morning coffee runs, routes to Andrew's school, and preparations for Sara's musical and Andrew's school play. On 11 March at 5:01 pm, Car-Agent recommended a quick route via Maple Avenue for the coffee run and suggested leaving by 7:30 am to avoid traffic. On 13 March at 4:22 pm, Tom asked for a serene route to Andrew's school for Sara's musical at 9 am, and Car-Agent suggested Oakwood Drive for a scenic drive. Tom also requested calm music for Sara and a reminder to surprise Andrew with dessert after his play. Lastly, Tom asked for guidance to a quiet dinner spot for a date night at 7 pm",
+    "session_3_summary": "Tom and Car-Agent have been discussing various plans, including morning coffee runs, routes to Andrew's school for Sara's musical and Andrew's school play, and a quiet dinner spot for a date night. On 11 March at 5:01 pm, Car-Agent recommended a quick route via Maple Avenue for a coffee run, and on 13 March at 4:22 pm, suggested a serene route on Oakwood Drive for Sara's musical. Tom also requested calm music for Sara and a reminder to surprise Andrew with dessert. On 16 March at 7:33 pm, Tom asked for fuel-efficient carpooling routes with John after 15th March, to check Andrew's school pickup time post-school play, and eco-friendly practices for",
+    "session_4_summary": "Tom and Car-Agent have been discussing various plans, including morning coffee runs, routes to Andrew's school for Sara's activities, and eco-friendly practices. On 11 March at 5:01 pm, Car-Agent recommended a quick route via Maple Avenue. On 13 March at 4:22 pm, a serene route on Oakwood Drive was suggested for Sara's musical. Tom also requested calm music, a reminder for Andrew, and a quiet dinner spot. On 16 March at 7:33 pm, Tom asked for fuel-efficient carpooling routes and eco-friendly practices. In the current conversation at 9:58 pm on 20 March, Tom asked about eco-friendly packing tips for camping, efficient routes for a beach trip with",
+    "session_5_summary": "Tom and Car-Agent have been discussing various plans, including morning coffee runs, routes to Andrew's school for Sara's activities, and eco-friendly practices. On 11 March, Car-Agent recommended a quick route via Maple Avenue. On 13 March, a serene route on Oakwood Drive was suggested for Sara's musical. On 16 March, Tom asked for fuel-efficient carpooling routes and eco-friendly practices. On 20 March, Tom asked about eco-friendly packing tips for camping and efficient routes for a beach trip. Today, on 1 April, Tom asked for a fuel-efficient route for a weekend outing with Sara and Andrew, eco-friendly beach trip tips, and a smooth drive to pick Andrew up after his classes. Car-Agent offered suggestions",
+    "session_6_summary": "Tom and Car-Agent have discussed various travel plans, including morning coffee runs, outings to Andrew's school, and eco-friendly practices. Recommendations for fuel-efficient routes and eco-friendly tips were shared by Car-Agent. Tom sought advice on eco-friendly packing for camping and efficient routes for a beach trip. On 1 April at 7:01 pm, Tom asked Car-Agent for a scenic drive route for a family camping trip. Car-Agent suggested the Rocky Ridge route and advised to visit Wildflower Farms for roadside attractions. Tom inquired about the weather forecast on the route and requested a reminder to pack an extra blanket. The current date is 3 April 2024. Throughout these interactions, the speakers are Tom and Car-Agent, discussing travel plans, routes",
+    "session_7_summary": "Tom has been engaging with Car-Agent for travel advice. Car-Agent suggested a scenic drive for a family camping trip and reminded Tom to pack an extra blanket. Tom asked for a tire pressure check reminder for an upcoming beach trip and sought safety tips for driving Andrew to school, to which Car-Agent recommended a booster seat and breathing techniques. Tom also asked for calming music suggestions for the school commute. The conversations occurred over multiple days, with the initial request for a scenic drive on 1 April and the latest exchange on 11 April. The speakers are Tom and Car-Agent, focusing on travel plans, safety, and driving tips. Time and location varied, with Tom seeking advice for different trips and daily routines.",
+    "session_8_summary": "Tom has been consulting Car-Agent for travel advice, including a scenic drive for a family camping trip, tire pressure check for a beach trip, safety tips for driving Andrew to school, and calming music for the school commute. The conversations occurred over multiple days, starting on 1 April and continuing until 19 April. Tom asked for a tire pressure reminder for a surprise visit to Andrew at school on 17 April. He also requested a scenic route suggestion for a celebration dinner with Sara and calming music for a commute to surprise Andrew after work. Car-Agent recommended securing Andrew in a booster seat for safety during the drive and planning a special treat accordingly. The speakers are Tom and Car-Agent, focusing on travel plans, safety, and driving tips, with various",
+    "session_9_summary": "Tom has been consulting Car-Agent for travel advice and safety tips for various trips, including a scenic drive for a family camping trip, a beach visit, driving Andrew to school, and a celebration dinner with Sara. Car-Agent has provided advice on routes, tire pressure checks, securing Andrew in a booster seat, and calming music for commutes. The current conversation took place at 5:23 pm on 26 April, where Tom asked for a scenic route to a vineyard, ensuring optimal tire pressure for the trip, and the best route to avoid traffic after a concert. Car-Agent suggested the Coastal Highway for the vineyard trip and the Riverside Parkway to avoid traffic post-concert, also reminding Tom to secure Andrew in a booster seat for the drive",
+    "session_10_summary": "Tom has been consulting Car-Agent for travel advice and safety tips for various trips, including a family camping trip, a beach visit, driving Andrew to school, and a celebration dinner with Sara. Car-Agent has provided route suggestions, tire pressure checks, and tips for securing Andrew in a booster seat. In the current conversation on 20 May at 5:15 pm, Tom asked for the best route to a mountain cabin for a surprise getaway with Sara, and Car-Agent suggested the Coastal Highway with light traffic. Car-Agent also recommended Sunset Bluff for scenic viewpoints along the way and suggested activities like hiking trails and stargazing at the mountain cabin. Tom and Car-Agent have a friendly and practical communication style, focusing on enhancing Tom's travel experiences with",
+    "session_11_summary": "Tom has been seeking travel advice and safety tips from Car-Agent for various trips, including a camping trip, beach visit, school commute, and a surprise getaway with Sara. Car-Agent has provided route suggestions, checked tire pressure, and offered tips for securing Andrew in a booster seat. In their latest conversation on 3 June at 12:44 am, Tom asked about involving Andrew in car maintenance tasks like checking oil levels and washing the car. Car-Agent recommended including Andrew in washing and waxing the car as a hands-on activity. Additionally, they discussed family cooking activities and how to incorporate cooking class recipes into a themed family dinner night. Tom, Sara, and Andrew are the main characters, and the interactions are friendly and practical, focusing on enhancing",
+    "session_12_summary": "Tom and Car-Agent have been discussing travel advice and family activities. In their latest conversation on 3 June at 12:44 am, Tom asked about involving Andrew in car maintenance tasks and family cooking activities. Car-Agent suggested including Andrew in washing the car and incorporating cooking class recipes into a themed family dinner night. On 21 June at 10:20 am, Tom asked Car-Agent to remind him to check tire pressure before a family trip to the car museum on 20 June. Car-Agent set a reminder and recommended a scenic route to the museum. Tom also inquired about involving Andrew in learning about the museum's technologies and recommended interactive exhibits for Andrew's engagement. So far, the interactions have been friendly and focused on enhancing family experiences.",
+    "session_13_summary": "Tom and Car-Agent have been exchanging advice on family activities and car maintenance. On 3 June at 12:44 am, Car-Agent recommended involving Andrew in car washing and themed family dinner nights. On 21 June at 10:20 am, Car-Agent reminded Tom to check tire pressure before a family trip to the car museum and suggested interactive exhibits for Andrew. On 2 July at 12:52 am, Tom asked about energy-efficient driving techniques and age-appropriate music playlists for Andrew. Car-Agent advised coasting and gentle acceleration for eco-friendly driving and 'Kid-Friendly Jams' playlist for enjoyable rides. They also discussed deepening Andrew's interest in music by introducing him to different genres and artists during their drives together. Their",
+    "session_14_summary": "Tom and Car-Agent have been discussing family activities and car-related topics since June 3. Car-Agent has recommended involving Andrew in car washing, interactive exhibits, and themed family dinners. Tom asked for energy-efficient driving tips and music playlists for Andrew. Car-Agent suggested eco-friendly driving techniques and 'Kid-Friendly Jams' playlist. In their latest conversation on July 7 at 2:20 pm, Tom sought advice on Andrew's birthday party at the amusement park, safety precautions, making the family hike memorable for Sara's parents, and planning a painting session during their next outing to inspire Andrew's creativity.",
+    "session_15_summary": "Tom and Car-Agent have been engaging in family-focused conversations since June 3, discussing activities for Andrew, eco-friendly driving tips, music playlists, birthday party plans, and making family outings memorable. On July 7 at 2:20 pm, Tom sought advice on Andrew's birthday party at an amusement park, safety precautions, and making the family hike memorable for Sara's parents. On July 9 at 8:04 pm, Tom asked for eco-friendly driving tips for their new hybrid vehicle after an upgrade, a shorter scenic route plan, incorporating interactive exhibits into a scenic drive with Sara and Andrew, and making the family hike memorable for Sara's parents. Car-Agent provided suggestions for fuel efficiency, route planning, detours for interactive exhibits,"
+  }
 }

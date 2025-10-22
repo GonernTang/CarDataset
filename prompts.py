@@ -92,6 +92,8 @@ Driver: “Yes, please.”
 
 Goal: Enable proactive, personalized, and cross-domain memory-driven services.
 
+Personal Preferences & Customization Needs,Destinations & Points of Interest,Vehicle Health & Maintenance Records,Driving Habits & Style,Personalized Settings,Parking Preferences
+
 CONVERSATION GENERATION RULES:
 
 Each generated conversation should include the following:

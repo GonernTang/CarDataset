@@ -1,0 +1,215 @@
+{
+  "qa": [
+    {
+      "question": "What route did Car-Agent recommend to Tom for a quicker drive to 'Cozy Beans'?",
+      "answer": "Maple Avenue",
+      "evidence": [
+        "D1:2"
+      ]
+    },
+    {
+      "question": "When should Tom leave tomorrow for a smooth drive to Andrew's school?",
+      "answer": "7:30 am",
+      "evidence": [
+        "D1:6"
+      ]
+    },
+    {
+      "question": "What music genre did Car-Agent play to calm Sara before her musical at 9 am?",
+      "answer": "Soft classical music",
+      "evidence": [
+        "D2:4"
+      ]
+    },
+    {
+      "question": "When is Tom planning to surprise Andrew with homemade dessert after his school play?",
+      "answer": "Tomorrow",
+      "evidence": [
+        "D2:6"
+      ]
+    },
+    {
+      "question": "What eco-friendly practices were recommended for daily commutes post-car pooling with John starting 15th March?",
+      "answer": "Avoid idling, carpool regularly, and consider electric/hybrid cars.",
+      "evidence": [
+        "D3:6"
+      ]
+    },
+    {
+      "question": "When should Tom check Andrew's school pickup time after the school play on 15th March?",
+      "answer": "Post-school play on 15th March.",
+      "evidence": [
+        "D3:4"
+      ]
+    },
+    {
+      "question": "What eco-friendly packing tips did CarBU-Agent recommend for the family camping trip?",
+      "answer": "Consider reusable utensils, biodegradable plates, and packing in a reusable container.",
+      "evidence": [
+        "D4:2"
+      ]
+    },
+    {
+      "question": "When should Tom perform maintenance tasks for smooth weekend trips?",
+      "answer": "Regularly check tire pressure, oil level, and fluid levels before long drives.",
+      "evidence": [
+        "D4:6"
+      ]
+    },
+    {
+      "question": "What can Tom do to ensure a smooth drive to pick Andrew up after his afternoon classes?",
+      "answer": "Set a reminder to leave early, check traffic updates, and take the most efficient route to Andrew's school.",
+      "evidence": [
+        "D5:6"
+      ]
+    },
+    {
+      "question": "What eco-friendly tips did Car-Agent provide for the beach trip with Sara and Andrew?",
+      "answer": "Reuse water bottles, use eco-friendly sunscreens, and pack reusable bags for beach cleanups to reduce waste.",
+      "evidence": [
+        "D5:4"
+      ]
+    },
+    {
+      "question": "What is the weather forecast along the Rocky Ridge route for the camping trip?",
+      "answer": "Expect clear skies and mild temperatures along the Rocky Ridge route for a pleasant camping trip.",
+      "evidence": [
+        "D6:6"
+      ]
+    },
+    {
+      "question": "What did Tom ask Car-Agent to remind him to pack for the camping trip to Rocky Ridge?",
+      "answer": "An extra blanket.",
+      "evidence": [
+        "D6:7",
+        "D6:8"
+      ]
+    },
+    {
+      "question": "What should Tom consider for Andrew's safety when driving him to school every morning?",
+      "answer": "Consider enrolling Andrew in a booster seat if he meets the height and weight requirements.",
+      "evidence": [
+        "D7:4"
+      ]
+    },
+    {
+      "question": "How can Tom maintain focus and calm while driving Andrew to school daily?",
+      "answer": "Practice deep breathing techniques to stay calm and focused during your daily drives with Andrew.",
+      "evidence": [
+        "D7:6"
+      ]
+    },
+    {
+      "question": "What did Car-Agent recommend for Tom's commute to surprise Andrew after work?",
+      "answer": "Playing soothing instrumental music",
+      "evidence": [
+        "D8:6"
+      ]
+    },
+    {
+      "question": "When should Tom check his tire pressure before surprising Andrew at school?",
+      "answer": "Before 17 April",
+      "evidence": [
+        "D8:1"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent suggest for the weekend trip to the vineyard?",
+      "answer": "Coastal Highway",
+      "evidence": [
+        "D9:2"
+      ]
+    },
+    {
+      "question": "When should Tom check the tire pressure for the vineyard trip?",
+      "answer": "next weekend",
+      "evidence": [
+        "D9:4"
+      ]
+    },
+    {
+      "question": "What activities does Car-Agent recommend at the mountain cabin for Tom and Sara?",
+      "answer": "Enjoy hiking trails, stargazing, and cozy evenings by the fireplace at the mountain cabin getaway with Sara.",
+      "evidence": [
+        "D10:8"
+      ]
+    },
+    {
+      "question": "Where along the Coastal Highway does Car-Agent suggest exploring for the mountain cabin surprise trip?",
+      "answer": "Explore scenic viewpoints like Sunset Bluff along the Coastal Highway for your mountain cabin getaway.",
+      "evidence": [
+        "D10:6"
+      ]
+    },
+    {
+      "question": "What activity did CarBU-Agent suggest for involving Andrew in checking the oil level?",
+      "answer": "Have Andrew help wash and wax the car.",
+      "evidence": [
+        "D11:4"
+      ]
+    },
+    {
+      "question": "When creating a themed family dinner night, what tasks should be assigned to each family member?",
+      "answer": "Prepare dishes from the cooking class recipes together.",
+      "evidence": [
+        "D11:8"
+      ]
+    },
+    {
+      "question": "What did Tom ask Car-Agent to remind him about before the family trip?",
+      "answer": "To check the tire pressure",
+      "evidence": [
+        "D12:1"
+      ]
+    },
+    {
+      "question": "When should Andrew be involved in learning about the car museum's technologies?",
+      "answer": "On 20 June",
+      "evidence": [
+        "D12:5"
+      ]
+    },
+    {
+      "question": "What driving technique should Tom try next for an eco-friendly commute?",
+      "answer": "Try coasting when approaching stops & gentle acceleration for fuel efficiency.",
+      "evidence": [
+        "D13:2"
+      ]
+    },
+    {
+      "question": "How can Tom deepen Andrew's interest in music during their rides together?",
+      "answer": "Introduce Andrew to different music genres and artists to spark his curiosity and appreciation for music.",
+      "evidence": [
+        "D13:8"
+      ]
+    },
+    {
+      "question": "What precautions should Tom take for Andrew's safety during the amusement park visit?",
+      "answer": "Reminder to agree on a meeting point if separated, take frequent breaks, and ensure Andrew knows emergency contact details.",
+      "evidence": [
+        "D14:4"
+      ]
+    },
+    {
+      "question": "What suggestion did Car-Agent give to make the family hike memorable for Sara's parents?",
+      "answer": "Surprise them with a themed picnic, capture moments with photos, and share interesting facts about the trail during the hike.",
+      "evidence": [
+        "D14:6"
+      ]
+    },
+    {
+      "question": "What eco-friendly driving tips were suggested for the new hybrid vehicle?",
+      "answer": "Use gentle acceleration and avoid idling for better fuel efficiency in the hybrid vehicle.",
+      "evidence": [
+        "D15:2"
+      ]
+    },
+    {
+      "question": "Where should Tom take a shorter scenic route for the weekend drive?",
+      "answer": "Taking the Coastal Highway should offer a shorter scenic route for the weekend drive.",
+      "evidence": [
+        "D15:4"
+      ]
+    }
+  ]
+}

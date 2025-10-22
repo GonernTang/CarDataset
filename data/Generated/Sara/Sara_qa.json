@@ -1,0 +1,286 @@
+{
+  "qa": [
+    {
+      "question": "Who does Sara want to share her ETA with when returning from Green Sprout Cafe?",
+      "answer": "Tom",
+      "evidence": [
+        "D1:3"
+      ]
+    },
+    {
+      "question": "Where should Sara look for a covered parking spot near Green Sprout Cafe?",
+      "answer": "Near Green Sprout Cafe",
+      "evidence": [
+        "D1:8"
+      ]
+    },
+    {
+      "question": "What type of gift suggestions did Car-Agent provide for Tom's upcoming birthday?",
+      "answer": "Consider a stylish watch, a personalized gift, or tickets to a sports event.",
+      "evidence": [
+        "D2:8"
+      ]
+    },
+    {
+      "question": "When should Sara check for upcoming family-friendly events at Oakwood Mall?",
+      "answer": "Check their website for event listings in the next month.",
+      "evidence": [
+        "D2:4"
+      ]
+    },
+    {
+      "question": "What activity did CarBU-Agent recommend for Sara Jones after visiting 'Green Sprout Cafe'?",
+      "answer": "Explore the Green Turtle Park nearby for a fun, kid-friendly activity after the cafe visit.",
+      "evidence": [
+        "D3:4"
+      ]
+    },
+    {
+      "question": "How should Sara Jones share the picnic plans with Tom for this Friday?",
+      "answer": "Message Tom directly via text or a messaging app to share the picnic plans for this Friday.",
+      "evidence": [
+        "D3:8"
+      ]
+    },
+    {
+      "question": "What are some scenic family activities available next weekend after visiting Oakwood Mall with Andrew?",
+      "answer": "Visit Ridgeview Park for scenic walks and a playground. Enjoy listening to birds and have a picnic.",
+      "evidence": [
+        "D4:2"
+      ]
+    },
+    {
+      "question": "Will Ridgeview Park near Oakwood Mall be crowded next weekend for Andrew?",
+      "answer": "I recommend checking local events or weather forecasts closer to the date for crowd predictions.",
+      "evidence": [
+        "D4:4"
+      ]
+    },
+    {
+      "question": "What family-friendly activity can be done around Oakwood Mall this weekend?",
+      "answer": "Visit the Oakwood Carousel for a fun family activity near Oakwood Mall this weekend.",
+      "evidence": [
+        "D5:4"
+      ]
+    },
+    {
+      "question": "How can the activities around Oakwood Mall be engaging for Andrew?",
+      "answer": "Engage Andrew by exploring the Oakwood Playground near the mall for interactive family fun.",
+      "evidence": [
+        "D5:6"
+      ]
+    },
+    {
+      "question": "When do the family activities at Oakwood Carousel start next Saturday?",
+      "answer": "Family activities at Oakwood Carousel start at 10:00 am next Saturday.",
+      "evidence": [
+        "D6:4"
+      ]
+    },
+    {
+      "question": "Is there covered parking near Oakwood Carousel for the visit next Saturday?",
+      "answer": "Yes, there is covered parking available near Oakwood Carousel for the visit next Saturday.",
+      "evidence": [
+        "D6:6"
+      ]
+    },
+    {
+      "question": "What is suggested as a scenic route to Ridgeview Park?",
+      "answer": "Oakwood Drive",
+      "evidence": [
+        "D7:2"
+      ]
+    },
+    {
+      "question": "Can snacks be brought to enjoy during the family walk at Ridgeview Park?",
+      "answer": "Bringing snacks is a great idea.",
+      "evidence": [
+        "D7:8"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent recommend from Oakwood Mall to Fresh Bites?",
+      "answer": "Take the quickest route via Main St to reach Fresh Bites safely from Oakwood Mall.",
+      "evidence": [
+        "D8:2"
+      ]
+    },
+    {
+      "question": "What activities are available nearby after dining at Fresh Bites for a full family day?",
+      "answer": "Head to Greenleaf Botanical Gardens after dining at Fresh Bites for a full family day of nature exploration and relaxation.",
+      "evidence": [
+        "D8:8"
+      ]
+    },
+    {
+      "question": "What playlist did Car-Agent suggest for the drive to the cafe on Hillside Ave to Elm St?",
+      "answer": "CarBU-Agent suggested playing the 'Family Favorites' playlist for the drive.",
+      "evidence": [
+        "D9:8"
+      ]
+    },
+    {
+      "question": "When did Sara Jones ask about the traffic along Hillside Ave to Elm St?",
+      "answer": "Sara Jones asked about the traffic along Hillside Ave to Elm St during the conversation.",
+      "evidence": [
+        "D9:3"
+      ]
+    },
+    {
+      "question": "What playlist did Sara ask for the drive to Oakwood Mall?",
+      "answer": "'Family Outing Mix' playlist",
+      "evidence": [
+        "D10:5"
+      ]
+    },
+    {
+      "question": "Where is the covered parking available near Oakwood Mall?",
+      "answer": "Near the main entrance",
+      "evidence": [
+        "D10:4"
+      ]
+    },
+    {
+      "question": "When should they leave to avoid traffic delays on Andrew's first day back at school?",
+      "answer": "Leaving by 7:30 am",
+      "evidence": [
+        "D11:6"
+      ]
+    },
+    {
+      "question": "What will the AC temperature be adjusted to after school for Andrew?",
+      "answer": "AC set to keep Andrew comfortable",
+      "evidence": [
+        "D11:8"
+      ]
+    },
+    {
+      "question": "When did Sara Jones discover the scenic route to Oakwood Mall?",
+      "answer": "July 12, 2024.",
+      "evidence": [
+        "D12:1"
+      ]
+    },
+    {
+      "question": "What playlist did Car-Agent recommend for the drive to the Oakwood Mall event tomorrow?",
+      "answer": "The 'Family Fun Day' playlist.",
+      "evidence": [
+        "D12:7",
+        "D12:8"
+      ]
+    },
+    {
+      "question": "What should Sara pack for the late afternoon visit to Ridgeview Park with Andrew?",
+      "answer": "Sunscreen, hats, water, and Andrew's favorite snacks.",
+      "evidence": [
+        "D13:8"
+      ]
+    },
+    {
+      "question": "Where should Sara park at Oakwood Mall for convenient parking?",
+      "answer": "In the secure underground lot near the elevator entrance.",
+      "evidence": [
+        "D13:6"
+      ]
+    },
+    {
+      "question": "What snacks should Sara pack for Andrew for their late afternoon visit to Ridgeview Park?",
+      "answer": "Pack fruit, granola bars, and water for Andrew during the late afternoon visit to Ridgeview Park.",
+      "evidence": [
+        "D14:7"
+      ]
+    },
+    {
+      "question": "How can Sara surprise Tom during their weekend getaway near Oakwood Mall?",
+      "answer": "Leave a thoughtful note or gift in the resort room for Tom during the weekend getaway near Oakwood Mall.",
+      "evidence": [
+        "D14:4"
+      ]
+    },
+    {
+      "question": "What route does Sara usually take to Oakwood Mall for Sunday brunch?",
+      "answer": "Vista Drive",
+      "evidence": [
+        "D15:2"
+      ]
+    },
+    {
+      "question": "What snacks can be prepared for Andrew during the Sunday brunch at Bella Pasta?",
+      "answer": "Pack Andrew's favorite snacks like fruit slices, crackers, or mini sandwiches",
+      "evidence": [
+        "D15:8"
+      ]
+    },
+    {
+      "question": "What type of snacks did Car-Agent suggest for Andrew during the trip to Bella Pasta?",
+      "answer": "Fruit slices and cheese sticks",
+      "evidence": [
+        "D16:7",
+        "D16:8"
+      ]
+    },
+    {
+      "question": "When did Sara Jones enjoy the car sing-along?",
+      "answer": "Last Friday",
+      "evidence": [
+        "D16:3"
+      ]
+    },
+    {
+      "question": "What specific game did Car-Agent suggest for Andrew to play during the drive?",
+      "answer": "Travel-specific bingo game",
+      "evidence": [
+        "D17:6"
+      ]
+    },
+    {
+      "question": "When is the upcoming drive for which Sara is seeking recommendations for engaging road trip games?",
+      "answer": "Next week",
+      "evidence": [
+        "D17:7"
+      ]
+    },
+    {
+      "question": "Who recommended taking Vista Drive after the movie night on October 3rd?",
+      "answer": "CarBU-Agent recommended taking Vista Drive after the movie night on October 3rd.",
+      "evidence": [
+        "D18:2"
+      ]
+    },
+    {
+      "question": "What did CarBU-Agent suggest for parking convenience near Green Sprout Cafe or Oakwood Diner on October 3rd?",
+      "answer": "CarBU-Agent suggested looking for covered parking at Green Sprout Cafe or Oakwood Diner for convenience on October 3rd.",
+      "evidence": [
+        "D18:8"
+      ]
+    },
+    {
+      "question": "What type of cafe did Sara ask Car-Agent to suggest near Ridgeview Park?",
+      "answer": "Family-friendly cafe",
+      "evidence": [
+        "D19:1"
+      ]
+    },
+    {
+      "question": "What did Car-Agent recommend as a fun dessert spot near Ridgeview Park?",
+      "answer": "Sweet Treats Bakery",
+      "evidence": [
+        "D19:4"
+      ]
+    },
+    {
+      "question": "What safety alerts did Car-Agent remind Sara about for the amusement park visit with Tom and Andrew?",
+      "answer": "Emergency contact info, sunscreen, and staying hydrated.",
+      "evidence": [
+        "D20:4"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest Sara go for a family snack with Tom and Andrew near the amusement park?",
+      "answer": "Lakeside Cafe.",
+      "evidence": [
+        "D20:8"
+      ]
+    }
+  ]
+}

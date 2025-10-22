@@ -35,7 +35,6 @@ def get_embedding(texts, model="text-embedding-ada-002"):
 
 
 def get_session_facts(args, agent_a, session_idx, return_embeddings=True):
-
     # Step 1: get events
     task = json.load(open(os.path.join(args.prompt_dir, 'fact_generation_examples_new.json')))
     query = CONVERSATION2FACTS_PROMPT
@@ -48,38 +47,125 @@ def get_session_facts(args, agent_a, session_idx, return_embeddings=True):
             conversation += "[%s] " % dialog["dia_id"] + dialog['speaker'] + ' said, \"' + dialog['clean_text'] + '\"'
         except KeyError:
             conversation += "[%s] " % dialog["dia_id"] + dialog['speaker'] + ' said, \"' + dialog['text'] + '\"'
-
         conversation += '\n'
-    
-    # print(conversation)
-    
+
     input = task['input_prefix'] + conversation
     facts = run_json_trials(query, num_gen=1, num_tokens_request=500, use_16k=False, examples=examples, input=input)
 
     if not return_embeddings:
         return facts
 
-    pprint.pprint(facts.get(agent_a['name']))
-    agent_a_embeddings = get_embedding([agent_a['session_%s_date_time' % session_idx] + ', ' + f for f, _ in facts[agent_a['name']]])
-    # agent_b_embeddings = get_embedding([agent_b['session_%s_date_time' % session_idx] + ', ' + f for f, _ in facts[agent_b['name']]])
+    # --- SAFE: extract fact strings for this agent ---
+    agent_name = agent_a['name']
+    agent_facts = facts.get(agent_name, [])  # expect list of (fact_str, metadata) pairs or similar
+    # If no facts found, return facts and skip embedding update
+    if not agent_facts:
+        logging.info("No facts generated for %s in session %s. Skipping embedding update.", agent_name, session_idx)
+        return facts
 
-    if session_idx > 1:
+    # create text list to embed: "date, fact"
+    texts_to_embed = [agent_a['session_%s_date_time' % session_idx] + ', ' + f for f, _ in agent_facts]
+
+    # get embeddings (wrap in try to catch failures)
+    agent_a_embeddings = get_embedding(texts_to_embed)
+    if agent_a_embeddings is None:
+        logging.warning("get_embedding returned None for %s session %s; skipping embedding persistence.", agent_name, session_idx)
+        return facts
+
+    # ensure numpy array and 2D shape (n, dim)
+    agent_a_embeddings = np.asarray(agent_a_embeddings)
+    if agent_a_embeddings.ndim == 1:
+        # single vector -> reshape to (1, dim)
+        agent_a_embeddings = agent_a_embeddings.reshape(1, -1)
+    elif agent_a_embeddings.ndim > 2:
+        # unexpected shape: try to flatten leading dims to 2D
+        agent_a_embeddings = agent_a_embeddings.reshape(agent_a_embeddings.shape[0], -1)
+
+    # load or create embeddings store
+    if session_idx > 1 and os.path.exists(args.emb_file):
         with open(args.emb_file, 'rb') as f:
             embs = pkl.load(f)
-
-        logging.info("Loaded existing embeddings from %s" % agent_a_embeddings)
-        logging.info("Existing embeddings for %s has shape %s" % (agent_a['name'], embs[agent_a['name']].shape))
-        embs[agent_a['name']] = np.concatenate([embs[agent_a['name']], agent_a_embeddings], axis=0)
-        # embs[agent_b['name']] = np.concatenate([embs[agent_b['name']], agent_b_embeddings], axis=0)
+        logging.info("Loaded existing embeddings from %s", args.emb_file)
     else:
         embs = {}
-        embs[agent_a['name']] = agent_a_embeddings
-        # embs[agent_b['name']] = agent_b_embeddings
-    
+
+    # if agent already has embeddings, ensure compatibility in dimension
+    if agent_name in embs and embs[agent_name] is not None:
+        existing = np.asarray(embs[agent_name])
+        # existing should be 2D
+        if existing.ndim == 1:
+            existing = existing.reshape(1, -1)
+
+        # shape check: dims must match
+        if existing.shape[1] != agent_a_embeddings.shape[1]:
+            logging.warning("Embedding dimension mismatch for %s: existing dim=%s new dim=%s. Attempting to handle by reprojecting or skipping.",
+                            agent_name, existing.shape[1], agent_a_embeddings.shape[1])
+            # Simple safe fallback: skip concatenation if dims don't match
+            # (Better: re-generate with consistent embedding model or handle projection)
+            embs[agent_name] = agent_a_embeddings  # replace to keep latest consistent set
+        else:
+            embs[agent_name] = np.concatenate([existing, agent_a_embeddings], axis=0)
+    else:
+        # no existing embeddings for this agent
+        embs[agent_name] = agent_a_embeddings
+
+    # persist
     with open(args.emb_file, 'wb') as f:
         pkl.dump(embs, f)
-    
+
+    # debug print
+    logging.info("Saved embeddings for %s. New shape: %s", agent_name, embs[agent_name].shape)
+
+    # optionally pretty-print facts for debugging
+    pprint.pprint(facts.get(agent_a['name']))
     return facts
+
+# def get_session_facts(args, agent_a, session_idx, return_embeddings=True):
+
+#     # Step 1: get events
+#     task = json.load(open(os.path.join(args.prompt_dir, 'fact_generation_examples_new.json')))
+#     query = CONVERSATION2FACTS_PROMPT
+#     examples = [[task['input_prefix'] + e["input"], json.dumps(e["output"], indent=2)] for e in task['examples']]
+
+#     conversation = ""
+#     conversation += agent_a['session_%s_date_time' % session_idx] + '\n'
+#     for i, dialog in enumerate(agent_a['session_%s' % session_idx]):
+#         try:
+#             conversation += "[%s] " % dialog["dia_id"] + dialog['speaker'] + ' said, \"' + dialog['clean_text'] + '\"'
+#         except KeyError:
+#             conversation += "[%s] " % dialog["dia_id"] + dialog['speaker'] + ' said, \"' + dialog['text'] + '\"'
+
+#         conversation += '\n'
+    
+#     # print(conversation)
+    
+#     input = task['input_prefix'] + conversation
+#     facts = run_json_trials(query, num_gen=1, num_tokens_request=500, use_16k=False, examples=examples, input=input)
+
+#     if not return_embeddings:
+#         return facts
+
+#     pprint.pprint(facts.get(agent_a['name']))
+#     agent_a_embeddings = get_embedding([agent_a['session_%s_date_time' % session_idx] + ', ' + f for f, _ in facts[agent_a['name']]])
+#     # agent_b_embeddings = get_embedding([agent_b['session_%s_date_time' % session_idx] + ', ' + f for f, _ in facts[agent_b['name']]])
+
+#     if session_idx > 1:
+#         with open(args.emb_file, 'rb') as f:
+#             embs = pkl.load(f)
+
+#         logging.info("Loaded existing embeddings from %s" % agent_a_embeddings)
+#         logging.info("Existing embeddings for %s has shape %s" % (agent_a['name'], embs[agent_a['name']].shape))
+#         embs[agent_a['name']] = np.concatenate([embs[agent_a['name']], agent_a_embeddings], axis=0)
+#         # embs[agent_b['name']] = np.concatenate([embs[agent_b['name']], agent_b_embeddings], axis=0)
+#     else:
+#         embs = {}
+#         embs[agent_a['name']] = agent_a_embeddings
+#         # embs[agent_b['name']] = agent_b_embeddings
+    
+#     with open(args.emb_file, 'wb') as f:
+#         pkl.dump(embs, f)
+    
+#     return facts
 
 
 def get_session_reflection(args, agent_a, agent_b, session_idx):

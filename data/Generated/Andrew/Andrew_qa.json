@@ -1,0 +1,288 @@
+{
+  "qa": [
+    {
+      "question": "What did Andrew ask Car-Agent to remind him of when approaching Oakwood High School?",
+      "answer": "To brake early",
+      "evidence": [
+        "D1:3"
+      ]
+    },
+    {
+      "question": "What type of route did Andrew ask Car-Agent to suggest for driving to Mark's house?",
+      "answer": "A simple route, avoiding busy intersections and highways",
+      "evidence": [
+        "D1:7"
+      ]
+    },
+    {
+      "question": "What is the distance of the nearest parking lot to the City Library entrance?",
+      "answer": "Approximately 200 meters away.",
+      "evidence": [
+        "D2:6"
+      ]
+    },
+    {
+      "question": "When will Andrew return his library books?",
+      "answer": "Upon arrival at the City Library.",
+      "evidence": [
+        "D2:8"
+      ]
+    },
+    {
+      "question": "Where did CarBU-Agent suggest Andrew park near Mia's favorite bakery?",
+      "answer": "Parallel parking available on Elm St.",
+      "evidence": [
+        "D3:4"
+      ]
+    },
+    {
+      "question": "When should Andrew consider driving to return the library books for less congestion?",
+      "answer": "Friday morning",
+      "evidence": [
+        "D3:8"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent suggest to Andrew for a serene drive to Oakwood High School?",
+      "answer": "Taking Peaceful Lane",
+      "evidence": [
+        "D4:2"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent advise Andrew to consider parallel parking for smooth parking near Mia's favorite bakery?",
+      "answer": "Elm St",
+      "evidence": [
+        "D4:4"
+      ]
+    },
+    {
+      "question": "What route did CarBU-Agent suggest for a serene evening drive?",
+      "answer": "Maple Avenue route",
+      "evidence": [
+        "D5:2"
+      ]
+    },
+    {
+      "question": "When does Andrew plan to explore Riverside Path for a calming drive?",
+      "answer": "this evening after school",
+      "evidence": [
+        "D5:3"
+      ]
+    },
+    {
+      "question": "Where can Andrew park near Parkwood Avenue for his defensive driving course on 20 October?",
+      "answer": "Parking is available in the school lot off Parkwood Avenue.",
+      "evidence": [
+        "D6:4"
+      ]
+    },
+    {
+      "question": "When should Andrew review key points from the defensive driving course?",
+      "answer": "Andrew should review key points on 21 October.",
+      "evidence": [
+        "D6:6"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent recommend to Andrew for a peaceful drive to Mark's house?",
+      "answer": "Take the serene Maple Rd route to Mark's house.",
+      "evidence": [
+        "D7:2"
+      ]
+    },
+    {
+      "question": "When exploring new mystery novels, what should Andrew focus on to optimize his driving experience?",
+      "answer": "Focus on the story, stay attentive, and let the audiobook immerse you in the mystery world for an engaging drive.",
+      "evidence": [
+        "D7:8"
+      ]
+    },
+    {
+      "question": "What can Andrew do to feel more confident after last week's parking practice?",
+      "answer": "Practice parallel parking in an empty lot to build confidence in your parking skills.",
+      "evidence": [
+        "D8:8"
+      ]
+    },
+    {
+      "question": "What should Andrew do if he encounters unexpected heavy traffic like last Wednesday?",
+      "answer": "Try deep breathing exercises or listening to calming music to stay relaxed during heavy traffic.",
+      "evidence": [
+        "D8:6"
+      ]
+    },
+    {
+      "question": "What did Car-Agent recommend for Andrew's weekend trip to Mark's house?",
+      "answer": "Listen to 'The Shadow of Suspense' for a thrilling mystery audiobook.",
+      "evidence": [
+        "D9:6"
+      ]
+    },
+    {
+      "question": "When should Andrew practice deep breathing according to Car-Agent?",
+      "answer": "To stay calm in heavy traffic situations like yesterday's book club meeting.",
+      "evidence": [
+        "D9:4"
+      ]
+    },
+    {
+      "question": "What actions should Andrew take if he encounters unexpected fog on his road trip?",
+      "answer": "In fog: Reduce speed, use low beams, increase following distance, avoid sudden stops, and stay focused on the road ahead.",
+      "evidence": [
+        "D10:7",
+        "D10:8"
+      ]
+    },
+    {
+      "question": "What audiobook recommendations did CarBU-Agent provide for rainy drives like to the City Library?",
+      "answer": "For rainy drives, recommend suspenseful or calming audiobooks. How about 'Whispers in the Rain' or 'Calm amidst Storm'?",
+      "evidence": [
+        "D10:3",
+        "D10:4"
+      ]
+    },
+    {
+      "question": "What precautions should Andrew take in case of sudden heavy fog?",
+      "answer": "Reduce speed, use fog lights if equipped, turn on low beams, and increase following distance in heavy fog for safety.",
+      "evidence": [
+        "D11:7",
+        "D11:8"
+      ]
+    },
+    {
+      "question": "When should Andrew use hazard lights in slippery conditions to enhance visibility?",
+      "answer": "Use hazard lights only when pulled over in a safe location due to poor visibility or stopped in traffic.",
+      "evidence": [
+        "D11:3",
+        "D11:4"
+      ]
+    },
+    {
+      "question": "What audiobook options were suggested for the journey to Oakwood High?",
+      "answer": "'The Serene Roadtrip' or 'Drive Relax'.",
+      "evidence": [
+        "D12:2"
+      ]
+    },
+    {
+      "question": "Where should Andrew select a parking spot for his visit to City Library?",
+      "answer": "Select well-lit, visible parking spots near the library entrance.",
+      "evidence": [
+        "D12:6"
+      ]
+    },
+    {
+      "question": "What type of areas should Andrew practice parallel parking in?",
+      "answer": "Practice parallel parking in a quiet area.",
+      "evidence": [
+        "D13:4"
+      ]
+    },
+    {
+      "question": "Where should Andrew practice parallel parking according to Car-Agent?",
+      "answer": "Practice parallel parking in a quiet area.",
+      "evidence": [
+        "D13:4"
+      ]
+    },
+    {
+      "question": "What did Andrew ask Car-Agent about incorporating during the journey?",
+      "answer": "A brief stop on Riverside Drive for a relaxing break.",
+      "evidence": [
+        "D14:3"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent suggest Andrew to drive for a serene journey to Oakwood High School?",
+      "answer": "Parkwood Avenue.",
+      "evidence": [
+        "D14:8"
+      ]
+    },
+    {
+      "question": "What route did Car-Agent recommend to Andrew for a serene drive to the City Library?",
+      "answer": "Riverside Drive",
+      "evidence": [
+        "D15:4"
+      ]
+    },
+    {
+      "question": "How can Andrew ensure he doesn't miss any part of his audiobook on his next drive?",
+      "answer": "Set up bookmarks or use a playback speed that suits your pace",
+      "evidence": [
+        "D15:8"
+      ]
+    },
+    {
+      "question": "What techniques should Andrew practice during the drive to Oakwood High for a serene arrival?",
+      "answer": "Practice deep breathing and focus on relaxation techniques while observing traffic.",
+      "evidence": [
+        "D16:4"
+      ]
+    },
+    {
+      "question": "What activities could Andrew engage in at Oakwood High to relax before driving back?",
+      "answer": "Take a short walk or listen to calming music.",
+      "evidence": [
+        "D16:8"
+      ]
+    },
+    {
+      "question": "What could Andrew do to unwind post-study session drive at Oakwood High with Mia?",
+      "answer": "Take a relaxing walk or listen to calming music at Oakwood High after the study session with Mia.",
+      "evidence": [
+        "D17:4"
+      ]
+    },
+    {
+      "question": "What challenging journeys could Mia suggest for future group study sessions at Oakwood High?",
+      "answer": "Ask Mia for routes exploring serene countryside roads or scenic drives to enhance future study sessions at Oakwood High.",
+      "evidence": [
+        "D17:8"
+      ]
+    },
+    {
+      "question": "What should Andrew do to maintain the relaxed atmosphere in the park route daily?",
+      "answer": "Play calming music and practice deep breathing.",
+      "evidence": [
+        "D18:6"
+      ]
+    },
+    {
+      "question": "How can Andrew enhance the park route experience for enjoying audiobooks during the drive?",
+      "answer": "Listen to engaging mystery audiobooks.",
+      "evidence": [
+        "D18:8"
+      ]
+    },
+    {
+      "question": "What did CarBU-Agent suggest for Andrew to do during traffic pauses?",
+      "answer": "Practice deep breathing in traffic pauses, and use abdominal breathing for calmness on Riverside Drive.",
+      "evidence": [
+        "D19:4"
+      ]
+    },
+    {
+      "question": "When should Andrew recall positive memories according to CarBU-Agent?",
+      "answer": "During deep breathing pauses for smooth relaxation.",
+      "evidence": [
+        "D19:8"
+      ]
+    },
+    {
+      "question": "What technique did Car-Agent suggest to Andrew for staying calm when following Mia's car?",
+      "answer": "Recall a positive memory during deep breathing",
+      "evidence": [
+        "D20:4"
+      ]
+    },
+    {
+      "question": "Where did Car-Agent advise Andrew to explore for a relaxed journey on the hiking trip with Mia?",
+      "answer": "scenic backroads off the main highway",
+      "evidence": [
+        "D20:6"
+      ]
+    }
+  ]
+}

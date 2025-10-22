@@ -103,7 +103,7 @@ def dateObj2Str(dateObj):
 def get_random_date():
 
     # initializing dates ranges
-    test_date1, test_date2 = date(2022, 1, 1), date(2023, 6, 1)
+    test_date1, test_date2 = date(2024, 1, 1), date(2024, 12, 30)
     # getting days between dates
     dates_bet = test_date2 - test_date1
     total_days = dates_bet.days
